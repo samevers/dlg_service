@@ -94,7 +94,7 @@ AK_CHECK_MODULE_ROOT(UTILS_ROOT, [the root of module utils], utils, [], [_lib])
 AK_CHECK_MODULE_ROOT(DICMAP_ROOT, [the root of module dicmap], dicmap, [_include], [_lib])
 AK_CHECK_MODULE_ROOT(WORDSEGMENT_ROOT, [the root of module word_segmentor], word_segmentor, [], [_lib])
 AK_CHECK_MODULE_ROOT(WEBSEGMENT_ROOT, [the root of module web_segmentor], web_segmentor, [], [_lib])
-#AK_CHECK_MODULE_ROOT(LIBVRDATAENGINE_ROOT, [the root of module vr_data_engine], vr_data_engine, [], [_lib])
+AK_CHECK_MODULE_ROOT(LIBVRDATAENGINE_ROOT, [the root of module vr_data_engine], vr_data_engine, [], [_lib])
 #AK_CHECK_MODULE_ROOT(LIBMAPSEARCH_ROOT, [the root of module map_search], map_search, [_include], [_lib])
 #AK_CHECK_MODULE_ROOT(PINYIN_ANNOTATION_ROOT, [the root of module pinyinannotation], pinyinannotation, [_include], [_lib])
 #AK_CHECK_MODULE_ROOT(QUERYCORRECTOR_ROOT, [the root of module query_corrector], query_corrector, [], [Library/Linux])
@@ -119,11 +119,13 @@ AC_CONFIG_FILES([
 	Makefile
 	src/jsoncpp/Makefile
 	src/common_base/Makefile
+	src/include/common/Makefile
+	src/include/Utils/Makefile
+	src/segment/Makefile
 	src/locate_getresult/Makefile
 	src/index/index_da/Makefile
 	src/index/inv_index/Makefile
 	src/index/data_make/Makefile
-	src/segment/Makefile
 	src/QueryMatch/Makefile
 	src/dialogue/Makefile
 	src/da_search/Makefile
@@ -131,8 +133,6 @@ AC_CONFIG_FILES([
 	src/test/Makefile
 	src/http_client/Makefile
 	src/http_server/Makefile
-	src/include/common/Makefile
-	src/include/Utils/Makefile
 ])
 AC_OUTPUT
 AK_PATCH_LIBTOOL
