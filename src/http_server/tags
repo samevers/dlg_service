@@ -1,0 +1,500 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+-target-directory	./Makefile	/^	ln -sf --target-directory=$(collectbin_DIR)\/ $(addprefix $(CURDIR)\/,$<)$/;"	m
+-target-directory	./Makefile	/^	ln -sf --target-directory=$(collectlib_DIR)\/ $(addprefix $(CURDIR)\/, $<)$/;"	m
+ACLOCAL	./Makefile	/^ACLOCAL = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	./Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ALLOCA	./Makefile	/^ALLOCA = $/;"	m
+AMTAR	./Makefile	/^AMTAR = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run tar$/;"	m
+AM_CFLAGS	./Makefile	/^AM_CFLAGS = $/;"	m
+AM_CPPFLAGS	./Makefile	/^AM_CPPFLAGS = -D'SVNVERSION="$(SVNVERSION)"' -DSS_DOCID_BITS=128 \\$/;"	m
+AM_CXXFLAGS	./Makefile	/^AM_CXXFLAGS = $/;"	m
+AM_LDFLAGS	./Makefile	/^AM_LDFLAGS = -Wl,-no-undefined$/;"	m
+AR	./Makefile	/^AR = ar$/;"	m
+AUTOCONF	./Makefile	/^AUTOCONF = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run autoconf$/;"	m
+AUTOHEADER	./Makefile	/^AUTOHEADER = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run autoheader$/;"	m
+AUTOMAKE	./Makefile	/^AUTOMAKE = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run automake-1.11$/;"	m
+AWK	./Makefile	/^AWK = gawk$/;"	m
+Accept_Ranges	./HttpResponse.hpp	/^    Accept_Ranges,$/;"	e	enum:httpserver::__anon2
+Age	./HttpResponse.hpp	/^    Age,$/;"	e	enum:httpserver::__anon2
+Allow	./HttpResponse.hpp	/^    Allow,$/;"	e	enum:httpserver::__anon2
+BUILD_DEPENDENCIES	./Makefile	/^BUILD_DEPENDENCIES = \/search\/yonghuahu\/hack\/dlg_service$/;"	m
+BUILT_SOURCES	./Makefile	/^BUILT_SOURCES = $/;"	m
+CC	./Makefile	/^CC = gcc -std=gnu99$/;"	m
+CCDEPMODE	./Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CFLAGS	./Makefile	/^CFLAGS = -g -O2 -pthread $(if $(DEBUG), -g -O0) $(if $(OPTIMIZE), -O3) $(if \\$/;"	m
+CONFIGURE_DEPENDENCIES	./Makefile	/^CONFIGURE_DEPENDENCIES = $(subst @@@,,$(subst \\$/;"	m
+CONFIG_CLEAN_FILES	./Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	./Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	./Makefile	/^CONFIG_HEADER = $(top_builddir)\/config-dummy.h$/;"	m
+CPP	./Makefile	/^CPP = gcc -std=gnu99 -E$/;"	m
+CPPFLAGS	./Makefile	/^CPPFLAGS =  -D_REENTRANT -D_FILE_OFFSET_BITS=64   -I\/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding\/_include   -I\/search\/yonghuahu\/hack\/dlg_service\/web_base\/_include -I\/search\/yonghuahu\/hack\/dlg_service\/utils -I\/search\/yonghuahu\/hack\/dlg_service\/dicmap\/_include -I\/search\/yonghuahu\/hack\/dlg_service\/word_segmentor -I\/search\/yonghuahu\/hack\/dlg_service\/web_segmentor $(if $(OPTIMIZE), -DNDEBUG)$/;"	m
+CTAGS	./Makefile	/^CTAGS = ctags$/;"	m
+CXX	./Makefile	/^CXX = g++ -std=gnu++0x$/;"	m
+CXXCOMPILE	./Makefile	/^CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \\$/;"	m
+CXXCPP	./Makefile	/^CXXCPP = g++ -std=gnu++0x -E$/;"	m
+CXXDEPMODE	./Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	./Makefile	/^CXXFLAGS = -g -O2 -pthread $(if $(DEBUG), -g -O0) $(if $(OPTIMIZE), -O3) \\$/;"	m
+CXXLD	./Makefile	/^CXXLD = $(CXX)$/;"	m
+CXXLINK	./Makefile	/^CXXLINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+CYGPATH_W	./Makefile	/^CYGPATH_W = echo$/;"	m
+Cache_Control	./HttpResponse.hpp	/^    Cache_Control,$/;"	e	enum:httpserver::__anon2
+Configuration	./configuration.hpp	/^class Configuration {$/;"	c
+Connection	./HttpResponse.hpp	/^    Connection,$/;"	e	enum:httpserver::__anon2
+Content_Disposition	./HttpResponse.hpp	/^    Content_Disposition,$/;"	e	enum:httpserver::__anon2
+Content_Encoding	./HttpResponse.hpp	/^    Content_Encoding,$/;"	e	enum:httpserver::__anon2
+Content_Language	./HttpResponse.hpp	/^    Content_Language,$/;"	e	enum:httpserver::__anon2
+Content_Length	./HttpResponse.hpp	/^    Content_Length,$/;"	e	enum:httpserver::__anon2
+Content_Location	./HttpResponse.hpp	/^    Content_Location,$/;"	e	enum:httpserver::__anon2
+Content_MD5	./HttpResponse.hpp	/^    Content_MD5,$/;"	e	enum:httpserver::__anon2
+Content_Range	./HttpResponse.hpp	/^    Content_Range,$/;"	e	enum:httpserver::__anon2
+Content_Type	./HttpResponse.hpp	/^    Content_Type,$/;"	e	enum:httpserver::__anon2
+DEFAULT_CONFIG_FILE	./main.cpp	23;"	d	file:
+DEFAULT_CONFIG_KEYNAME	./main.cpp	24;"	d	file:
+DEFAULT_INCLUDES	./Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	./Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	./Makefile	/^DEPDIR = .deps$/;"	m
+DICMAP_PKG_CFLAGS	./Makefile	/^DICMAP_PKG_CFLAGS = $/;"	m
+DICMAP_PKG_LIBS	./Makefile	/^DICMAP_PKG_LIBS = $/;"	m
+DICMAP_ROOT	./Makefile	/^DICMAP_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/dicmap$/;"	m
+DISTFILES	./Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	./Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in \\$/;"	m
+DIST_SOURCES	./Makefile	/^DIST_SOURCES = $(httpserver_SOURCES)$/;"	m
+DSYMUTIL	./Makefile	/^DSYMUTIL = $/;"	m
+DUMPBIN	./Makefile	/^DUMPBIN = $/;"	m
+Date	./HttpResponse.hpp	/^    Date,$/;"	e	enum:httpserver::__anon2
+DoLinkTemplate	./Makefile	/^define DoLinkTemplate$/;"	m
+ECHO_C	./Makefile	/^ECHO_C = $/;"	m
+ECHO_N	./Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	./Makefile	/^ECHO_T = $/;"	m
+EGREP	./Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ERROR_SOCKET	./http_server.hpp	14;"	d
+ETAGS	./Makefile	/^ETAGS = etags$/;"	m
+ETag	./HttpResponse.hpp	/^    ETag,$/;"	e	enum:httpserver::__anon2
+EXEEXT	./Makefile	/^EXEEXT = $/;"	m
+Expires	./HttpResponse.hpp	/^    Expires,$/;"	e	enum:httpserver::__anon2
+FGREP	./Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+GREP	./Makefile	/^GREP = \/bin\/grep$/;"	m
+GetInfo	./http_server.cpp	/^int Http_Server::GetInfo(Worker* worker) {$/;"	f	class:Http_Server
+HANDLER_HPP	./HttpHandler.hpp	2;"	d
+HTTP10	./HttpResponse.hpp	/^    HTTP10,$/;"	e	enum:httpserver::__anon1
+HTTP11	./HttpResponse.hpp	/^    HTTP11,$/;"	e	enum:httpserver::__anon1
+HTTP_HEADER_MAX_LENGTH	./http_server.hpp	23;"	d
+HTTP_RESPONSE_HPP	./HttpResponse.hpp	2;"	d
+HTTP_SERVER_HPP	./http_server.hpp	2;"	d
+HTTP_WORKER_HPP	./worker.hpp	2;"	d
+HttpHandler	./HttpHandler.cpp	/^HttpHandler::HttpHandler()$/;"	f	class:httpserver::HttpHandler
+HttpHandler	./HttpHandler.hpp	/^class HttpHandler $/;"	c	namespace:httpserver
+HttpResponse	./HttpResponse.cpp	/^HttpResponse::HttpResponse(http_res_version _version, status_code _code) {$/;"	f	class:httpserver::HttpResponse
+HttpResponse	./HttpResponse.hpp	/^class HttpResponse {$/;"	c	namespace:httpserver
+Http_Server	./http_server.cpp	/^Http_Server::Http_Server()$/;"	f	class:Http_Server
+Http_Server	./http_server.hpp	/^class Http_Server:public task_base$/;"	c
+INCLUDES	./Makefile	/^INCLUDES = -I$(top_srcdir) -I$(top_builddir)$/;"	m
+INSTALL	./Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	./Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	./Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	./Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	./Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	./Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INVALID_FD	./socket_handle.hpp	7;"	d
+LD	./Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LDFLAGS	./Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	./Makefile	/^LIBOBJS = $/;"	m
+LIBS	./Makefile	/^LIBS =  -lnsl   -L\/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding\/_lib   -L\/search\/yonghuahu\/hack\/dlg_service\/web_base\/_lib -L\/search\/yonghuahu\/hack\/dlg_service\/utils\/_lib -L\/search\/yonghuahu\/hack\/dlg_service\/dicmap\/_lib -L\/search\/yonghuahu\/hack\/dlg_service\/word_segmentor\/_lib -L\/search\/yonghuahu\/hack\/dlg_service\/web_segmentor\/_lib$/;"	m
+LIBTOOL	./Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LIPO	./Makefile	/^LIPO = $/;"	m
+LISTEN_PORT_1	./http_server.hpp	13;"	d
+LN_S	./Makefile	/^LN_S = ln -s$/;"	m
+LTCXXCOMPILE	./Makefile	/^LTCXXCOMPILE = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LTLIBOBJS	./Makefile	/^LTLIBOBJS = $/;"	m
+Last_Modified	./HttpResponse.hpp	/^    Last_Modified,$/;"	e	enum:httpserver::__anon2
+Link	./HttpResponse.hpp	/^    Link,$/;"	e	enum:httpserver::__anon2
+Location	./HttpResponse.hpp	/^    Location,$/;"	e	enum:httpserver::__anon2
+MAKEINFO	./Makefile	/^MAKEINFO = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run makeinfo$/;"	m
+MAX_EPOLL_EVENT_NUM	./http_server.hpp	16;"	d
+MAX_FD_NUM	./http_server.hpp	17;"	d
+MKDIR_P	./Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MODULE_ROOT_VARS	./Makefile	/^MODULE_ROOT_VARS =  SSENCODING_ROOT WEBBASE_ROOT UTILS_ROOT DICMAP_ROOT WORDSEGMENT_ROOT WEBSEGMENT_ROOT$/;"	m
+MOSTLYCLEANFILES	./Makefile	/^MOSTLYCLEANFILES = $(foreach t, $(collectLTLIBRARIES), \\$/;"	m
+NM	./Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NMEDIT	./Makefile	/^NMEDIT = $/;"	m
+NORMAL_INSTALL	./Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	./Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJDUMP	./Makefile	/^OBJDUMP = objdump$/;"	m
+OBJEXT	./Makefile	/^OBJEXT = o$/;"	m
+OTOOL	./Makefile	/^OTOOL = $/;"	m
+OTOOL64	./Makefile	/^OTOOL64 = $/;"	m
+P3P	./HttpResponse.hpp	/^    P3P,$/;"	e	enum:httpserver::__anon2
+PACKAGE	./Makefile	/^PACKAGE = hint$/;"	m
+PACKAGE_BUGREPORT	./Makefile	/^PACKAGE_BUGREPORT = lvjieyong@sohu-rd.com$/;"	m
+PACKAGE_DEPENDENCIES	./Makefile	/^PACKAGE_DEPENDENCIES =  \/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding \/search\/yonghuahu\/hack\/dlg_service\/web_base \/search\/yonghuahu\/hack\/dlg_service\/utils \/search\/yonghuahu\/hack\/dlg_service\/dicmap \/search\/yonghuahu\/hack\/dlg_service\/word_segmentor \/search\/yonghuahu\/hack\/dlg_service\/web_segmentor$/;"	m
+PACKAGE_NAME	./Makefile	/^PACKAGE_NAME = hint$/;"	m
+PACKAGE_STRING	./Makefile	/^PACKAGE_STRING = hint 3.0.1$/;"	m
+PACKAGE_TARNAME	./Makefile	/^PACKAGE_TARNAME = hint$/;"	m
+PACKAGE_VERSION	./Makefile	/^PACKAGE_VERSION = 3.0.1$/;"	m
+PATH_SEPARATOR	./Makefile	/^PATH_SEPARATOR = :$/;"	m
+PKG_CONFIG	./Makefile	/^PKG_CONFIG = \/usr\/bin\/pkg-config$/;"	m
+POST_INSTALL	./Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	./Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	./Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	./Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	./Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+Pragma	./HttpResponse.hpp	/^    Pragma,$/;"	e	enum:httpserver::__anon2
+Proxy_Authenticate	./HttpResponse.hpp	/^    Proxy_Authenticate,$/;"	e	enum:httpserver::__anon2
+QO_TASK_BASE_HPP	./task_base.hpp	2;"	d
+QUERY_CORE_SERVER_CONFIGURATION_HPP	./configuration.hpp	2;"	d
+RANLIB	./Makefile	/^RANLIB = ranlib$/;"	m
+READ_BUF_SIZE	./http_server.hpp	22;"	d
+RECEIVE_TIMEOUT	./http_server.hpp	18;"	d
+REPLY_TIMEOUT	./http_server.hpp	19;"	d
+Refresh	./HttpResponse.hpp	/^    Refresh,$/;"	e	enum:httpserver::__anon2
+Retry_After	./HttpResponse.hpp	/^    Retry_After,$/;"	e	enum:httpserver::__anon2
+SC100	./HttpResponse.hpp	/^    SC100,$/;"	e	enum:httpserver::__anon3
+SC101	./HttpResponse.hpp	/^    SC101,$/;"	e	enum:httpserver::__anon3
+SC200	./HttpResponse.hpp	/^    SC200,$/;"	e	enum:httpserver::__anon3
+SC201	./HttpResponse.hpp	/^    SC201,$/;"	e	enum:httpserver::__anon3
+SC202	./HttpResponse.hpp	/^    SC202,$/;"	e	enum:httpserver::__anon3
+SC203	./HttpResponse.hpp	/^    SC203,$/;"	e	enum:httpserver::__anon3
+SC204	./HttpResponse.hpp	/^    SC204,$/;"	e	enum:httpserver::__anon3
+SC205	./HttpResponse.hpp	/^    SC205,$/;"	e	enum:httpserver::__anon3
+SC206	./HttpResponse.hpp	/^    SC206,$/;"	e	enum:httpserver::__anon3
+SC300	./HttpResponse.hpp	/^    SC300,$/;"	e	enum:httpserver::__anon3
+SC301	./HttpResponse.hpp	/^    SC301,$/;"	e	enum:httpserver::__anon3
+SC302	./HttpResponse.hpp	/^    SC302,$/;"	e	enum:httpserver::__anon3
+SC303	./HttpResponse.hpp	/^    SC303,$/;"	e	enum:httpserver::__anon3
+SC304	./HttpResponse.hpp	/^    SC304,$/;"	e	enum:httpserver::__anon3
+SC305	./HttpResponse.hpp	/^    SC305,$/;"	e	enum:httpserver::__anon3
+SC307	./HttpResponse.hpp	/^    SC307,$/;"	e	enum:httpserver::__anon3
+SC400	./HttpResponse.hpp	/^    SC400,$/;"	e	enum:httpserver::__anon3
+SC401	./HttpResponse.hpp	/^    SC401,$/;"	e	enum:httpserver::__anon3
+SC402	./HttpResponse.hpp	/^    SC402,$/;"	e	enum:httpserver::__anon3
+SC403	./HttpResponse.hpp	/^    SC403,$/;"	e	enum:httpserver::__anon3
+SC404	./HttpResponse.hpp	/^    SC404,$/;"	e	enum:httpserver::__anon3
+SC405	./HttpResponse.hpp	/^    SC405,$/;"	e	enum:httpserver::__anon3
+SC406	./HttpResponse.hpp	/^    SC406,$/;"	e	enum:httpserver::__anon3
+SC407	./HttpResponse.hpp	/^    SC407,$/;"	e	enum:httpserver::__anon3
+SC408	./HttpResponse.hpp	/^    SC408,$/;"	e	enum:httpserver::__anon3
+SC409	./HttpResponse.hpp	/^    SC409,$/;"	e	enum:httpserver::__anon3
+SC410	./HttpResponse.hpp	/^    SC410,$/;"	e	enum:httpserver::__anon3
+SC411	./HttpResponse.hpp	/^    SC411,$/;"	e	enum:httpserver::__anon3
+SC412	./HttpResponse.hpp	/^    SC412,$/;"	e	enum:httpserver::__anon3
+SC413	./HttpResponse.hpp	/^    SC413,$/;"	e	enum:httpserver::__anon3
+SC414	./HttpResponse.hpp	/^    SC414,$/;"	e	enum:httpserver::__anon3
+SC415	./HttpResponse.hpp	/^    SC415,$/;"	e	enum:httpserver::__anon3
+SC416	./HttpResponse.hpp	/^    SC416,$/;"	e	enum:httpserver::__anon3
+SC417	./HttpResponse.hpp	/^    SC417,$/;"	e	enum:httpserver::__anon3
+SC500	./HttpResponse.hpp	/^    SC500,$/;"	e	enum:httpserver::__anon3
+SC501	./HttpResponse.hpp	/^    SC501,$/;"	e	enum:httpserver::__anon3
+SC502	./HttpResponse.hpp	/^    SC502,$/;"	e	enum:httpserver::__anon3
+SC503	./HttpResponse.hpp	/^    SC503,$/;"	e	enum:httpserver::__anon3
+SC504	./HttpResponse.hpp	/^    SC504,$/;"	e	enum:httpserver::__anon3
+SC505	./HttpResponse.hpp	/^    SC505,$/;"	e	enum:httpserver::__anon3
+SECTION	./config_map.hpp	/^    enum config_map_node_type { SECTION, VALUE } type;$/;"	e	enum:config_map_node::config_map_node_type
+SED	./Makefile	/^SED = \/bin\/sed$/;"	m
+SET_MAKE	./Makefile	/^SET_MAKE = $/;"	m
+SHELL	./Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOCKET_RCV_BUF_SIZE	./http_server.hpp	21;"	d
+SOCKET_SND_BUF_SIZE	./http_server.hpp	20;"	d
+SOURCES	./Makefile	/^SOURCES = $(httpserver_SOURCES)$/;"	m
+SSENCODING_ROOT	./Makefile	/^SSENCODING_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding$/;"	m
+SSPLATFORM_ENCODING_PKG_CFLAGS	./Makefile	/^SSPLATFORM_ENCODING_PKG_CFLAGS = -I\/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding\/_include  $/;"	m
+SSPLATFORM_ENCODING_PKG_LIBS	./Makefile	/^SSPLATFORM_ENCODING_PKG_LIBS = -L\/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding\/_lib  $/;"	m
+SSPLATFORM_PKG_CFLAGS	./Makefile	/^SSPLATFORM_PKG_CFLAGS =  $/;"	m
+SSPLATFORM_PKG_LIBS	./Makefile	/^SSPLATFORM_PKG_LIBS =  $/;"	m
+SSPLATFORM_ROOT	./Makefile	/^SSPLATFORM_ROOT = $/;"	m
+STRIP	./Makefile	/^STRIP = strip$/;"	m
+SVNVERSION	./Makefile	/^SVNVERSION = $(if $(_SVNVERSION),$(_SVNVERSION),0)$/;"	m
+SeparateIP	./configuration.cpp	/^int Configuration::SeparateIP(const char * value,char * ip, int * port)$/;"	f	class:Configuration
+Server	./HttpResponse.hpp	/^    Server,$/;"	e	enum:httpserver::__anon2
+Set_Cookie	./HttpResponse.hpp	/^    Set_Cookie,$/;"	e	enum:httpserver::__anon2
+SocketHandle	./socket_handle.hpp	/^		SocketHandle(int fd = INVALID_FD, int ref = 0,int flag = 0):_fd(fd),_ref(ref),_flag(flag)$/;"	f	class:SocketHandle
+SocketHandle	./socket_handle.hpp	/^class SocketHandle$/;"	c
+Strict_Transport_Security	./HttpResponse.hpp	/^    Strict_Transport_Security,$/;"	e	enum:httpserver::__anon2
+ToHex	./HttpHandler.cpp	/^unsigned char ToHex(unsigned char x)$/;"	f	namespace:httpserver
+Trailer	./HttpResponse.hpp	/^    Trailer,$/;"	e	enum:httpserver::__anon2
+UTILS_PKG_CFLAGS	./Makefile	/^UTILS_PKG_CFLAGS = $/;"	m
+UTILS_PKG_LIBS	./Makefile	/^UTILS_PKG_LIBS = $/;"	m
+UTILS_ROOT	./Makefile	/^UTILS_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/utils$/;"	m
+UrlEncode	./HttpHandler.cpp	/^std::string HttpHandler::UrlEncode(const std::string& str)$/;"	f	class:httpserver::HttpHandler
+VALUE	./config_map.hpp	/^    enum config_map_node_type { SECTION, VALUE } type;$/;"	e	enum:config_map_node::config_map_node_type
+VERSION	./Makefile	/^VERSION = 3.0.1$/;"	m
+Vary	./HttpResponse.hpp	/^    Vary,$/;"	e	enum:httpserver::__anon2
+Via	./HttpResponse.hpp	/^    Via,$/;"	e	enum:httpserver::__anon2
+WEBBASE_ROOT	./Makefile	/^WEBBASE_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/web_base$/;"	m
+WEBSEGMENT_ROOT	./Makefile	/^WEBSEGMENT_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/web_segmentor$/;"	m
+WEB_BASE_PKG_CFLAGS	./Makefile	/^WEB_BASE_PKG_CFLAGS = $/;"	m
+WEB_BASE_PKG_LIBS	./Makefile	/^WEB_BASE_PKG_LIBS = $/;"	m
+WEB_SEGMENTOR_PKG_CFLAGS	./Makefile	/^WEB_SEGMENTOR_PKG_CFLAGS = $/;"	m
+WEB_SEGMENTOR_PKG_LIBS	./Makefile	/^WEB_SEGMENTOR_PKG_LIBS = $/;"	m
+WORDSEGMENT_ROOT	./Makefile	/^WORDSEGMENT_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/word_segmentor$/;"	m
+WORD_SEGMENTOR_PKG_CFLAGS	./Makefile	/^WORD_SEGMENTOR_PKG_CFLAGS = $/;"	m
+WORD_SEGMENTOR_PKG_LIBS	./Makefile	/^WORD_SEGMENTOR_PKG_LIBS = $/;"	m
+WWW_Authenticate	./HttpResponse.hpp	/^    WWW_Authenticate,$/;"	e	enum:httpserver::__anon2
+Warning	./HttpResponse.hpp	/^    Warning,$/;"	e	enum:httpserver::__anon2
+Worker	./worker.hpp	/^        Worker() {$/;"	f	class:Worker
+Worker	./worker.hpp	/^class Worker {$/;"	c
+_SOCKET_HANDLE_HPP_	./socket_handle.hpp	3;"	d
+_SVNVERSION	./Makefile	/^_SVNVERSION = $(strip $(subst exported, 0, $(shell svnversion -nc $(srcdir) | sed 's\/^.*:\/\/' | tr -cd [0-9] )))$/;"	m
+__CONFIG_MAP_HPP__	./config_map.hpp	2;"	d
+__LINKED_LIST_HPP__	./linked_list.hpp	2;"	d
+__WAIT_LIST_HPP__	./wait_list.hpp	2;"	d
+_alive	./wait_list.hpp	/^		int _alive;$/;"	m	class:wait_list_t
+_cond	./wait_list.hpp	/^		pthread_cond_t _cond;$/;"	m	class:wait_list_t
+_connections_mutex	./http_server.hpp	/^		pthread_mutex_t _connections_mutex;$/;"	m	class:Http_Server
+_epoll_fd	./http_server.hpp	/^		int _epoll_fd;	$/;"	m	class:Http_Server
+_epoll_mutex	./http_server.hpp	/^		pthread_mutex_t _epoll_mutex;$/;"	m	class:Http_Server
+_epoll_ready_event	./http_server.hpp	/^		epoll_event _epoll_ready_event[MAX_EPOLL_EVENT_NUM];$/;"	m	class:Http_Server
+_epoll_ready_event_num	./http_server.hpp	/^		int _epoll_ready_event_num;$/;"	m	class:Http_Server
+_fd	./socket_handle.hpp	/^		int _fd;$/;"	m	class:SocketHandle
+_flag	./socket_handle.hpp	/^		int _flag;$/;"	m	class:SocketHandle
+_head	./linked_list.hpp	/^		linked_list_node_t _head;$/;"	m	class:linked_list_t
+_map_mutex	./http_server.hpp	/^		pthread_mutex_t _map_mutex;$/;"	m	class:Http_Server
+_mutex	./socket_handle.hpp	/^		pthread_mutex_t _mutex;$/;"	m	class:SocketHandle
+_mutex	./wait_list.hpp	/^		pthread_mutex_t _mutex;$/;"	m	class:wait_list_t
+_node_offset	./linked_list.hpp	/^		static linked_list_node_t const * const _node_offset;$/;"	m	class:linked_list_t
+_node_offset	./linked_list.hpp	/^linked_list_node_t const * const linked_list_t<T, list_node>::_node_offset = &(((T *)0)->*list_node);$/;"	m	class:linked_list_t
+_now_connections	./http_server.hpp	/^		int _now_connections;$/;"	m	class:Http_Server
+_num	./wait_list.hpp	/^		int _num;$/;"	m	class:wait_list_t
+_pipe_read	./http_server.hpp	/^		int _pipe_read;$/;"	m	class:Http_Server
+_pipe_write	./http_server.hpp	/^		int _pipe_write;$/;"	m	class:Http_Server
+_read_buf	./socket_handle.hpp	/^		std::string _read_buf;$/;"	m	class:SocketHandle
+_ref	./socket_handle.hpp	/^		int _ref;$/;"	m	class:SocketHandle
+_socket_server_listen	./http_server.hpp	/^		int _socket_server_listen;$/;"	m	class:Http_Server
+_stop_task	./http_server.hpp	/^		int _stop_task;$/;"	m	class:Http_Server
+abs_builddir	./Makefile	/^abs_builddir = \/search\/yonghuahu\/hack\/dlg_service\/src\/http_server$/;"	m
+abs_srcdir	./Makefile	/^abs_srcdir = \/search\/yonghuahu\/hack\/dlg_service\/src\/http_server$/;"	m
+abs_top_builddir	./Makefile	/^abs_top_builddir = \/search\/yonghuahu\/hack\/dlg_service$/;"	m
+abs_top_srcdir	./Makefile	/^abs_top_srcdir = \/search\/yonghuahu\/hack\/dlg_service$/;"	m
+ac_ct_CC	./Makefile	/^ac_ct_CC = gcc -std=gnu99$/;"	m
+ac_ct_CXX	./Makefile	/^ac_ct_CXX = $/;"	m
+ac_ct_DUMPBIN	./Makefile	/^ac_ct_DUMPBIN = $/;"	m
+acquire	./socket_handle.hpp	/^		int acquire()$/;"	f	class:SocketHandle
+activate	./task_base.cpp	/^int task_base::activate()$/;"	f	class:task_base
+add	./linked_list.hpp	/^		void add(T &node)$/;"	f	class:linked_list_t
+add_input_fd	./http_server.cpp	/^int Http_Server::add_input_fd(int fd)$/;"	f	class:Http_Server
+add_next	./linked_list.hpp	/^		static void add_next(T &node, T &cur)$/;"	f	class:linked_list_t
+add_prev	./linked_list.hpp	/^		static void add_prev(T &node, T &cur)$/;"	f	class:linked_list_t
+am__aclocal_m4_deps	./Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__cd	./Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	./Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	./Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	./Makefile	/^am__include = include$/;"	m
+am__installdirs	./Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__leading_dot	./Makefile	/^am__leading_dot = .$/;"	m
+am__mv	./Makefile	/^am__mv = mv -f$/;"	m
+am__quote	./Makefile	/^am__quote = $/;"	m
+am__tar	./Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	./Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am_httpserver_OBJECTS	./Makefile	/^am_httpserver_OBJECTS = main.$(OBJEXT) http_server.$(OBJEXT) \\$/;"	m
+bin_PROGRAMS	./Makefile	/^bin_PROGRAMS = httpserver$(EXEEXT)$/;"	m
+bindir	./Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build	./Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build_alias	./Makefile	/^build_alias = $/;"	m
+build_cpu	./Makefile	/^build_cpu = x86_64$/;"	m
+build_os	./Makefile	/^build_os = linux-gnu$/;"	m
+build_triplet	./Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_vendor	./Makefile	/^build_vendor = unknown$/;"	m
+builddir	./Makefile	/^builddir = .$/;"	m
+code	./HttpResponse.hpp	/^        status_code code;$/;"	m	class:httpserver::HttpResponse
+collectHEADERS	./Makefile	/^collectHEADERS = $(include_HEADERS) $(pkginclude_HEADERS) $(nobase_include_HEADERS) $(nobase_pkginclude_HEADERS)$/;"	m
+collectHEADERS_T	./Makefile	/^collectHEADERS_T = \\$/;"	m
+collectLIBRARIES	./Makefile	/^collectLIBRARIES = $(lib_LIBRARIES) $(pkglib_LIBRARIES)$/;"	m
+collectLTLIBRARIES	./Makefile	/^collectLTLIBRARIES = $(lib_LTLIBRARIES) $(pkglib_LTLIBRARIES)$/;"	m
+collectPROGRAMS	./Makefile	/^collectPROGRAMS = $(bin_PROGRAMS) $(sbin_PROGRAM) $(pkglib_PROGRAMS) $(libexec_PROGRAMS) \\$/;"	m
+collectbin_DIR	./Makefile	/^collectbin_DIR = $(top_builddir)\/_bin$/;"	m
+collectinclude_DIR	./Makefile	/^collectinclude_DIR = $(top_builddir)\/_include$/;"	m
+collectlib_DIR	./Makefile	/^collectlib_DIR = $(top_builddir)\/_lib$/;"	m
+config_map	./config_map.hpp	/^class config_map$/;"	c
+config_map	./config_map.hpp	/^config_map::config_map(): root("ROOT", "", config_map_node::SECTION), cur(&root), iter(cur->left)$/;"	f	class:config_map
+config_map_node	./config_map.hpp	/^    config_map_node(const std::string &key, const std::string &value, config_map_node_type type):$/;"	f	struct:config_map_node
+config_map_node	./config_map.hpp	/^struct config_map_node$/;"	s
+config_map_node_type	./config_map.hpp	/^    enum config_map_node_type { SECTION, VALUE } type;$/;"	g	struct:config_map_node
+content_buf	./worker.hpp	/^        char* content_buf;$/;"	m	class:Worker
+content_buff	./HttpResponse.hpp	/^        char* content_buff;$/;"	m	class:httpserver::HttpResponse
+content_len	./worker.hpp	/^        int content_len;$/;"	m	class:Worker
+create_handle	./http_server.cpp	/^int Http_Server::create_handle(int fd, int flag)$/;"	f	class:Http_Server
+create_listen	./http_server.cpp	/^int Http_Server::create_listen(int &socket_fd, unsigned short port)$/;"	f	class:Http_Server
+create_pipe	./http_server.cpp	/^int Http_Server::create_pipe()$/;"	f	class:Http_Server
+cur	./config_map.hpp	/^    config_map_node *cur;$/;"	m	class:config_map
+datadir	./Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	./Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+del	./linked_list.hpp	/^		static void del(T &node)$/;"	f	class:linked_list_t
+del_input_fd	./http_server.cpp	/^int Http_Server::del_input_fd(int fd)$/;"	f	class:Http_Server
+depcomp	./Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/_aux\/depcomp$/;"	m
+docdir	./Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dump_to_buff	./HttpResponse.cpp	/^int HttpResponse::dump_to_buff(char* dest, int max_dest_len, int& len) {$/;"	f	class:httpserver::HttpResponse
+dvidir	./Makefile	/^dvidir = ${docdir}$/;"	m
+empty	./linked_list.hpp	/^		void empty() { _head.next = _head.prev = &_head; }$/;"	f	class:linked_list_t
+entry	./linked_list.hpp	/^		T* entry(linked_list_node_t &node) const { return &node == &_head ? NULL : (T*)((char*)&node - (char*)_node_offset); }$/;"	f	class:linked_list_t
+enum_value	./config_map.hpp	/^int config_map::enum_value(const char *&key, const char *&value)$/;"	f	class:config_map
+exec_prefix	./Makefile	/^exec_prefix = ${prefix}$/;"	m
+field_vals	./HttpResponse.hpp	/^        char* field_vals[http_response_field_count];$/;"	m	class:httpserver::HttpResponse
+fillContent	./HttpResponse.cpp	/^int HttpResponse::fillContent(unsigned int content_len, const char* content) {$/;"	f	class:httpserver::HttpResponse
+flush	./wait_list.hpp	/^		void flush()$/;"	f	class:wait_list_t
+genContentBuf	./worker.hpp	/^        int genContentBuf() {$/;"	f	class:Worker
+generate_http_header	./http_server.cpp	/^int Http_Server::generate_http_header(std::string& res,int len)$/;"	f	class:Http_Server
+generate_json_result	./HttpHandler.cpp	/^int32_t HttpHandler::generate_json_result($/;"	f	class:httpserver::HttpHandler
+generate_response	./HttpHandler.cpp	/^int HttpHandler::generate_response(Worker* worker) $/;"	f	class:httpserver::HttpHandler
+get	./wait_list.hpp	/^		T* get()$/;"	f	class:wait_list_t
+get	./wait_list.hpp	/^		T* get(const struct timespec* abstime) $/;"	f	class:wait_list_t
+get_fd	./socket_handle.hpp	/^		int get_fd()$/;"	f	class:SocketHandle
+get_flag	./socket_handle.hpp	/^		int get_flag()$/;"	f	class:SocketHandle
+get_from_head	./wait_list.hpp	/^		T* get_from_head()$/;"	f	class:wait_list_t
+get_handle	./http_server.cpp	/^SocketHandle * Http_Server::get_handle(int fd)$/;"	f	class:Http_Server
+get_read_buf	./socket_handle.hpp	/^		std::string & get_read_buf()$/;"	f	class:SocketHandle
+get_value	./config_map.hpp	/^int config_map::get_value(const char *key, const char *&value)$/;"	f	class:config_map
+handle	./worker.hpp	/^        SocketHandle * handle;$/;"	m	class:Worker
+handle_worker	./HttpHandler.cpp	/^int HttpHandler::handle_worker(Worker* worker) {$/;"	f	class:httpserver::HttpHandler
+head	./linked_list.hpp	/^		linked_list_node_t& head() { return _head; }$/;"	f	class:linked_list_t
+header	./worker.hpp	/^        std::string header;$/;"	m	class:Worker
+host	./Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host_alias	./Makefile	/^host_alias = $/;"	m
+host_cpu	./Makefile	/^host_cpu = x86_64$/;"	m
+host_os	./Makefile	/^host_os = linux-gnu$/;"	m
+host_triplet	./Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_vendor	./Makefile	/^host_vendor = unknown$/;"	m
+htmldir	./Makefile	/^htmldir = ${docdir}$/;"	m
+http_res_version	./HttpResponse.hpp	/^} http_res_version;$/;"	t	namespace:httpserver	typeref:enum:httpserver::__anon1
+http_res_version_str	./HttpResponse.hpp	/^static const char* http_res_version_str[2] = {$/;"	m	namespace:httpserver
+http_response_field	./HttpResponse.hpp	/^} http_response_field;$/;"	t	namespace:httpserver	typeref:enum:httpserver::__anon2
+http_response_field_count	./HttpResponse.hpp	/^static const int http_response_field_count = 33;$/;"	m	namespace:httpserver
+http_response_field_names	./HttpResponse.hpp	/^static const char* http_response_field_names[http_response_field_count] = {$/;"	m	namespace:httpserver
+httpserver	./HttpHandler.cpp	/^namespace httpserver $/;"	n	file:
+httpserver	./HttpHandler.hpp	/^namespace httpserver {$/;"	n
+httpserver	./HttpResponse.cpp	/^namespace httpserver {$/;"	n	file:
+httpserver	./HttpResponse.hpp	/^namespace httpserver {$/;"	n
+httpserver_DEPENDENCIES	./Makefile	/^httpserver_DEPENDENCIES =$/;"	m
+httpserver_LDADD	./Makefile	/^httpserver_LDADD = -lpthread -lssplatform  -L"..\/jsoncpp" -ljsoncpp -L"..\/locate_getresult" -llocateresult -lgflags -lglog -lgtest$/;"	m
+httpserver_OBJECTS	./Makefile	/^httpserver_OBJECTS = $(am_httpserver_OBJECTS)$/;"	m
+httpserver_SOURCES	./Makefile	/^httpserver_SOURCES = main.cpp http_server.cpp task_base.cpp configuration.cpp HttpResponse.cpp HttpHandler.cpp $/;"	m
+import	./config_map.hpp	/^int config_map::import(const char *filename)$/;"	f	class:config_map
+includedir	./Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	./Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+insert_handle	./http_server.cpp	/^int Http_Server::insert_handle(int fd,SocketHandle * hdle)$/;"	f	class:Http_Server
+install_sh	./Makefile	/^install_sh = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/install-sh$/;"	m
+install_sh_DATA	./Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	./Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	./Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+is_empty	./linked_list.hpp	/^		bool is_empty() const { return _head.next == &_head; }$/;"	f	class:linked_list_t
+iter	./config_map.hpp	/^    config_map_node *iter;$/;"	m	class:config_map
+join	./task_base.cpp	/^int task_base::join()$/;"	f	class:task_base
+keep_alive	./worker.hpp	/^        bool keep_alive;$/;"	m	class:Worker
+key	./config_map.hpp	/^    std::string key;$/;"	m	struct:config_map_node
+left	./config_map.hpp	/^    config_map_node *left;$/;"	m	struct:config_map_node
+len	./wait_list.hpp	/^		int len()$/;"	f	class:wait_list_t
+libdir	./Makefile	/^libdir = ${exec_prefix}\/lib64$/;"	m
+libexecdir	./Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+line_sep	./HttpResponse.hpp	/^static const char* line_sep = "\\r\\n";$/;"	m	namespace:httpserver
+line_sep_len	./HttpResponse.hpp	/^static const int line_sep_len = strlen(line_sep);$/;"	m	namespace:httpserver
+linked_list_node_t	./linked_list.hpp	/^struct linked_list_node_t$/;"	s
+linked_list_t	./linked_list.hpp	/^		linked_list_t() { _head.next = _head.prev = &_head; }$/;"	f	class:linked_list_t
+linked_list_t	./linked_list.hpp	/^class linked_list_t$/;"	c
+listen_port	./configuration.hpp	/^		unsigned int listen_port;$/;"	m	class:Configuration
+localedir	./Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	./Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+locateResult	./HttpHandler.hpp	/^		std::vector<ResultData> locateResult;$/;"	m	class:httpserver::HttpHandler
+lock	./socket_handle.hpp	/^		void lock()$/;"	f	class:SocketHandle
+lt_ECHO	./Makefile	/^lt_ECHO = echo$/;"	m
+m_barrier	./task_base.hpp	/^		pthread_barrier_t m_barrier;		$/;"	m	class:task_base
+m_fd_set	./http_server.hpp	/^		std::map<int, SocketHandle *> m_fd_set;	$/;"	m	class:Http_Server
+m_handler	./http_server.hpp	/^        httpserver::HttpHandler* m_handler;$/;"	m	class:Http_Server
+m_location_result	./HttpHandler.hpp	/^		LocationResultGet *m_location_result;$/;"	m	class:httpserver::HttpHandler
+m_server	./HttpHandler.hpp	/^        Http_Server* m_server;$/;"	m	class:httpserver::HttpHandler
+m_thread	./task_base.hpp	/^		pthread_t *m_thread;$/;"	m	class:task_base
+m_thread_num	./task_base.hpp	/^		size_t m_thread_num;$/;"	m	class:task_base
+main	./main.cpp	/^int main(int argc, char* argv[]) {$/;"	f
+mandir	./Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mkdir_p	./Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	./Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+next	./linked_list.hpp	/^		T* next(T &node) const$/;"	f	class:linked_list_t
+next	./linked_list.hpp	/^		T* next(linked_list_node_t &node) const$/;"	f	class:linked_list_t
+next	./linked_list.hpp	/^	linked_list_node_t *next;$/;"	m	struct:linked_list_node_t
+oldincludedir	./Makefile	/^oldincludedir = \/usr\/include$/;"	m
+open	./HttpHandler.hpp	/^        virtual int open(Configuration config) {$/;"	f	class:httpserver::HttpHandler
+open	./configuration.cpp	/^int Configuration::open(const char *filename, const char *key)$/;"	f	class:Configuration
+open	./http_server.cpp	/^int Http_Server::open(size_t thread_num, size_t stack_size, int port)$/;"	f	class:Http_Server
+open	./task_base.cpp	/^int task_base::open(size_t thread_num, size_t stack_size)$/;"	f	class:task_base
+operator =	./linked_list.hpp	/^		linked_list_t& operator =(const linked_list_t &) { _head.next = _head.prev = &_head; return *this; }$/;"	f	class:linked_list_t
+pdfdir	./Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgdatadir	./Makefile	/^pkgdatadir = $(datadir)\/hint$/;"	m
+pkgincludedir	./Makefile	/^pkgincludedir = $(includedir)\/hint$/;"	m
+pkglibdir	./Makefile	/^pkglibdir = $(libdir)\/hint$/;"	m
+pkglibexecdir	./Makefile	/^pkglibexecdir = $(libexecdir)\/hint$/;"	m
+prefix	./Makefile	/^prefix = \/opt\/sogou$/;"	m
+prev	./linked_list.hpp	/^		T* prev(T &node) const$/;"	f	class:linked_list_t
+prev	./linked_list.hpp	/^		T* prev(linked_list_node_t &node) const$/;"	f	class:linked_list_t
+prev	./linked_list.hpp	/^	linked_list_node_t *prev;$/;"	m	struct:linked_list_node_t
+program_transform_name	./Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	./Makefile	/^psdir = ${docdir}$/;"	m
+put	./wait_list.hpp	/^		void put(T &node)$/;"	f	class:wait_list_t
+ransfer_Encoding	./HttpResponse.hpp	/^    ransfer_Encoding,$/;"	e	enum:httpserver::__anon2
+readParameter	./configuration.cpp	/^int Configuration::readParameter(const char *filename, const char * key)$/;"	f	class:Configuration
+readString	./configuration.cpp	/^std::string Configuration::readString(char const * filename, char const * path, char const * name)$/;"	f	class:Configuration
+readThreadNumber	./configuration.cpp	/^int Configuration::readThreadNumber(const char *filename, const char * key)$/;"	f	class:Configuration
+read_data	./http_server.cpp	/^int Http_Server::read_data(int fd, void * buf, int buf_len, timeval * timeout)$/;"	f	class:Http_Server
+read_http_header_timeout	./http_server.cpp	/^int Http_Server::read_http_header_timeout(SocketHandle * hdle, std::string &http, timeval *timeout)$/;"	f	class:Http_Server
+readn_timeout	./http_server.cpp	/^int Http_Server::readn_timeout(SocketHandle * hdle, char* content, int buf_len, timeval *timeout)$/;"	f	class:Http_Server
+receiver_num	./configuration.hpp	/^		unsigned int receiver_num;$/;"	m	class:Configuration
+recv_request	./http_server.cpp	/^int Http_Server::recv_request(int fd)$/;"	f	class:Http_Server
+ref	./socket_handle.hpp	/^		int ref()$/;"	f	class:SocketHandle
+register_handler	./http_server.cpp	/^int Http_Server::register_handler(HttpHandler* handler) {$/;"	f	class:Http_Server
+release	./socket_handle.hpp	/^		int release()$/;"	f	class:SocketHandle
+release_handle	./http_server.cpp	/^int Http_Server::release_handle(SocketHandle* hdle, bool close_handle)$/;"	f	class:Http_Server
+request_url	./worker.hpp	/^        std::string request_url;$/;"	m	class:Worker
+response	./worker.hpp	/^		httpserver::HttpResponse* response;$/;"	m	class:Worker
+retrieve_worker	./http_server.cpp	/^int Http_Server::retrieve_worker(Worker * worker)$/;"	f	class:Http_Server
+right	./config_map.hpp	/^    config_map_node *right;$/;"	m	struct:config_map_node
+root	./config_map.hpp	/^    config_map_node root;$/;"	m	class:config_map
+run_svc	./task_base.cpp	/^void* task_base::run_svc(void *arg)$/;"	f	class:task_base
+sbindir	./Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+send_result	./http_server.cpp	/^int Http_Server::send_result(SocketHandle *hdle,const void * buf, int buf_len)$/;"	f	class:Http_Server
+setField	./HttpResponse.cpp	/^int HttpResponse::setField(http_response_field field, const char* field_value) {$/;"	f	class:httpserver::HttpResponse
+setServer	./HttpHandler.cpp	/^int HttpHandler::setServer(Http_Server* server) {$/;"	f	class:httpserver::HttpHandler
+setStatusCode	./HttpResponse.cpp	/^int HttpResponse::setStatusCode(status_code _code) {$/;"	f	class:httpserver::HttpResponse
+setVersion	./HttpResponse.cpp	/^int HttpResponse::setVersion(http_res_version _version) {$/;"	f	class:httpserver::HttpResponse
+set_fd	./socket_handle.hpp	/^		void set_fd(int fd)$/;"	f	class:SocketHandle
+set_flag	./socket_handle.hpp	/^		int set_flag(int flag)$/;"	f	class:SocketHandle
+set_section	./config_map.hpp	/^int config_map::set_section(const char *key)$/;"	f	class:config_map
+set_socket	./http_server.cpp	/^int Http_Server::set_socket(int fd, int flag)$/;"	f	class:Http_Server
+set_value	./config_map.hpp	/^int config_map::set_value(const char *key, const char *value)$/;"	f	class:config_map
+sharedstatedir	./Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sigint_handler	./main.cpp	/^void sigint_handler(int signo) {}$/;"	f
+sigterm_handler	./main.cpp	/^void sigterm_handler(int signo) {}$/;"	f
+srcdir	./Makefile	/^srcdir = .$/;"	m
+status_code	./HttpResponse.hpp	/^} status_code;$/;"	t	namespace:httpserver	typeref:enum:httpserver::__anon3
+status_code_str	./HttpResponse.hpp	/^static const char* status_code_str[40] = {$/;"	m	namespace:httpserver
+stop	./http_server.cpp	/^int Http_Server::stop()$/;"	f	class:Http_Server
+strip	./config_map.hpp	/^const std::string config_map::strip(const std::string &str)$/;"	f	class:config_map
+subdir	./Makefile	/^subdir = src\/http_server$/;"	m
+subdirs	./Makefile	/^subdirs =  ssplatform-encoding web_base utils dicmap word_segmentor web_segmentor$/;"	m
+svc	./http_server.cpp	/^int Http_Server::svc()$/;"	f	class:Http_Server
+sysconfdir	./Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	./Makefile	/^target_alias = $/;"	m
+task_base	./task_base.cpp	/^task_base::task_base(): m_thread(NULL), m_thread_num(0)$/;"	f	class:task_base
+task_base	./task_base.hpp	/^class task_base {$/;"	c
+task_list_node	./worker.hpp	/^        linked_list_node_t task_list_node;$/;"	m	class:Worker
+thread_stack_size	./configuration.hpp	/^		unsigned int thread_stack_size;$/;"	m	class:Configuration
+top_build_prefix	./Makefile	/^top_build_prefix = ..\/..\/$/;"	m
+top_builddir	./Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	./Makefile	/^top_srcdir = ..\/..$/;"	m
+transform	./Makefile	/^transform = $(program_transform_name)$/;"	m
+type	./config_map.hpp	/^    enum config_map_node_type { SECTION, VALUE } type;$/;"	m	struct:config_map_node	typeref:enum:config_map_node::config_map_node_type
+unlock	./socket_handle.hpp	/^		void unlock()$/;"	f	class:SocketHandle
+usage	./main.cpp	/^void usage(const char *bin_name)$/;"	f
+value	./config_map.hpp	/^    std::string value;$/;"	m	struct:config_map_node
+version	./HttpResponse.hpp	/^        http_res_version version;$/;"	m	class:httpserver::HttpResponse
+wait_list_t	./wait_list.hpp	/^		wait_list_t(): _alive(1),_num(0)$/;"	f	class:wait_list_t
+wait_list_t	./wait_list.hpp	/^class wait_list_t: public linked_list_t<T, list_node>$/;"	c
+writen_timeout	./http_server.cpp	/^int Http_Server::writen_timeout(int fd, const void *buf, int buf_len, timeval *timeout)$/;"	f	class:Http_Server
+~HttpHandler	./HttpHandler.cpp	/^HttpHandler::~HttpHandler()$/;"	f	class:httpserver::HttpHandler
+~HttpResponse	./HttpResponse.cpp	/^HttpResponse::~HttpResponse() {$/;"	f	class:httpserver::HttpResponse
+~Http_Server	./http_server.cpp	/^Http_Server::~Http_Server()$/;"	f	class:Http_Server
+~SocketHandle	./socket_handle.hpp	/^		~SocketHandle()$/;"	f	class:SocketHandle
+~Worker	./worker.hpp	/^        ~Worker() {$/;"	f	class:Worker
+~config_map	./config_map.hpp	/^config_map::~config_map()$/;"	f	class:config_map
+~task_base	./task_base.cpp	/^task_base::~task_base()$/;"	f	class:task_base
+~wait_list_t	./wait_list.hpp	/^		~wait_list_t()$/;"	f	class:wait_list_t

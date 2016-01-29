@@ -1,0 +1,27 @@
+include $(top_srcdir)/common.mk
+
+bin_PROGRAMS=
+lib_LIBRARIES=
+lib_LTLIBRARIES=
+SUBDIRS=
+
+lib_LTLIBRARIES+=libpoi_log_index.la
+libpoi_log_index_la_SOURCES=poi_log_index.cpp
+libpoi_log_index_la_LIBADD=-lm -lpthread -lssplatform -lencoding -ldicmap -lCoreSegmentor
+
+#bin_PROGRAMS+=poi_log_index_test
+#poi_log_index_test_SOURCES=poi_log_index_test.cpp
+#poi_log_index_test_LDADD=-lpoi_log_index -lgtest -lpthread
+#
+#bin_PROGRAMS+=poi_log_index_make_index
+#poi_log_index_make_index_SOURCES=poi_log_index_make_index.cpp
+#poi_log_index_make_index_LDADD=-lpoi_log_index -lpthread -lgflags
+#
+#bin_PROGRAMS+=poi_index_test_file
+#poi_index_test_file_SOURCES=poi_index_test_file.cpp
+#poi_index_test_file_LDADD=-lpoi_index -lpthread
+#
+#
+#bin_PROGRAMS+=get_postfix
+#get_postfix_file_SOURCES=get_postfix.cpp
+#get_postfix_LDADD=-lpoi_index -lpthread

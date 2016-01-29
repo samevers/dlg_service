@@ -1,0 +1,336 @@
+#include "normalize.h"
+#define MAX_CONTENT_LEN         20*1024*1024
+/**
+* @brief  获取utf8字符串字的数目
+**/
+template <bool trackpos>
+int get_utf8str_wordnum(const char *str, vector<int> *cur)
+{
+	if(str == NULL)
+	{
+		printf("str is null");
+		return -1;
+	}
+
+	const char *ps = str;
+	int word_len = 0;
+	int word_num = 0;
+	int total_len = 0;
+	while((*ps != '\0') && (word_len = ul_ccode_next_utf8(ps)) != 0)
+	{
+		/*if(word_num >= MAX_POSINFO_LEN)
+		{
+		break;
+		}*/
+		if(trackpos)
+		{
+			cur->push_back(total_len);
+			total_len += word_len;
+		}
+		word_num++;
+		ps += word_len;
+	}
+	return word_num;
+}
+
+/**
+*把字符字符串src快速拷贝到字符串dst的末尾des_cur
+**/
+char *fast_strcat(char *dst, char *dst_cur, const char *src, size_t src_len, size_t dst_size)
+{
+	if(dst == NULL || dst_cur == NULL || src == NULL || src_len <=0 || dst_size <= 0 )
+	{
+		printf("dst or dst_cur or scr is null");
+		return NULL;
+	}
+
+	int len = dst_cur - dst;
+	if(len+src_len >= dst_size)
+	{
+		printf("exceed max len");
+		return NULL;
+	}
+
+	strncat(dst_cur, src, src_len);
+	dst_cur += src_len;
+	return dst_cur; 
+}
+
+//
+int set_pos(vector<int> *cur, int &index, const char *key, const char *value)
+{
+	int key_wnum = get_utf8str_wordnum<false>(key,NULL);
+	int value_wnum = get_utf8str_wordnum<false>(value,NULL);
+	if(key_wnum == -1 || value_wnum == -1)
+	{
+		printf("get_utf8str_word from key or value failed");
+		return -1;
+	}
+	if(cur == NULL)
+	{
+		return -1;
+	}
+	if(value_wnum > key_wnum)
+	{
+		for(int k = 0; k < value_wnum; k++)
+		{
+			if(k < key_wnum)
+			{
+				cur->push_back(index++);
+			}
+			else
+			{
+				cur->push_back(index - 1);
+			}
+		}
+	}
+	else
+	{
+		for(int k = 0; k < value_wnum - 1; k++)
+		{
+			cur->push_back(index++);
+		}
+		cur->push_back(index - value_wnum + key_wnum);
+		index = index - value_wnum + key_wnum + 1;
+	}
+	return 0;
+}
+
+
+
+
+int _html_entity2char(const char *src,char *dest,int codetype)
+{
+	if(src == NULL || dest == NULL)
+	{
+		printf("parameter error");
+		return -1;
+	}
+	//printf("text is [%s]",src);
+	int word_len = 0;
+	string key;
+	string value;
+	const char *ps = src;
+	dest[0] = '\0';
+	char *pd_cur = dest;
+	char entity[30];
+	entity[0] = '\0';
+	int entity_max_size = 25;
+	int index = -1;
+	if(codetype == 3)
+		while((*ps != '\0') &&(word_len = ul_ccode_next_utf8(ps)) != 0)
+		{
+			index++;
+			if(word_len == 1 && *ps == '&')
+			{
+				const char *start = ps;
+				int suffix = 1;
+				ps += word_len;
+				//int tmpindex = index;
+				while((*ps != '\0') &&(word_len = ul_ccode_next_utf8(ps)) != 0)
+				{
+					index++;
+					if(word_len != 1)
+					{
+						
+						ps += word_len;
+						pd_cur = fast_strcat(dest, pd_cur, start, ps-start, MAX_CONTENT_LEN);
+						if(pd_cur == NULL)
+						{
+							printf("pd_cur is null");
+							return -1;
+						}
+						suffix = 0;
+						break;
+					}
+					if(*ps == '&')
+					{
+						index--;//'&' Participate in the next match
+						
+						//ps do not need add word_len
+						pd_cur = fast_strcat(dest, pd_cur, start, ps-start, MAX_CONTENT_LEN);
+						if(pd_cur == NULL)
+						{
+							printf("pd_cur is null");
+							return -1;
+						}
+						suffix = 0;
+						break;
+					}
+					if(*ps == ';')
+					{
+						int len = ps - start + word_len;
+						int deres = 0;
+						if(len < entity_max_size)
+						{
+							strncpy(entity,start,len);
+							entity[len] = '\0';
+							char utf8tmp[30];
+							if((deres = html_text_dereference(utf8tmp,0,sizeof(utf8tmp)-1,entity,false,CODETYPE_UTF8)) > 0)
+							{
+								utf8tmp[deres] = '\0';
+								
+								pd_cur = fast_strcat(dest, pd_cur,utf8tmp, strlen(utf8tmp), MAX_CONTENT_LEN);
+								if(pd_cur == NULL)
+								{      
+									printf("pd_cur is null");
+									return -1;
+								}
+							}
+						}
+						if(len >= entity_max_size || deres <= 0)
+						{
+							
+							pd_cur = fast_strcat(dest, pd_cur, start, len, MAX_CONTENT_LEN);
+							if(pd_cur == NULL)
+							{
+								printf("pd_cur is null");
+								return -1;
+							}
+
+						}
+						memset(entity,0,sizeof(entity));
+						suffix = 0;
+						ps += word_len;
+						break;
+					}
+					ps += word_len;
+				}
+				if(suffix)
+				{
+					
+					pd_cur = fast_strcat(dest, pd_cur, start, ps-start, MAX_CONTENT_LEN);
+					if(pd_cur == NULL)
+					{
+						printf("pd_cur is null");
+						return -1;
+					}
+				}
+			}
+			else
+			{
+				
+				pd_cur = fast_strcat(dest, pd_cur, ps, word_len, MAX_CONTENT_LEN);
+				if(pd_cur == NULL)
+				{
+					printf("pd_cur is null");
+					return -1;
+				}
+				ps += word_len;
+			}
+		}
+	else if(codetype == 1)
+		while((*ps != '\0') &&(word_len = ul_ccode_next_gbk(ps)) != 0)
+		{
+			index++;
+			if(word_len == 1 && *ps == '&')
+			{
+				const char *start = ps;
+				int suffix = 1;
+				ps += word_len;
+				//int tmpindex = index;
+				while((*ps != '\0') &&(word_len = ul_ccode_next_gbk(ps)) != 0)
+				{
+					index++;
+					if(word_len != 1)
+					{
+						
+						ps += word_len;
+						pd_cur = fast_strcat(dest, pd_cur, start, ps-start, MAX_CONTENT_LEN);
+						if(pd_cur == NULL)
+						{
+							printf("pd_cur is null");
+							return -1;
+						}
+						suffix = 0;
+						break;
+					}
+					if(*ps == '&')
+					{
+						index--;//'&' Participate in the next match
+					
+						//ps do not need add word_len
+						pd_cur = fast_strcat(dest, pd_cur, start, ps-start, MAX_CONTENT_LEN);
+						if(pd_cur == NULL)
+						{
+							printf("pd_cur is null");
+							return -1;
+						}
+						suffix = 0;
+						break;
+					}
+					if(*ps == ';')
+					{
+						int len = ps - start + word_len;
+						int deres = 0;
+						if(len < entity_max_size)
+						{
+							strncpy(entity,start,len);
+							entity[len] = '\0';
+							char utf8tmp[30];
+							if((deres = html_text_dereference(utf8tmp,0,sizeof(utf8tmp)-1,entity,false,CODETYPE_UTF8)) > 0)
+							{
+								utf8tmp[deres] = '\0';
+								
+								pd_cur = fast_strcat(dest, pd_cur,utf8tmp, strlen(utf8tmp), MAX_CONTENT_LEN);
+								if(pd_cur == NULL)
+								{      
+									printf("pd_cur is null");
+									return -1;
+								}
+							}
+						}
+						if(len >= entity_max_size || deres <= 0)
+						{
+							
+							pd_cur = fast_strcat(dest, pd_cur, start, len, MAX_CONTENT_LEN);
+							if(pd_cur == NULL)
+							{
+								printf("pd_cur is null");
+								return -1;
+							}
+
+						}
+						memset(entity,0,sizeof(entity));
+						suffix = 0;
+						ps += word_len;
+						break;
+					}
+					ps += word_len;
+				}
+				if(suffix)
+				{
+					
+					pd_cur = fast_strcat(dest, pd_cur, start, ps-start, MAX_CONTENT_LEN);
+					if(pd_cur == NULL)
+					{
+						printf("pd_cur is null");
+						return -1;
+					}
+				}
+			}
+			else
+			{
+				
+				pd_cur = fast_strcat(dest, pd_cur, ps, word_len, MAX_CONTENT_LEN);
+				if(pd_cur == NULL)
+				{
+					printf("pd_cur is null");
+					return -1;
+				}
+				ps += word_len;
+			}
+		}
+		*pd_cur = '\0';
+		printf("%s#############33",dest);
+		return 0;
+}
+
+
+int html_entity2char(const char *src,char *dest,int codetype)
+{
+	int res;
+	res = _html_entity2char(src,dest,codetype);
+	return res;
+
+}

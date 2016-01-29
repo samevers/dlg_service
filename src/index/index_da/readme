@@ -1,0 +1,2 @@
+1. how to generate a index file for white/blacklist?
+   A: run [ ./make_index filename filename.index ]

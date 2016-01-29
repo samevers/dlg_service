@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/websearch4/!svn/ver/362818/web/web_nlp/vr_query_rewrite/trunk/src/jsoncpp/json
+END
+json.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/websearch4/!svn/ver/362818/web/web_nlp/vr_query_rewrite/trunk/src/jsoncpp/json/json.h
+END
+assertions.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/websearch4/!svn/ver/362818/web/web_nlp/vr_query_rewrite/trunk/src/jsoncpp/json/assertions.h
+END
+value.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/websearch4/!svn/ver/362818/web/web_nlp/vr_query_rewrite/trunk/src/jsoncpp/json/value.h
+END
+writer.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/websearch4/!svn/ver/362818/web/web_nlp/vr_query_rewrite/trunk/src/jsoncpp/json/writer.h
+END
+features.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/websearch4/!svn/ver/362818/web/web_nlp/vr_query_rewrite/trunk/src/jsoncpp/json/features.h
+END
+reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/websearch4/!svn/ver/362818/web/web_nlp/vr_query_rewrite/trunk/src/jsoncpp/json/reader.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/websearch4/!svn/ver/362818/web/web_nlp/vr_query_rewrite/trunk/src/jsoncpp/json/config.h
+END
+autolink.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/websearch4/!svn/ver/362818/web/web_nlp/vr_query_rewrite/trunk/src/jsoncpp/json/autolink.h
+END
+forwards.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/websearch4/!svn/ver/362818/web/web_nlp/vr_query_rewrite/trunk/src/jsoncpp/json/forwards.h
+END

@@ -1,0 +1,102 @@
+/*************************************************
+ *
+ * Author: liushukai
+ * Create time: 2015 9月 16 16时38分54秒
+ * E-Mail: liushukai@sogou-inc.com
+ * version 1.0
+ *
+*************************************************/
+
+#ifndef _POI_LOG_INDEX_H
+#define _POI_LOG_INDEX_H
+
+#include "../../include/common_index.h"
+#include "../poi_index/poi_index.h"
+#include "WordSegmentor4/Segmentor/Graph.h"
+#include "Platform/bchar.h" 
+#include "Platform/encoding.h" 
+#include "WordSegmentor4/Segmentor/Graph.h" 
+#include "Platform/encoding/support.h"
+#include <set>
+#include <limits.h>
+
+struct PoiLogResult{
+	std::string query;
+	std::string area;
+	std::string city;
+	std::string device;
+	int weight;
+
+	PoiLogResult()
+	{
+		query = "";
+		area = "";
+		city = "";
+		device = "";
+		weight = 0;
+	}
+
+	bool operator < (const PoiLogResult& rp)const
+	{//实现逆序排序
+		return this->weight > rp.weight;
+	}
+};
+
+class CPoiLogIndex{
+public:
+	CPoiLogIndex();
+	~CPoiLogIndex();
+
+	static int32_t Init();
+	static int32_t MakeIndex(
+			const char* file_in,
+			const char* file_out);
+	static int32_t LoadIndex(
+			const char* file_index);
+	static int32_t Release();
+
+	int32_t GetUnionResults(
+			const std::string& query,
+			std::vector<POI_DOC_TYPE*>& docs,
+			std::vector<std::string>& seg_parts);
+	int32_t GetUnionResults(
+			const std::string& query,
+			std::vector<PoiLogResult>& log_docs,
+			std::vector<std::string>& seg_parts);
+
+
+	static int32_t GraphSegment(
+			analysis::TGraph& graph,
+			const std::string& query,
+			std::vector<std::string>& parts);
+private:
+	int32_t GetInvResults(
+			const std::vector<std::string>& parts,
+			InvNumInfo& num_info,
+			std::vector<InvResult>& inv_results
+			);
+	int32_t UnionInvResult(
+			const std::vector<InvResult>& inv_results,
+			const InvNumInfo& num_info,
+			std::vector<POI_DOC_TYPE*>& docs);
+	int32_t SearchDoc(
+			const int doc_id,
+			const std::vector<InvResult>& inv_results,
+			const int min_index,
+			std::vector<int>& index_begins,
+			std::vector<POI_INV_TYPE*>& inv_vector);
+	int32_t BinarySearch(
+			const int doc_id,
+			POI_INV_TYPE* inv,
+			int offset,
+			int max_pos);
+
+private:
+	static CommonIndex<POI_DOC_TYPE,POI_INV_TYPE,POI_KEY_TYPE> m_poi_index;
+
+private:
+	analysis::TGraph m_graph_segment;
+};
+
+
+#endif

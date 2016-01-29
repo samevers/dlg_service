@@ -1,0 +1,781 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+-target-directory	./Makefile	/^	ln -sf --target-directory=$(collectbin_DIR)\/ $(addprefix $(CURDIR)\/,$<)$/;"	m
+-target-directory	./Makefile	/^	ln -sf --target-directory=$(collectlib_DIR)\/ $(addprefix $(CURDIR)\/, $<)$/;"	m
+ACLOCAL	./Makefile	/^ACLOCAL = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	./Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ALLOCA	./Makefile	/^ALLOCA = $/;"	m
+AMTAR	./Makefile	/^AMTAR = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run tar$/;"	m
+AM_CFLAGS	./Makefile	/^AM_CFLAGS = $/;"	m
+AM_CPPFLAGS	./Makefile	/^AM_CPPFLAGS = -DSS_DOCID_BITS=256 $/;"	m
+AM_CXXFLAGS	./Makefile	/^AM_CXXFLAGS = $/;"	m
+AM_LDFLAGS	./Makefile	/^AM_LDFLAGS = -Wl,-no-undefined$/;"	m
+AM_RECURSIVE_TARGETS	./Makefile	/^AM_RECURSIVE_TARGETS = $(RECURSIVE_TARGETS:-recursive=) \\$/;"	m
+AR	./Makefile	/^AR = ar$/;"	m
+AUTOCONF	./Makefile	/^AUTOCONF = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run autoconf$/;"	m
+AUTOHEADER	./Makefile	/^AUTOHEADER = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run autoheader$/;"	m
+AUTOMAKE	./Makefile	/^AUTOMAKE = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run automake-1.11$/;"	m
+AWK	./Makefile	/^AWK = gawk$/;"	m
+AutoArray	./darts.h	/^  explicit AutoArray(T *array = NULL) : array_(array) {}$/;"	f	class:Darts_0_32::Details::AutoArray
+AutoArray	./darts.h	/^class AutoArray {$/;"	c	namespace:Darts_0_32::Details
+AutoPool	./darts.h	/^  AutoPool() : buf_(), size_(0), capacity_(0) {}$/;"	f	class:Darts_0_32::Details::AutoPool
+AutoPool	./darts.h	/^class AutoPool {$/;"	c	namespace:Darts_0_32::Details
+AutoStack	./darts.h	/^  AutoStack() : pool_() {}$/;"	f	class:Darts_0_32::Details::AutoStack
+AutoStack	./darts.h	/^class AutoStack {$/;"	c	namespace:Darts_0_32::Details
+BEGIN_END	./Index_da.h	/^	BEGIN_END(){}$/;"	f	struct:WHITE_BLACK_DA::BEGIN_END
+BEGIN_END	./Index_da.h	/^	BEGIN_END(int64_t begin_, int64_t end_)$/;"	f	struct:WHITE_BLACK_DA::BEGIN_END
+BEGIN_END	./Index_da.h	/^struct BEGIN_END$/;"	s	namespace:WHITE_BLACK_DA
+BLOCK_SIZE	./darts-clone.h	/^		BLOCK_SIZE = 256,$/;"	e	enum:Darts::DoubleArrayBuilder::__anon3
+BLOCK_SIZE	./darts.h	/^  enum { BLOCK_SIZE = 256 };$/;"	e	enum:Darts_0_32::Details::DoubleArrayBuilder::__anon7
+BUILD_DEPENDENCIES	./Makefile	/^BUILD_DEPENDENCIES = \/search\/yonghuahu\/hack\/dlg_service$/;"	m
+BUILT_SOURCES	./Makefile	/^BUILT_SOURCES = $/;"	m
+BitVector	./darts.h	/^  BitVector() : units_(), ranks_(), num_ones_(0), size_(0) {}$/;"	f	class:Darts_0_32::Details::BitVector
+BitVector	./darts.h	/^class BitVector {$/;"	c	namespace:Darts_0_32::Details
+CC	./Makefile	/^CC = gcc -std=gnu99$/;"	m
+CCDEPMODE	./Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	./Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	./Makefile	/^CFLAGS = -g -O2 -pthread $(if $(DEBUG), -g -O0) $(if $(OPTIMIZE), -O3) $(if \\$/;"	m
+COMPILE	./Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIGURE_DEPENDENCIES	./Makefile	/^CONFIGURE_DEPENDENCIES = $(subst @@@,,$(subst \\$/;"	m
+CONFIG_CLEAN_FILES	./Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	./Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	./Makefile	/^CONFIG_HEADER = $(top_builddir)\/config-dummy.h$/;"	m
+CPP	./Makefile	/^CPP = gcc -std=gnu99 -E$/;"	m
+CPPFLAGS	./Makefile	/^CPPFLAGS =  -D_REENTRANT -D_FILE_OFFSET_BITS=64   -I\/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding\/_include   -I\/search\/yonghuahu\/hack\/dlg_service\/web_base\/_include -I\/search\/yonghuahu\/hack\/dlg_service\/utils -I\/search\/yonghuahu\/hack\/dlg_service\/dicmap\/_include -I\/search\/yonghuahu\/hack\/dlg_service\/word_segmentor -I\/search\/yonghuahu\/hack\/dlg_service\/web_segmentor $(if $(OPTIMIZE), -DNDEBUG)$/;"	m
+CTAGS	./Makefile	/^CTAGS = ctags$/;"	m
+CXX	./Makefile	/^CXX = g++ -std=gnu++0x$/;"	m
+CXXCOMPILE	./Makefile	/^CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \\$/;"	m
+CXXCPP	./Makefile	/^CXXCPP = g++ -std=gnu++0x -E$/;"	m
+CXXDEPMODE	./Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	./Makefile	/^CXXFLAGS = -g -O2 -pthread $(if $(DEBUG), -g -O0) $(if $(OPTIMIZE), -O3) \\$/;"	m
+CXXLD	./Makefile	/^CXXLD = $(CXX)$/;"	m
+CXXLINK	./Makefile	/^CXXLINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+CYGPATH_W	./Makefile	/^CYGPATH_W = echo$/;"	m
+ClearIndex	./Index_da.cpp	/^int32_t WhiteBlackList_::ClearIndex() $/;"	f	class:WHITE_BLACK_DA::WhiteBlackList_
+DARTS_0_32_H_	./darts.h	2;"	d
+DARTS_CLONE_H_	./darts-clone.h	2;"	d
+DARTS_CLONE_VERSION	./darts-clone.h	10;"	d
+DARTS_INT_TO_STR	./darts.h	15;"	d
+DARTS_INT_TO_STR	./darts.h	1984;"	d
+DARTS_LINE_STR	./darts.h	17;"	d
+DARTS_LINE_STR	./darts.h	1986;"	d
+DARTS_LINE_TO_STR	./darts.h	16;"	d
+DARTS_LINE_TO_STR	./darts.h	1985;"	d
+DARTS_THROW	./darts.h	18;"	d
+DARTS_THROW	./darts.h	1987;"	d
+DARTS_VERSION	./darts-clone.h	9;"	d
+DARTS_VERSION	./darts.h	8;"	d
+DA_IndexFile_DLG	./dialogue.cpp	/^const static string DA_IndexFile_DLG = "pair.out.post.doc.index";$/;"	v	file:
+DEFAULT_INCLUDES	./Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	./Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	./Makefile	/^DEPDIR = .deps$/;"	m
+DIALOGUE	./dialogue.cpp	/^DIALOGUE::DIALOGUE()$/;"	f	class:DIALOGUE
+DIALOGUE	./dialogue.h	/^class DIALOGUE{$/;"	c
+DIALOGUE_H_	./dialogue.h	2;"	d
+DICMAP_PKG_CFLAGS	./Makefile	/^DICMAP_PKG_CFLAGS = $/;"	m
+DICMAP_PKG_LIBS	./Makefile	/^DICMAP_PKG_LIBS = $/;"	m
+DICMAP_ROOT	./Makefile	/^DICMAP_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/dicmap$/;"	m
+DISTFILES	./Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	./Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in \\$/;"	m
+DIST_SOURCES	./Makefile	/^DIST_SOURCES = $(libdialogue_la_SOURCES) $(test_run_SOURCES)$/;"	m
+DIST_SUBDIRS	./Makefile	/^DIST_SUBDIRS = $(SUBDIRS)$/;"	m
+DSYMUTIL	./Makefile	/^DSYMUTIL = $/;"	m
+DUMPBIN	./Makefile	/^DUMPBIN = $/;"	m
+Darts	./darts-clone.h	/^namespace Darts$/;"	n
+Darts_0_32	./darts.h	/^namespace Darts_0_32 {$/;"	n
+DawgBuilder	./darts.h	/^  DawgBuilder() : nodes_(), units_(), labels_(), is_intersections_(),$/;"	f	class:Darts_0_32::Details::DawgBuilder
+DawgBuilder	./darts.h	/^class DawgBuilder {$/;"	c	namespace:Darts_0_32::Details
+DawgNode	./darts.h	/^  DawgNode() : child_(0), sibling_(0), label_('\\0'),$/;"	f	class:Darts_0_32::Details::DawgNode
+DawgNode	./darts.h	/^class DawgNode {$/;"	c	namespace:Darts_0_32::Details
+DawgUnit	./darts.h	/^  DawgUnit(const DawgUnit &unit) : unit_(unit.unit_) {}$/;"	f	class:Darts_0_32::Details::DawgUnit
+DawgUnit	./darts.h	/^  explicit DawgUnit(id_type unit = 0) : unit_(unit) {}$/;"	f	class:Darts_0_32::Details::DawgUnit
+DawgUnit	./darts.h	/^class DawgUnit {$/;"	c	namespace:Darts_0_32::Details
+DefaultProgressFunc	./darts-clone.h	/^class DefaultProgressFunc : public DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DeleteSpace	./Index_da.cpp	/^int32_t DeleteSpace(string & input,$/;"	f	namespace:WHITE_BLACK_DA
+Details	./darts.h	/^namespace Details {$/;"	n	namespace:Darts_0_32
+DoLinkTemplate	./Makefile	/^define DoLinkTemplate$/;"	m
+DoubleArray	./darts-clone.h	/^typedef DoubleArrayBase<int, 3> DoubleArray;$/;"	t	namespace:Darts
+DoubleArray	./darts.h	/^typedef DoubleArrayImpl<void, void, int, void> DoubleArray;$/;"	t	namespace:Darts_0_32
+DoubleArrayBase	./darts-clone.h	/^	DoubleArrayBase() : units_(0), tail_(0), size_(0), units_buf_() {}$/;"	f	class:Darts::DoubleArrayBase
+DoubleArrayBase	./darts-clone.h	/^class DoubleArrayBase : public DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DoubleArrayBuilder	./darts-clone.h	/^	DoubleArrayBuilder(std::vector<key_type> &keys,$/;"	f	class:Darts::DoubleArrayBuilder
+DoubleArrayBuilder	./darts-clone.h	/^class DoubleArrayBuilder : public DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DoubleArrayBuilder	./darts.h	/^  explicit DoubleArrayBuilder(progress_func_type progress_func)$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+DoubleArrayBuilder	./darts.h	/^class DoubleArrayBuilder {$/;"	c	namespace:Darts_0_32::Details
+DoubleArrayBuilderExtraUnit	./darts.h	/^  DoubleArrayBuilderExtraUnit() : prev_(0), next_(0),$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+DoubleArrayBuilderExtraUnit	./darts.h	/^class DoubleArrayBuilderExtraUnit {$/;"	c	namespace:Darts_0_32::Details
+DoubleArrayBuilderUnit	./darts.h	/^  DoubleArrayBuilderUnit() : unit_(0) {}$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderUnit
+DoubleArrayBuilderUnit	./darts.h	/^class DoubleArrayBuilderUnit {$/;"	c	namespace:Darts_0_32::Details
+DoubleArrayCommonTypes	./darts-clone.h	/^class DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DoubleArrayException	./darts-clone.h	/^	explicit DoubleArrayException(const char (&msg)[Size]) : msg_(msg) {}$/;"	f	class:Darts::DoubleArrayException
+DoubleArrayException	./darts-clone.h	/^class DoubleArrayException : public std::exception$/;"	c	namespace:Darts
+DoubleArrayExtra	./darts-clone.h	/^	DoubleArrayExtra() : lo_values_(0), hi_values_(0) {}$/;"	f	class:Darts::DoubleArrayExtra
+DoubleArrayExtra	./darts-clone.h	/^class DoubleArrayExtra : public DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DoubleArrayFile	./darts-clone.h	/^	DoubleArrayFile(const char *file_name, const char *mode) : file_(0)$/;"	f	class:Darts::DoubleArrayFile
+DoubleArrayFile	./darts-clone.h	/^class DoubleArrayFile : DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DoubleArrayImpl	./darts-clone.h	/^class DoubleArrayImpl : public DoubleArrayBase<ResultType, 3> {};$/;"	c	namespace:Darts
+DoubleArrayImpl	./darts.h	/^  DoubleArrayImpl() : size_(0), array_(NULL), buf_(NULL) {}$/;"	f	class:Darts_0_32::DoubleArrayImpl
+DoubleArrayImpl	./darts.h	/^class DoubleArrayImpl {$/;"	c	namespace:Darts_0_32
+DoubleArrayKey	./darts-clone.h	/^	DoubleArrayKey() : key_(0), length_(0) {}$/;"	f	class:Darts::DoubleArrayKey
+DoubleArrayKey	./darts-clone.h	/^	DoubleArrayKey(const char_type *key, size_type length)$/;"	f	class:Darts::DoubleArrayKey
+DoubleArrayKey	./darts-clone.h	/^	explicit DoubleArrayKey(const char_type *key) : key_(key), length_(0)$/;"	f	class:Darts::DoubleArrayKey
+DoubleArrayKey	./darts-clone.h	/^class DoubleArrayKey : public DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DoubleArrayKeyRange	./darts-clone.h	/^	DoubleArrayKeyRange(iterator begin, iterator end, base_type index = 0)$/;"	f	class:Darts::DoubleArrayKeyRange
+DoubleArrayKeyRange	./darts-clone.h	/^class DoubleArrayKeyRange : DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DoubleArrayLengthQuery	./darts-clone.h	/^	DoubleArrayLengthQuery(const char_type *key,$/;"	f	class:Darts::DoubleArrayLengthQuery
+DoubleArrayLengthQuery	./darts-clone.h	/^class DoubleArrayLengthQuery : public DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DoubleArrayQuery	./darts-clone.h	/^	explicit DoubleArrayQuery(const char_type *key, size_type index = 0)$/;"	f	class:Darts::DoubleArrayQuery
+DoubleArrayQuery	./darts-clone.h	/^class DoubleArrayQuery : public DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DoubleArraySwitcher	./darts-clone.h	/^class DoubleArraySwitcher$/;"	c	namespace:Darts
+DoubleArraySwitcher	./darts-clone.h	/^class DoubleArraySwitcher<false>$/;"	c	namespace:Darts
+DoubleArrayUnit	./darts-clone.h	/^	DoubleArrayUnit() : values_(0) {}$/;"	f	class:Darts::DoubleArrayUnit
+DoubleArrayUnit	./darts-clone.h	/^	explicit DoubleArrayUnit(base_type values) : values_(values) {}$/;"	f	class:Darts::DoubleArrayUnit
+DoubleArrayUnit	./darts-clone.h	/^class DoubleArrayUnit : public DoubleArrayCommonTypes$/;"	c	namespace:Darts
+DoubleArrayUnit	./darts.h	/^  DoubleArrayUnit() : unit_() {}$/;"	f	class:Darts_0_32::Details::DoubleArrayUnit
+DoubleArrayUnit	./darts.h	/^class DoubleArrayUnit {$/;"	c	namespace:Darts_0_32::Details
+ECHO_C	./Makefile	/^ECHO_C = $/;"	m
+ECHO_N	./Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	./Makefile	/^ECHO_T = $/;"	m
+EGREP	./Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	./Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	./Makefile	/^EXEEXT = $/;"	m
+Exception	./darts.h	/^  Exception(const Exception &rhs) throw() : msg_(rhs.msg_) {}$/;"	f	class:Darts_0_32::Details::Exception
+Exception	./darts.h	/^  explicit Exception(const char *msg = NULL) throw() : msg_(msg) {}$/;"	f	class:Darts_0_32::Details::Exception
+Exception	./darts.h	/^class Exception : public std::exception {$/;"	c	namespace:Darts_0_32::Details
+FGREP	./Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+GREP	./Makefile	/^GREP = \/bin\/grep$/;"	m
+HugeDoubleArray	./darts-clone.h	/^typedef DoubleArrayBase<int, 0> HugeDoubleArray;$/;"	t	namespace:Darts
+INCLUDES	./Makefile	/^INCLUDES = -I$(top_srcdir) -I$(top_builddir)$/;"	m
+INITIAL_TABLE_SIZE	./darts.h	/^  enum { INITIAL_TABLE_SIZE = 1 << 10 };$/;"	e	enum:Darts_0_32::Details::DawgBuilder::__anon6
+INSTALL	./Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	./Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	./Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	./Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	./Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	./Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+IndexOutcome	./dialogue.cpp	/^int DIALOGUE::IndexOutcome(const char* query)$/;"	f	class:DIALOGUE
+Init	./dialogue.cpp	/^int DIALOGUE::Init(const char* data_path) \/\/ data directory$/;"	f	class:DIALOGUE
+Keyset	./darts.h	/^  Keyset(std::size_t num_keys, const char_type * const *keys,$/;"	f	class:Darts_0_32::Details::Keyset
+Keyset	./darts.h	/^class Keyset {$/;"	c	namespace:Darts_0_32::Details
+LD	./Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LDFLAGS	./Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	./Makefile	/^LIBOBJS = $/;"	m
+LIBRARIES	./Makefile	/^LIBRARIES = $(lib_LIBRARIES)$/;"	m
+LIBS	./Makefile	/^LIBS =  -lnsl   -L\/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding\/_lib   -L\/search\/yonghuahu\/hack\/dlg_service\/web_base\/_lib -L\/search\/yonghuahu\/hack\/dlg_service\/utils\/_lib -L\/search\/yonghuahu\/hack\/dlg_service\/dicmap\/_lib -L\/search\/yonghuahu\/hack\/dlg_service\/word_segmentor\/_lib -L\/search\/yonghuahu\/hack\/dlg_service\/web_segmentor\/_lib$/;"	m
+LIBTOOL	./Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LINK	./Makefile	/^LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LINK_BITS	./darts-clone.h	/^		LINK_BITS = 32 - 1 - VALUE_ID_BITS,$/;"	e	enum:Darts::DoubleArrayUnit::__anon1
+LIPO	./Makefile	/^LIPO = $/;"	m
+LN_S	./Makefile	/^LN_S = ln -s$/;"	m
+LOWER_MASK	./darts.h	/^  enum { LOWER_MASK = 0xFF };$/;"	e	enum:Darts_0_32::Details::DoubleArrayBuilder::__anon11
+LTCOMPILE	./Makefile	/^LTCOMPILE = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LTCXXCOMPILE	./Makefile	/^LTCXXCOMPILE = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LTLIBOBJS	./Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBRARIES	./Makefile	/^LTLIBRARIES = $(lib_LTLIBRARIES)$/;"	m
+LoadIndex	./Index_da.cpp	/^int32_t WhiteBlackList_::LoadIndex(const char *index_file, $/;"	f	class:WHITE_BLACK_DA::WhiteBlackList_
+MAKEINFO	./Makefile	/^MAKEINFO = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/missing --run makeinfo$/;"	m
+MAXQUERYLEN	./Index_da.cpp	/^const static int MAXQUERYLEN=MAXSTRLEN\/2;$/;"	m	namespace:WHITE_BLACK_DA	file:
+MAXSTRLEN	./Index_da.cpp	/^const static int MAXSTRLEN=1024;$/;"	m	namespace:WHITE_BLACK_DA	file:
+MKDIR_P	./Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MODULE_ROOT_VARS	./Makefile	/^MODULE_ROOT_VARS =  SSENCODING_ROOT WEBBASE_ROOT UTILS_ROOT DICMAP_ROOT WORDSEGMENT_ROOT WEBSEGMENT_ROOT$/;"	m
+MOSTLYCLEANFILES	./Makefile	/^MOSTLYCLEANFILES = $(foreach t, $(collectLTLIBRARIES), \\$/;"	m
+MakeIndex	./Index_da.cpp	/^int32_t WhiteBlackList_::MakeIndex(const char *file, const char *index_file)$/;"	f	class:WHITE_BLACK_DA::WhiteBlackList_
+MakeIndex	./Index_da.cpp	/^int32_t WhiteBlackList_::MakeIndex(const char *file, const char *index_file,const char* tag)$/;"	f	class:WHITE_BLACK_DA::WhiteBlackList_
+MakeResponse	./dialogue.cpp	/^int DIALOGUE::MakeResponse(const char* query, const char* anwser)$/;"	f	class:DIALOGUE
+NM	./Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NMEDIT	./Makefile	/^NMEDIT = $/;"	m
+NORMAL_INSTALL	./Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	./Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NUM_EXTRAS	./darts.h	/^  enum { NUM_EXTRAS = BLOCK_SIZE * NUM_EXTRA_BLOCKS };$/;"	e	enum:Darts_0_32::Details::DoubleArrayBuilder::__anon9
+NUM_EXTRA_BLOCKS	./darts.h	/^  enum { NUM_EXTRA_BLOCKS = 16 };$/;"	e	enum:Darts_0_32::Details::DoubleArrayBuilder::__anon8
+NUM_OF_UNFIXED_BLOCKS	./darts-clone.h	/^		NUM_OF_UNFIXED_BLOCKS = 16,$/;"	e	enum:Darts::DoubleArrayBuilder::__anon3
+OBJDUMP	./Makefile	/^OBJDUMP = objdump$/;"	m
+OBJEXT	./Makefile	/^OBJEXT = o$/;"	m
+OFFSET_MAX	./darts-clone.h	/^	static const base_type OFFSET_MAX = static_cast<base_type>(1) << 21;$/;"	m	class:Darts::DoubleArrayUnit
+OTOOL	./Makefile	/^OTOOL = $/;"	m
+OTOOL64	./Makefile	/^OTOOL64 = $/;"	m
+OutputIndexFile	./Index_da.cpp	/^int32_t WhiteBlackList_::OutputIndexFile($/;"	f	class:WHITE_BLACK_DA::WhiteBlackList_
+OutputIndexFile	./Index_da.cpp	/^int32_t WhiteBlackList_::OutputIndexFile(std::vector<ST> & vect,const char * index_file) $/;"	f	class:WHITE_BLACK_DA::WhiteBlackList_
+PACKAGE	./Makefile	/^PACKAGE = hint$/;"	m
+PACKAGE_BUGREPORT	./Makefile	/^PACKAGE_BUGREPORT = lvjieyong@sohu-rd.com$/;"	m
+PACKAGE_DEPENDENCIES	./Makefile	/^PACKAGE_DEPENDENCIES =  \/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding \/search\/yonghuahu\/hack\/dlg_service\/web_base \/search\/yonghuahu\/hack\/dlg_service\/utils \/search\/yonghuahu\/hack\/dlg_service\/dicmap \/search\/yonghuahu\/hack\/dlg_service\/word_segmentor \/search\/yonghuahu\/hack\/dlg_service\/web_segmentor$/;"	m
+PACKAGE_NAME	./Makefile	/^PACKAGE_NAME = hint$/;"	m
+PACKAGE_STRING	./Makefile	/^PACKAGE_STRING = hint 3.0.1$/;"	m
+PACKAGE_TARNAME	./Makefile	/^PACKAGE_TARNAME = hint$/;"	m
+PACKAGE_VERSION	./Makefile	/^PACKAGE_VERSION = 3.0.1$/;"	m
+PATH_SEPARATOR	./Makefile	/^PATH_SEPARATOR = :$/;"	m
+PKG_CONFIG	./Makefile	/^PKG_CONFIG = \/usr\/bin\/pkg-config$/;"	m
+POST_INSTALL	./Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	./Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	./Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	./Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	./Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+Pos_Reform	./Index_da.h	/^	Pos_Reform(){}$/;"	f	struct:WHITE_BLACK_DA::Pos_Reform
+Pos_Reform	./Index_da.h	/^	Pos_Reform(const char*  vr_, const char* label_, const char* pos_type_, const char* reform_, const char* itemquery, const char* data_, const char* iswappc_,int query_len_) $/;"	f	struct:WHITE_BLACK_DA::Pos_Reform
+Pos_Reform	./Index_da.h	/^struct Pos_Reform$/;"	s	namespace:WHITE_BLACK_DA
+RANLIB	./Makefile	/^RANLIB = ranlib$/;"	m
+RECURSIVE_CLEAN_TARGETS	./Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m
+RECURSIVE_TARGETS	./Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive dvi-recursive \\$/;"	m
+ReversedComparisonFunc	./darts-clone.h	/^	class ReversedComparisonFunc$/;"	c	class:Darts::DoubleArrayKey
+SED	./Makefile	/^SED = \/bin\/sed$/;"	m
+SET_MAKE	./Makefile	/^SET_MAKE = $/;"	m
+SHELL	./Makefile	/^SHELL = \/bin\/sh$/;"	m
+SOURCES	./Makefile	/^SOURCES = $(libdialogue_la_SOURCES) $(test_run_SOURCES)$/;"	m
+SSENCODING_ROOT	./Makefile	/^SSENCODING_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding$/;"	m
+SSPLATFORM_ENCODING_PKG_CFLAGS	./Makefile	/^SSPLATFORM_ENCODING_PKG_CFLAGS = -I\/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding\/_include  $/;"	m
+SSPLATFORM_ENCODING_PKG_LIBS	./Makefile	/^SSPLATFORM_ENCODING_PKG_LIBS = -L\/search\/yonghuahu\/hack\/dlg_service\/ssplatform-encoding\/_lib  $/;"	m
+SSPLATFORM_PKG_CFLAGS	./Makefile	/^SSPLATFORM_PKG_CFLAGS =  $/;"	m
+SSPLATFORM_PKG_LIBS	./Makefile	/^SSPLATFORM_PKG_LIBS =  $/;"	m
+SSPLATFORM_ROOT	./Makefile	/^SSPLATFORM_ROOT = $/;"	m
+ST	./Index_da.h	/^	ST(){}$/;"	f	struct:WHITE_BLACK_DA::ST
+ST	./Index_da.h	/^	ST(std::string q,std::string e)$/;"	f	struct:WHITE_BLACK_DA::ST
+ST	./Index_da.h	/^struct ST{$/;"	s	namespace:WHITE_BLACK_DA
+STRIP	./Makefile	/^STRIP = strip$/;"	m
+SUBDIRS	./Makefile	/^SUBDIRS = $/;"	m
+SVNVERSION	./Makefile	/^SVNVERSION = $(if $(_SVNVERSION),$(_SVNVERSION),0)$/;"	m
+THROW	./darts-clone.h	1278;"	d
+THROW	./darts-clone.h	25;"	d
+THROW_FINAL	./darts-clone.h	1280;"	d
+THROW_FINAL	./darts-clone.h	27;"	d
+THROW_RELAY	./darts-clone.h	1279;"	d
+THROW_RELAY	./darts-clone.h	26;"	d
+TRANSLATION_TABLE_H_	./Index_da.h	2;"	d
+UNFIXED_SIZE	./darts-clone.h	/^		UNFIXED_SIZE = BLOCK_SIZE * NUM_OF_UNFIXED_BLOCKS,$/;"	e	enum:Darts::DoubleArrayBuilder::__anon3
+UNIT_LINK_MAX	./darts-clone.h	/^	static const base_type UNIT_LINK_MAX =$/;"	m	class:Darts::DoubleArrayUnit
+UNIT_SIZE	./darts.h	/^  enum { UNIT_SIZE = sizeof(id_type) * 8 };$/;"	e	enum:Darts_0_32::Details::BitVector::__anon5
+UPPER_MASK	./darts.h	/^  enum { UPPER_MASK = 0xFF << 21 };$/;"	e	enum:Darts_0_32::Details::DoubleArrayBuilder::__anon10
+UTILS_PKG_CFLAGS	./Makefile	/^UTILS_PKG_CFLAGS = $/;"	m
+UTILS_PKG_LIBS	./Makefile	/^UTILS_PKG_LIBS = $/;"	m
+UTILS_ROOT	./Makefile	/^UTILS_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/utils$/;"	m
+VALUE_ID_BITS	./darts-clone.h	/^		VALUE_ID_BITS = IdBits,$/;"	e	enum:Darts::DoubleArrayUnit::__anon1
+VALUE_ID_BITS	./darts-clone.h	/^	enum { VALUE_ID_BITS = IdBits };$/;"	e	enum:Darts::DoubleArrayBase::__anon4
+VALUE_ID_BITS	./darts-clone.h	/^	enum { VALUE_ID_BITS = IdBits };$/;"	e	enum:Darts::DoubleArrayBuilder::__anon2
+VALUE_ID_MAX	./darts-clone.h	/^	static const base_type VALUE_ID_MAX =$/;"	m	class:Darts::DoubleArrayUnit
+VERSION	./Makefile	/^VERSION = 3.0.1$/;"	m
+WEBBASE_ROOT	./Makefile	/^WEBBASE_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/web_base$/;"	m
+WEBSEGMENT_ROOT	./Makefile	/^WEBSEGMENT_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/web_segmentor$/;"	m
+WEB_BASE_PKG_CFLAGS	./Makefile	/^WEB_BASE_PKG_CFLAGS = $/;"	m
+WEB_BASE_PKG_LIBS	./Makefile	/^WEB_BASE_PKG_LIBS = $/;"	m
+WEB_SEGMENTOR_PKG_CFLAGS	./Makefile	/^WEB_SEGMENTOR_PKG_CFLAGS = $/;"	m
+WEB_SEGMENTOR_PKG_LIBS	./Makefile	/^WEB_SEGMENTOR_PKG_LIBS = $/;"	m
+WHITE_BLACK_DA	./Index_da.cpp	/^namespace WHITE_BLACK_DA{$/;"	n	file:
+WHITE_BLACK_DA	./Index_da.h	/^namespace WHITE_BLACK_DA{$/;"	n
+WORDSEGMENT_ROOT	./Makefile	/^WORDSEGMENT_ROOT = \/search\/yonghuahu\/hack\/dlg_service\/word_segmentor$/;"	m
+WORD_SEGMENTOR_PKG_CFLAGS	./Makefile	/^WORD_SEGMENTOR_PKG_CFLAGS = $/;"	m
+WORD_SEGMENTOR_PKG_LIBS	./Makefile	/^WORD_SEGMENTOR_PKG_LIBS = $/;"	m
+WhiteBlackList_	./Index_da.cpp	/^WhiteBlackList_::WhiteBlackList_() $/;"	f	class:WHITE_BLACK_DA::WhiteBlackList_
+WhiteBlackList_	./Index_da.h	/^class WhiteBlackList_ $/;"	c	namespace:WHITE_BLACK_DA
+WhiteBlackList_TMP	./Index_da.h	/^struct WhiteBlackList_TMP$/;"	s	namespace:WHITE_BLACK_DA
+_SVNVERSION	./Makefile	/^_SVNVERSION = $(strip $(subst exported, 0, $(shell svnversion -nc $(srcdir) | sed 's\/^.*:\/\/' | tr -cd [0-9] )))$/;"	m
+abs_builddir	./Makefile	/^abs_builddir = \/search\/yonghuahu\/hack\/dlg_service\/src\/dialogue$/;"	m
+abs_srcdir	./Makefile	/^abs_srcdir = \/search\/yonghuahu\/hack\/dlg_service\/src\/dialogue$/;"	m
+abs_top_builddir	./Makefile	/^abs_top_builddir = \/search\/yonghuahu\/hack\/dlg_service$/;"	m
+abs_top_srcdir	./Makefile	/^abs_top_srcdir = \/search\/yonghuahu\/hack\/dlg_service$/;"	m
+ac_ct_CC	./Makefile	/^ac_ct_CC = gcc -std=gnu99$/;"	m
+ac_ct_CXX	./Makefile	/^ac_ct_CXX = $/;"	m
+ac_ct_DUMPBIN	./Makefile	/^ac_ct_DUMPBIN = $/;"	m
+am__aclocal_m4_deps	./Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__base_list	./Makefile	/^am__base_list = \\$/;"	m
+am__cd	./Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	./Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	./Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	./Makefile	/^am__include = include$/;"	m
+am__install_max	./Makefile	/^am__install_max = 40$/;"	m
+am__installdirs	./Makefile	/^am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(libdir)" \\$/;"	m
+am__leading_dot	./Makefile	/^am__leading_dot = .$/;"	m
+am__mv	./Makefile	/^am__mv = mv -f$/;"	m
+am__nobase_list	./Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m
+am__nobase_strip	./Makefile	/^am__nobase_strip = \\$/;"	m
+am__nobase_strip_setup	./Makefile	/^am__nobase_strip_setup = \\$/;"	m
+am__quote	./Makefile	/^am__quote = $/;"	m
+am__relativize	./Makefile	/^am__relativize = \\$/;"	m
+am__strip_dir	./Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
+am__tar	./Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	./Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am__vpath_adj	./Makefile	/^am__vpath_adj = case $$p in \\$/;"	m
+am__vpath_adj_setup	./Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
+am_libdialogue_la_OBJECTS	./Makefile	/^am_libdialogue_la_OBJECTS = libdialogue_la-dialogue.lo \\$/;"	m
+am_test_run_OBJECTS	./Makefile	/^am_test_run_OBJECTS = test.$(OBJEXT)$/;"	m
+append	./darts.h	/^  void append() {$/;"	f	class:Darts_0_32::Details::AutoPool
+append	./darts.h	/^  void append() {$/;"	f	class:Darts_0_32::Details::BitVector
+append	./darts.h	/^  void append(const T &value) {$/;"	f	class:Darts_0_32::Details::AutoPool
+append_byte	./darts-clone.h	/^	void append_byte(uchar_type byte)$/;"	f	class:Darts::DoubleArrayBuilder
+append_node	./darts.h	/^inline id_type DawgBuilder::append_node() {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+append_suffix	./darts-clone.h	/^	void append_suffix(const key_type &key)$/;"	f	class:Darts::DoubleArrayBuilder
+append_unit	./darts.h	/^inline id_type DawgBuilder::append_unit() {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+append_value	./darts-clone.h	/^	void append_value(value_type value)$/;"	f	class:Darts::DoubleArrayBuilder
+are_equal	./darts.h	/^inline bool DawgBuilder::are_equal(id_type node_id, id_type unit_id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+arrange_from_dawg	./darts.h	/^inline id_type DoubleArrayBuilder::arrange_from_dawg(const DawgBuilder &dawg,$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+arrange_from_keyset	./darts.h	/^id_type DoubleArrayBuilder::arrange_from_keyset(const Keyset<T> &keyset,$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+arrange_suffixes	./darts-clone.h	/^	void arrange_suffixes()$/;"	f	class:Darts::DoubleArrayBuilder
+array	./darts-clone.h	/^	const void *array() const { return units_; }$/;"	f	class:Darts::DoubleArrayBase
+array	./darts.h	/^  const void *array() const {$/;"	f	class:Darts_0_32::DoubleArrayImpl
+array_	./darts.h	/^  T *array_;$/;"	m	class:Darts_0_32::Details::AutoArray
+array_	./darts.h	/^  const unit_type *array_;$/;"	m	class:Darts_0_32::DoubleArrayImpl
+base_type	./darts-clone.h	/^	typedef unsigned int base_type;$/;"	t	class:Darts::DoubleArrayCommonTypes
+begin	./Index_da.h	/^	uint32_t begin;$/;"	m	struct:WHITE_BLACK_DA::BEGIN_END
+begin	./darts-clone.h	/^	iterator begin() { return begin_; }$/;"	f	class:Darts::DoubleArrayKeyRange
+begin_	./darts-clone.h	/^	iterator begin_;$/;"	m	class:Darts::DoubleArrayKeyRange
+begin_end_len	./Index_da.h	/^	uint32_t begin_end_len;$/;"	m	class:WHITE_BLACK_DA::WhiteBlackList_
+bin_PROGRAMS	./Makefile	/^bin_PROGRAMS = test_run$(EXEEXT)$/;"	m
+bindir	./Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+buf_	./darts.h	/^  AutoArray<char> buf_;$/;"	m	class:Darts_0_32::Details::AutoPool
+buf_	./darts.h	/^  unit_type *buf_;$/;"	m	class:Darts_0_32::DoubleArrayImpl
+build	./Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build	./darts-clone.h	/^	int build(size_type num_of_keys, const char_type * const *keys,$/;"	f	class:Darts::DoubleArrayBase
+build	./darts-clone.h	/^	static void build(std::vector<key_type> &keys,$/;"	f	class:Darts::DoubleArrayBuilder
+build	./darts-clone.h	/^	void build()$/;"	f	class:Darts::DoubleArrayBuilder
+build	./darts.h	/^inline void BitVector::build() {$/;"	f	class:Darts_0_32::Details::BitVector
+build	./darts.h	/^int DoubleArrayImpl<A, B, T, C>::build(std::size_t num_keys,$/;"	f	class:Darts_0_32::DoubleArrayImpl
+build	./darts.h	/^void DoubleArrayBuilder::build(const Keyset<T> &keyset) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+build_alias	./Makefile	/^build_alias = $/;"	m
+build_cpu	./Makefile	/^build_cpu = x86_64$/;"	m
+build_dawg	./darts.h	/^void DoubleArrayBuilder::build_dawg(const Keyset<T> &keyset,$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+build_double_array	./darts-clone.h	/^	void build_double_array(size_type num_of_keys,$/;"	f	class:Darts::DoubleArrayBase
+build_from_dawg	./darts.h	/^inline void DoubleArrayBuilder::build_from_dawg(const DawgBuilder &dawg) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+build_from_dawg	./darts.h	/^inline void DoubleArrayBuilder::build_from_dawg(const DawgBuilder &dawg,$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+build_from_keyset	./darts.h	/^void DoubleArrayBuilder::build_from_keyset(const Keyset<T> &keyset) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+build_from_keyset	./darts.h	/^void DoubleArrayBuilder::build_from_keyset(const Keyset<T> &keyset,$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+build_os	./Makefile	/^build_os = linux-gnu$/;"	m
+build_trie	./darts-clone.h	/^	void build_trie()$/;"	f	class:Darts::DoubleArrayBuilder
+build_trie_subroutine	./darts-clone.h	/^	void build_trie_subroutine()$/;"	f	class:Darts::DoubleArrayBuilder
+build_triplet	./Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_vendor	./Makefile	/^build_vendor = unknown$/;"	m
+builddir	./Makefile	/^builddir = .$/;"	m
+capacity_	./darts.h	/^  std::size_t capacity_;$/;"	m	class:Darts_0_32::Details::AutoPool
+change2qj	./Index_da.cpp	/^int WhiteBlackList_::change2qj(string query, char* &buffer)$/;"	f	class:WHITE_BLACK_DA::WhiteBlackList_
+char_type	./darts-clone.h	/^	typedef char char_type;$/;"	t	class:Darts::DoubleArrayCommonTypes
+char_type	./darts.h	/^typedef char char_type;$/;"	t	namespace:Darts_0_32::Details
+char_vect_push_	./Index_da.cpp	/^int char_vect_push_(const char* content, vector<char>& char_vect_, uint32_t& end)$/;"	f	namespace:WHITE_BLACK_DA
+child	./darts.h	/^  id_type child() const {$/;"	f	class:Darts_0_32::Details::DawgNode
+child	./darts.h	/^  id_type child() const {$/;"	f	class:Darts_0_32::Details::DawgUnit
+child	./darts.h	/^  id_type child(id_type id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+child_	./darts.h	/^  id_type child_;$/;"	m	class:Darts_0_32::Details::DawgNode
+clear	./darts-clone.h	/^	void clear() { lo_values_ = hi_values_ = 0; }$/;"	f	class:Darts::DoubleArrayExtra
+clear	./darts-clone.h	/^	void clear()$/;"	f	class:Darts::DoubleArrayBase
+clear	./darts.h	/^  void clear() {$/;"	f	class:Darts_0_32::Details::AutoArray
+clear	./darts.h	/^  void clear() {$/;"	f	class:Darts_0_32::Details::AutoPool
+clear	./darts.h	/^  void clear() {$/;"	f	class:Darts_0_32::Details::AutoStack
+clear	./darts.h	/^  void clear() {$/;"	f	class:Darts_0_32::Details::BitVector
+clear	./darts.h	/^  void clear() {$/;"	f	class:Darts_0_32::DoubleArrayImpl
+clear	./darts.h	/^inline void DawgBuilder::clear() {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+clear	./darts.h	/^inline void DoubleArrayBuilder::clear() {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+collectHEADERS	./Makefile	/^collectHEADERS = $(include_HEADERS) $(pkginclude_HEADERS) $(nobase_include_HEADERS) $(nobase_pkginclude_HEADERS)$/;"	m
+collectHEADERS_T	./Makefile	/^collectHEADERS_T = \\$/;"	m
+collectLIBRARIES	./Makefile	/^collectLIBRARIES = $(lib_LIBRARIES) $(pkglib_LIBRARIES)$/;"	m
+collectLTLIBRARIES	./Makefile	/^collectLTLIBRARIES = $(lib_LTLIBRARIES) $(pkglib_LTLIBRARIES)$/;"	m
+collectPROGRAMS	./Makefile	/^collectPROGRAMS = $(bin_PROGRAMS) $(sbin_PROGRAM) $(pkglib_PROGRAMS) $(libexec_PROGRAMS) \\$/;"	m
+collectbin_DIR	./Makefile	/^collectbin_DIR = $(top_builddir)\/_bin$/;"	m
+collectinclude_DIR	./Makefile	/^collectinclude_DIR = $(top_builddir)\/_include$/;"	m
+collectlib_DIR	./Makefile	/^collectlib_DIR = $(top_builddir)\/_lib$/;"	m
+commonPrefixSearch	./darts-clone.h	/^	size_type commonPrefixSearch(const char_type *key,$/;"	f	class:Darts::DoubleArrayBase
+commonPrefixSearch	./darts.h	/^inline std::size_t DoubleArrayImpl<A, B, T, C>::commonPrefixSearch($/;"	f	class:Darts_0_32::DoubleArrayImpl
+common_prefix_search	./darts-clone.h	/^	size_type common_prefix_search(QueryType query, ResultType *results,$/;"	f	class:Darts::DoubleArrayBase
+comp	./Index_da.h	/^inline bool comp(ST v1, ST v2)$/;"	f	namespace:WHITE_BLACK_DA
+compare	./darts-clone.h	/^	int compare(const DoubleArrayKey &rhs) const$/;"	f	class:Darts::DoubleArrayKey
+copy	./darts.h	/^inline void DoubleArrayBuilder::copy(std::size_t *size_ptr,$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+darts	./darts-clone.cpp	/^int darts(const string &index_file_path)$/;"	f
+darts	./darts-clone.cpp	/^int darts(const string &index_file_path, const string &option)$/;"	f
+data	./Index_da.h	/^	std::string data;		\/\/ data$/;"	m	struct:WHITE_BLACK_DA::Pos_Reform
+datadir	./Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	./Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	./Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/_aux\/depcomp$/;"	m
+dlg_index	./dialogue.h	/^	CDlgIndex dlg_index;$/;"	m	class:DIALOGUE
+docdir	./Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	./Makefile	/^dvidir = ${docdir}$/;"	m
+ec	./Index_da.h	/^	EncodingConvertor* ec;$/;"	m	class:WHITE_BLACK_DA::WhiteBlackList_
+empty	./darts.h	/^  bool empty() const {$/;"	f	class:Darts_0_32::Details::AutoArray
+empty	./darts.h	/^  bool empty() const {$/;"	f	class:Darts_0_32::Details::AutoPool
+empty	./darts.h	/^  bool empty() const {$/;"	f	class:Darts_0_32::Details::AutoStack
+empty	./darts.h	/^  bool empty() const {$/;"	f	class:Darts_0_32::Details::BitVector
+end	./Index_da.h	/^	uint32_t end;$/;"	m	struct:WHITE_BLACK_DA::BEGIN_END
+end	./darts-clone.h	/^	iterator end() { return end_; }$/;"	f	class:Darts::DoubleArrayKeyRange
+end_	./darts-clone.h	/^	iterator end_;$/;"	m	class:Darts::DoubleArrayKeyRange
+exactMatchSearch	./darts-clone.h	/^	ResultType exactMatchSearch(const char_type *key,$/;"	f	class:Darts::DoubleArrayBase
+exactMatchSearch	./darts-clone.h	/^	bool exactMatchSearch(const char_type *key, ResultType &result,$/;"	f	class:Darts::DoubleArrayBase
+exactMatchSearch	./darts.h	/^  void exactMatchSearch(const key_type *key, U &result,$/;"	f	class:Darts_0_32::DoubleArrayImpl
+exactMatchSearch	./darts.h	/^inline U DoubleArrayImpl<A, B, T, C>::exactMatchSearch(const key_type *key,$/;"	f	class:Darts_0_32::DoubleArrayImpl
+exact_match_search	./darts-clone.h	/^	bool exact_match_search(QueryType query,$/;"	f	class:Darts::DoubleArrayBase
+exception	./darts-clone.h	/^	typedef DoubleArrayException exception;$/;"	t	class:Darts::DoubleArrayCommonTypes
+exec_prefix	./Makefile	/^exec_prefix = ${prefix}$/;"	m
+expand_table	./darts.h	/^inline void DawgBuilder::expand_table() {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+expand_trie	./darts-clone.h	/^	void expand_trie()$/;"	f	class:Darts::DoubleArrayBuilder
+expand_units	./darts.h	/^inline void DoubleArrayBuilder::expand_units() {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+extend	./Index_da.h	/^	std::string extend;$/;"	m	struct:WHITE_BLACK_DA::ST
+extend_da	./Index_da.h	/^	Darts::DoubleArray extend_da; 					 \/\/	DA ´Êµä$/;"	m	class:WHITE_BLACK_DA::WhiteBlackList_
+extra_type	./darts-clone.h	/^	typedef DoubleArrayExtra extra_type;$/;"	t	class:Darts::DoubleArrayBuilder
+extra_type	./darts.h	/^  typedef DoubleArrayBuilderExtraUnit extra_type;$/;"	t	class:Darts_0_32::Details::DoubleArrayBuilder
+extras	./darts-clone.h	/^	extra_type &extras(base_type index)$/;"	f	class:Darts::DoubleArrayBuilder
+extras	./darts.h	/^  const extra_type &extras(id_type id) const {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+extras	./darts.h	/^  extra_type &extras(id_type id) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+extras_	./darts-clone.h	/^	std::vector<std::vector<extra_type> *> extras_;$/;"	m	class:Darts::DoubleArrayBuilder
+extras_	./darts.h	/^  AutoArray<extra_type> extras_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilder
+extras_head_	./darts.h	/^  id_type extras_head_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilder
+file_	./darts-clone.h	/^	std::FILE *file_;$/;"	m	class:Darts::DoubleArrayFile
+file_type	./darts-clone.h	/^	typedef DoubleArrayFile file_type;$/;"	t	class:Darts::DoubleArrayBase
+find_node	./darts.h	/^inline id_type DawgBuilder::find_node(id_type node_id,$/;"	f	class:Darts_0_32::Details::DawgBuilder
+find_offset_index	./darts-clone.h	/^	base_type find_offset_index(base_type index,$/;"	f	class:Darts::DoubleArrayBuilder
+find_unit	./darts.h	/^inline id_type DawgBuilder::find_unit(id_type id, id_type *hash_id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+find_valid_offset	./darts.h	/^inline id_type DoubleArrayBuilder::find_valid_offset(id_type id) const {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+finish	./darts.h	/^inline void DawgBuilder::finish() {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+fix_all_blocks	./darts-clone.h	/^	void fix_all_blocks()$/;"	f	class:Darts::DoubleArrayBuilder
+fix_all_blocks	./darts.h	/^inline void DoubleArrayBuilder::fix_all_blocks() {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+fix_block	./darts-clone.h	/^	void fix_block(base_type block_id)$/;"	f	class:Darts::DoubleArrayBuilder
+fix_block	./darts.h	/^inline void DoubleArrayBuilder::fix_block(id_type block_id) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+flush	./darts.h	/^inline void DawgBuilder::flush(id_type id) {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+free_node	./darts.h	/^  void free_node(id_type id) {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+get	./darts-clone.h	/^	ValueType get() const$/;"	f	class:Darts::DoubleArrayUnit
+get_value	./darts-clone.h	/^	value_type get_value(const uchar_type *tail) const$/;"	f	class:Darts::DoubleArrayBase
+has_leaf	./darts.h	/^  bool has_leaf() const {$/;"	f	class:Darts_0_32::Details::DoubleArrayUnit
+has_lengths	./darts.h	/^  bool has_lengths() const {$/;"	f	class:Darts_0_32::Details::Keyset
+has_sibling	./darts.h	/^  bool has_sibling() const {$/;"	f	class:Darts_0_32::Details::DawgNode
+has_sibling	./darts.h	/^  bool has_sibling() const {$/;"	f	class:Darts_0_32::Details::DawgUnit
+has_sibling_	./darts.h	/^  bool has_sibling_;$/;"	m	class:Darts_0_32::Details::DawgNode
+has_values	./darts.h	/^  bool has_values() const {$/;"	f	class:Darts_0_32::Details::Keyset
+hash	./darts.h	/^  static id_type hash(id_type key) {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+hash_node	./darts.h	/^inline id_type DawgBuilder::hash_node(id_type id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+hash_unit	./darts.h	/^inline id_type DawgBuilder::hash_unit(id_type id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+hi_values_	./darts-clone.h	/^	base_type hi_values_;$/;"	m	class:Darts::DoubleArrayExtra
+host	./Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host_alias	./Makefile	/^host_alias = $/;"	m
+host_cpu	./Makefile	/^host_cpu = x86_64$/;"	m
+host_os	./Makefile	/^host_os = linux-gnu$/;"	m
+host_triplet	./Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_vendor	./Makefile	/^host_vendor = unknown$/;"	m
+htmldir	./Makefile	/^htmldir = ${docdir}$/;"	m
+id_type	./darts.h	/^  typedef Details::id_type id_type;$/;"	t	class:Darts_0_32::DoubleArrayImpl
+id_type	./darts.h	/^typedef unsigned int id_type;$/;"	t	namespace:Darts_0_32::Details
+includedir	./Makefile	/^includedir = ${prefix}\/include$/;"	m
+index	./darts-clone.h	/^	base_type index() const { return get<1, 31, base_type>(); }$/;"	f	class:Darts::DoubleArrayUnit
+index	./darts-clone.h	/^	base_type index() const { return index_; }$/;"	f	class:Darts::DoubleArrayKey
+index	./darts-clone.h	/^	base_type index() const { return index_; }$/;"	f	class:Darts::DoubleArrayKeyRange
+index	./darts-clone.h	/^	size_type index() const { return index_; }$/;"	f	class:Darts::DoubleArrayLengthQuery
+index	./darts-clone.h	/^	size_type index() const { return index_; }$/;"	f	class:Darts::DoubleArrayQuery
+index_	./darts-clone.h	/^	base_type index_;$/;"	m	class:Darts::DoubleArrayKey
+index_	./darts-clone.h	/^	base_type index_;$/;"	m	class:Darts::DoubleArrayKeyRange
+index_	./darts-clone.h	/^	size_type index_;$/;"	m	class:Darts::DoubleArrayLengthQuery
+index_	./darts-clone.h	/^	size_type index_;$/;"	m	class:Darts::DoubleArrayQuery
+infodir	./Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+init	./darts.h	/^inline void DawgBuilder::init() {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+insert	./darts.h	/^inline void DawgBuilder::insert(const char *key, std::size_t length,$/;"	f	class:Darts_0_32::Details::DawgBuilder
+install_sh	./Makefile	/^install_sh = ${SHELL} \/search\/yonghuahu\/hack\/dlg_service\/_aux\/install-sh$/;"	m
+install_sh_DATA	./Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	./Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	./Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+intersection_id	./darts.h	/^  id_type intersection_id(id_type id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+is_end	./darts-clone.h	/^	bool is_end() const { return (values_ & 2) == 2; }$/;"	f	class:Darts::DoubleArrayUnit
+is_fixed	./darts-clone.h	/^	bool is_fixed() const { return (lo_values_ & 1) == 1; }$/;"	f	class:Darts::DoubleArrayExtra
+is_fixed	./darts.h	/^  bool is_fixed() const {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+is_fixed_	./darts.h	/^  bool is_fixed_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+is_intersection	./darts.h	/^  bool is_intersection(id_type id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+is_intersections_	./darts.h	/^  BitVector is_intersections_;$/;"	m	class:Darts_0_32::Details::DawgBuilder
+is_leaf	./darts-clone.h	/^	bool is_leaf() const { return (values_ & 1) == 1; }$/;"	f	class:Darts::DoubleArrayUnit
+is_leaf	./darts.h	/^  bool is_leaf(id_type id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+is_open	./darts-clone.h	/^	bool is_open() const { return file_ != 0; }$/;"	f	class:Darts::DoubleArrayFile
+is_state	./darts.h	/^  bool is_state() const {$/;"	f	class:Darts_0_32::Details::DawgNode
+is_state	./darts.h	/^  bool is_state() const {$/;"	f	class:Darts_0_32::Details::DawgUnit
+is_state_	./darts.h	/^  bool is_state_;$/;"	m	class:Darts_0_32::Details::DawgNode
+is_suffix_of	./darts-clone.h	/^	bool is_suffix_of(const DoubleArrayKey &rhs) const$/;"	f	class:Darts::DoubleArrayKey
+is_used	./darts-clone.h	/^	bool is_used() const { return (hi_values_ & 1) == 1; }$/;"	f	class:Darts::DoubleArrayExtra
+is_used	./darts.h	/^  bool is_used() const {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+is_used_	./darts.h	/^  bool is_used_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+is_valid_offset	./darts.h	/^inline bool DoubleArrayBuilder::is_valid_offset(id_type id,$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+iswappc	./Index_da.h	/^	std::string iswappc;			\/\/ is wap or pc$/;"	m	struct:WHITE_BLACK_DA::Pos_Reform
+item_query	./Index_da.h	/^	std::string item_query; \/\/ item query$/;"	m	struct:WHITE_BLACK_DA::Pos_Reform
+iterator	./darts-clone.h	/^	typedef typename std::vector<key_type>::iterator iterator;$/;"	t	class:Darts::DoubleArrayKeyRange
+key_	./darts-clone.h	/^	const char_type *key_;$/;"	m	class:Darts::DoubleArrayKey
+key_	./darts-clone.h	/^	const char_type *key_;$/;"	m	class:Darts::DoubleArrayLengthQuery
+key_	./darts-clone.h	/^	const char_type *key_;$/;"	m	class:Darts::DoubleArrayQuery
+key_type	./darts-clone.h	/^	typedef DoubleArrayKey key_type;$/;"	t	class:Darts::DoubleArrayKey
+key_type	./darts-clone.h	/^	typedef DoubleArrayKey<value_type> key_type;$/;"	t	class:Darts::DoubleArrayBuilder
+key_type	./darts-clone.h	/^	typedef DoubleArrayKey<value_type> key_type;$/;"	t	class:Darts::DoubleArrayKeyRange
+key_type	./darts-clone.h	/^	typedef char_type key_type;$/;"	t	class:Darts::DoubleArrayCommonTypes
+key_type	./darts.h	/^  typedef Details::char_type key_type;$/;"	t	class:Darts_0_32::DoubleArrayImpl
+keys	./darts.h	/^  const char_type *keys(std::size_t id) const {$/;"	f	class:Darts_0_32::Details::Keyset
+keys	./darts.h	/^  uchar_type keys(std::size_t key_id, std::size_t char_id) const {$/;"	f	class:Darts_0_32::Details::Keyset
+keys_	./darts-clone.h	/^	std::vector<key_type> &keys_;$/;"	m	class:Darts::DoubleArrayBuilder
+keys_	./darts.h	/^  const char_type * const * keys_;$/;"	m	class:Darts_0_32::Details::Keyset
+label	./Index_da.h	/^	std::string label;$/;"	m	struct:WHITE_BLACK_DA::Pos_Reform
+label	./darts-clone.h	/^	uchar_type label() const { return get<2, 8, uchar_type>(); }$/;"	f	class:Darts::DoubleArrayUnit
+label	./darts.h	/^  id_type label() const {$/;"	f	class:Darts_0_32::Details::DoubleArrayUnit
+label	./darts.h	/^  uchar_type label() const {$/;"	f	class:Darts_0_32::Details::DawgNode
+label	./darts.h	/^  uchar_type label(id_type id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+label_	./darts.h	/^  uchar_type label_;$/;"	m	class:Darts_0_32::Details::DawgNode
+labels_	./darts.h	/^  AutoPool<uchar_type> labels_;$/;"	m	class:Darts_0_32::Details::DawgBuilder
+labels_	./darts.h	/^  AutoPool<uchar_type> labels_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilder
+length	./darts-clone.h	/^		size_type length;$/;"	m	struct:Darts::DoubleArrayBase::result_pair_type
+length	./darts-clone.h	/^	base_type length() const { return length_; }$/;"	f	class:Darts::DoubleArrayKey
+length	./darts.h	/^    std::size_t length;$/;"	m	struct:Darts_0_32::DoubleArrayImpl::result_pair_type
+length_	./darts-clone.h	/^	base_type length_;$/;"	m	class:Darts::DoubleArrayKey
+length_	./darts-clone.h	/^	size_type length_;$/;"	m	class:Darts::DoubleArrayLengthQuery
+length_query_type	./darts-clone.h	/^	typedef DoubleArrayLengthQuery length_query_type;$/;"	t	class:Darts::DoubleArrayBase
+lengths	./darts.h	/^  std::size_t lengths(std::size_t id) const {$/;"	f	class:Darts_0_32::Details::Keyset
+lengths_	./darts.h	/^  const std::size_t *lengths_;$/;"	m	class:Darts_0_32::Details::Keyset
+lib_LIBRARIES	./Makefile	/^lib_LIBRARIES = $/;"	m
+lib_LTLIBRARIES	./Makefile	/^lib_LTLIBRARIES = libdialogue.la$/;"	m
+libdialogue_la_CPPFLAGS	./Makefile	/^libdialogue_la_CPPFLAGS = $(AM_CPPFLAGS) -DSS_DOCID_BITS=256$/;"	m
+libdialogue_la_DEPENDENCIES	./Makefile	/^libdialogue_la_DEPENDENCIES =$/;"	m
+libdialogue_la_LIBADD	./Makefile	/^libdialogue_la_LIBADD = -lpthread -lssplatform -lencoding -lgflags -lglog -lgtest -L..\/index\/inv_index\/ -ldlg_index$/;"	m
+libdialogue_la_OBJECTS	./Makefile	/^libdialogue_la_OBJECTS = $(am_libdialogue_la_OBJECTS)$/;"	m
+libdialogue_la_SOURCES	./Makefile	/^libdialogue_la_SOURCES = dialogue.cpp Index_da.cpp darts-clone.cpp darts-clone.h darts.h$/;"	m
+libdir	./Makefile	/^libdir = ${exec_prefix}\/lib64$/;"	m
+libexecdir	./Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+link	./darts-clone.h	/^	base_type link() const$/;"	f	class:Darts::DoubleArrayUnit
+lo_values_	./darts-clone.h	/^	base_type lo_values_;$/;"	m	class:Darts::DoubleArrayExtra
+localedir	./Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	./Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+lt_ECHO	./Makefile	/^lt_ECHO = echo$/;"	m
+m_char_buf	./Index_da.h	/^	char * m_char_buf;									 \/\/	´æ·Åbuf Êý¾Ý$/;"	m	class:WHITE_BLACK_DA::WhiteBlackList_
+m_len_char	./Index_da.h	/^    uint32_t m_len_char;$/;"	m	class:WHITE_BLACK_DA::WhiteBlackList_
+m_len_reform	./Index_da.h	/^    uint32_t m_len_reform;$/;"	m	class:WHITE_BLACK_DA::WhiteBlackList_
+m_len_struct	./Index_da.h	/^    uint32_t m_len_struct;$/;"	m	class:WHITE_BLACK_DA::WhiteBlackList_
+m_len_type	./Index_da.h	/^    uint32_t m_len_type;$/;"	m	class:WHITE_BLACK_DA::WhiteBlackList_
+m_len_vr	./Index_da.h	/^    uint32_t m_len_vr;$/;"	m	class:WHITE_BLACK_DA::WhiteBlackList_
+main	./darts-clone.cpp	/^int main(int argc, char **argv)$/;"	f
+main	./test.cpp	/^int main(int arg, char** argv)$/;"	f
+mandir	./Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mkdir_p	./Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	./Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+msg_	./darts-clone.h	/^	const char *msg_;$/;"	m	class:Darts::DoubleArrayException
+msg_	./darts.h	/^  const char *msg_;$/;"	m	class:Darts_0_32::Details::Exception
+next	./darts-clone.h	/^	base_type next() const { return lo_values_ >> 1; }$/;"	f	class:Darts::DoubleArrayExtra
+next	./darts.h	/^  id_type next() const {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+next_	./darts.h	/^  id_type next_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+node_stack_	./darts.h	/^  AutoStack<id_type> node_stack_;$/;"	m	class:Darts_0_32::Details::DawgBuilder
+nodes_	./darts.h	/^  AutoPool<DawgNode> nodes_;$/;"	m	class:Darts_0_32::Details::DawgBuilder
+nonzero_size	./darts-clone.h	/^	size_type nonzero_size() const { return size(); }$/;"	f	class:Darts::DoubleArrayBase
+nonzero_size	./darts.h	/^  std::size_t nonzero_size() const {$/;"	f	class:Darts_0_32::DoubleArrayImpl
+num_blocks	./darts.h	/^  std::size_t num_blocks() const {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+num_intersections	./darts.h	/^  std::size_t num_intersections() const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+num_keys	./darts.h	/^  std::size_t num_keys() const {$/;"	f	class:Darts_0_32::Details::Keyset
+num_keys_	./darts.h	/^  std::size_t num_keys_;$/;"	m	class:Darts_0_32::Details::Keyset
+num_of_blocks	./darts-clone.h	/^	base_type num_of_blocks() const$/;"	f	class:Darts::DoubleArrayBuilder
+num_of_units	./darts-clone.h	/^	base_type num_of_units() const$/;"	f	class:Darts::DoubleArrayBuilder
+num_of_unused_indices_	./darts-clone.h	/^	base_type num_of_unused_indices_;$/;"	m	class:Darts::DoubleArrayBuilder
+num_ones	./darts.h	/^  std::size_t num_ones() const {$/;"	f	class:Darts_0_32::Details::BitVector
+num_ones_	./darts.h	/^  std::size_t num_ones_;$/;"	m	class:Darts_0_32::Details::BitVector
+num_states_	./darts.h	/^  std::size_t num_states_;$/;"	m	class:Darts_0_32::Details::DawgBuilder
+offset	./darts-clone.h	/^	base_type offset() const$/;"	f	class:Darts::DoubleArrayUnit
+offset	./darts.h	/^  id_type offset() const {$/;"	f	class:Darts_0_32::Details::DoubleArrayUnit
+oldincludedir	./Makefile	/^oldincludedir = \/usr\/include$/;"	m
+open	./darts-clone.h	/^	int open(const char *file_name, const char *mode = "rb",$/;"	f	class:Darts::DoubleArrayBase
+open	./darts.h	/^int DoubleArrayImpl<A, B, T, C>::open(const char *file_name,$/;"	f	class:Darts_0_32::DoubleArrayImpl
+operator ()	./darts-clone.h	/^		bool operator()(const key_type &lhs, const key_type &rhs) const$/;"	f	class:Darts::DoubleArrayKey::ReversedComparisonFunc
+operator ()	./darts-clone.h	/^	Iterator operator()(Iterator begin, Iterator) const { return begin; }$/;"	f	class:Darts::DoubleArraySwitcher
+operator ()	./darts-clone.h	/^	Iterator operator()(Iterator, Iterator end) const { return end; }$/;"	f	class:Darts::DoubleArraySwitcher
+operator ()	./darts-clone.h	/^	int operator()(size_type, size_type) const { return 1; }$/;"	f	class:Darts::DefaultProgressFunc
+operator *	./darts-clone.h	/^	uchar_type operator *() const$/;"	f	class:Darts::DoubleArrayLengthQuery
+operator *	./darts-clone.h	/^	uchar_type operator *() const$/;"	f	class:Darts::DoubleArrayQuery
+operator ++	./darts-clone.h	/^	DoubleArrayKey &operator++() { ++key_, --length_; return *this; }$/;"	f	class:Darts::DoubleArrayKey
+operator ++	./darts-clone.h	/^	DoubleArrayLengthQuery &operator++() { ++index_; return *this; }$/;"	f	class:Darts::DoubleArrayLengthQuery
+operator ++	./darts-clone.h	/^	DoubleArrayQuery &operator++() { ++index_; return *this; }$/;"	f	class:Darts::DoubleArrayQuery
+operator --	./darts-clone.h	/^	DoubleArrayKey &operator--() { --key_, ++length_; return *this; }$/;"	f	class:Darts::DoubleArrayKey
+operator <	./Index_da.h	/^	bool operator < (const WhiteBlackList_TMP &other) const$/;"	f	struct:WHITE_BLACK_DA::WhiteBlackList_TMP
+operator =	./darts.h	/^  DawgUnit &operator=(id_type unit) {$/;"	f	class:Darts_0_32::Details::DawgUnit
+operator []	./darts-clone.h	/^	uchar_type operator[](base_type index) const$/;"	f	class:Darts::DoubleArrayKey
+operator []	./darts.h	/^  T &operator[](std::size_t id) {$/;"	f	class:Darts_0_32::Details::AutoArray
+operator []	./darts.h	/^  T &operator[](std::size_t id) {$/;"	f	class:Darts_0_32::Details::AutoPool
+operator []	./darts.h	/^  bool operator[](std::size_t id) const {$/;"	f	class:Darts_0_32::Details::BitVector
+operator []	./darts.h	/^  const T &operator[](std::size_t id) const {$/;"	f	class:Darts_0_32::Details::AutoArray
+operator []	./darts.h	/^  const T &operator[](std::size_t id) const {$/;"	f	class:Darts_0_32::Details::AutoPool
+path	./test.cpp	/^const char* path = "..\/..\/data";$/;"	v
+pdfdir	./Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgdatadir	./Makefile	/^pkgdatadir = $(datadir)\/hint$/;"	m
+pkgincludedir	./Makefile	/^pkgincludedir = $(includedir)\/hint$/;"	m
+pkglibdir	./Makefile	/^pkglibdir = $(libdir)\/hint$/;"	m
+pkglibexecdir	./Makefile	/^pkglibexecdir = $(libexecdir)\/hint$/;"	m
+pool_	./darts.h	/^  AutoPool<T> pool_;$/;"	m	class:Darts_0_32::Details::AutoStack
+pop	./darts.h	/^  void pop() {$/;"	f	class:Darts_0_32::Details::AutoStack
+pop_back	./darts.h	/^  void pop_back() {$/;"	f	class:Darts_0_32::Details::AutoPool
+pop_count	./darts.h	/^  static id_type pop_count(id_type unit) {$/;"	f	class:Darts_0_32::Details::BitVector
+pos_type	./Index_da.h	/^	std::string pos_type;	\/\/ whole,part,pre,sub$/;"	m	struct:WHITE_BLACK_DA::Pos_Reform
+prefix	./Makefile	/^prefix = \/opt\/sogou$/;"	m
+prefixSearch	./darts.h	/^inline std::size_t DoubleArrayImpl<A, B, T, C>::prefixSearch(const key_type *key, U *results,$/;"	f	class:Darts_0_32::DoubleArrayImpl
+prev	./darts-clone.h	/^	base_type prev() const { return hi_values_ >> 1; }$/;"	f	class:Darts::DoubleArrayExtra
+prev	./darts.h	/^  id_type prev() const {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+prev_	./darts.h	/^  id_type prev_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+program_transform_name	./Makefile	/^program_transform_name = s,x,x,$/;"	m
+progress_func_	./darts-clone.h	/^	ProgressFunc progress_func_;$/;"	m	class:Darts::DoubleArrayBuilder
+progress_func_	./darts.h	/^  progress_func_type progress_func_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilder
+progress_func_type	./darts.h	/^typedef int (*progress_func_type)(std::size_t, std::size_t);$/;"	t	namespace:Darts_0_32::Details
+psdir	./Makefile	/^psdir = ${docdir}$/;"	m
+push	./darts.h	/^  void push(const T &value) {$/;"	f	class:Darts_0_32::Details::AutoStack
+push_back	./darts.h	/^  void push_back(const T &value) {$/;"	f	class:Darts_0_32::Details::AutoPool
+query	./Index_da.h	/^	std::string query;$/;"	m	struct:WHITE_BLACK_DA::ST
+query	./Index_da.h	/^	std::string query;$/;"	m	struct:WHITE_BLACK_DA::WhiteBlackList_TMP
+query_len	./Index_da.h	/^	int query_len; \/\/ $/;"	m	struct:WHITE_BLACK_DA::Pos_Reform
+query_type	./darts-clone.h	/^	typedef DoubleArrayQuery query_type;$/;"	t	class:Darts::DoubleArrayBase
+range_type	./darts-clone.h	/^	typedef DoubleArrayKeyRange<value_type> range_type;$/;"	t	class:Darts::DoubleArrayBuilder
+rank	./darts.h	/^  id_type rank(std::size_t id) const {$/;"	f	class:Darts_0_32::Details::BitVector
+ranks_	./darts.h	/^  AutoArray<id_type> ranks_;$/;"	m	class:Darts_0_32::Details::BitVector
+read	./darts-clone.h	/^	bool read(T *buf, size_type nmemb)$/;"	f	class:Darts::DoubleArrayFile
+recycle_bin_	./darts.h	/^  AutoStack<id_type> recycle_bin_;$/;"	m	class:Darts_0_32::Details::DawgBuilder
+reform	./Index_da.h	/^	std::string reform; 	\/\/ reform content$/;"	m	struct:WHITE_BLACK_DA::Pos_Reform
+reserve	./darts.h	/^  void reserve(std::size_t size) {$/;"	f	class:Darts_0_32::Details::AutoPool
+reserve_id	./darts.h	/^inline void DoubleArrayBuilder::reserve_id(id_type id) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+reserve_index	./darts-clone.h	/^	void reserve_index(base_type index)$/;"	f	class:Darts::DoubleArrayBuilder
+reset	./darts.h	/^  void reset(T *array = NULL) {$/;"	f	class:Darts_0_32::Details::AutoArray
+resize	./darts.h	/^  void resize(std::size_t size) {$/;"	f	class:Darts_0_32::Details::AutoPool
+resize	./darts.h	/^  void resize(std::size_t size, const T &value) {$/;"	f	class:Darts_0_32::Details::AutoPool
+resize_buf	./darts.h	/^void AutoPool<T>::resize_buf(std::size_t size) {$/;"	f	class:Darts_0_32::Details::AutoPool
+result_pair_type	./darts-clone.h	/^	struct result_pair_type$/;"	s	class:Darts::DoubleArrayBase
+result_pair_type	./darts.h	/^  struct result_pair_type {$/;"	s	class:Darts_0_32::DoubleArrayImpl
+result_type	./darts-clone.h	/^	typedef value_type result_type;$/;"	t	class:Darts::DoubleArrayBase
+result_type	./darts.h	/^  typedef value_type result_type;$/;"	t	class:Darts_0_32::DoubleArrayImpl
+rkey	./darts-clone.h	/^	uchar_type rkey(base_type index) const$/;"	f	class:Darts::DoubleArrayKey
+root	./darts.h	/^  id_type root() const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+save	./darts-clone.h	/^	int save(const char *file_name, const char *mode = "wb",$/;"	f	class:Darts::DoubleArrayBase
+save	./darts.h	/^int DoubleArrayImpl<A, B, T, C>::save(const char *file_name,$/;"	f	class:Darts_0_32::DoubleArrayImpl
+sbindir	./Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+seek	./darts-clone.h	/^	bool seek(size_type offset, int whence = SEEK_SET)$/;"	f	class:Darts::DoubleArrayFile
+set	./darts-clone.h	/^	void set(ValueType value)$/;"	f	class:Darts::DoubleArrayUnit
+set	./darts.h	/^  void set(std::size_t id, bool bit) {$/;"	f	class:Darts_0_32::Details::BitVector
+set_array	./darts-clone.h	/^	void set_array(const void *ptr, size_type size = 0)$/;"	f	class:Darts::DoubleArrayBase
+set_array	./darts.h	/^  void set_array(const void *ptr, std::size_t size = 0) {$/;"	f	class:Darts_0_32::DoubleArrayImpl
+set_child	./darts.h	/^  void set_child(id_type child) {$/;"	f	class:Darts_0_32::Details::DawgNode
+set_has_leaf	./darts.h	/^  void set_has_leaf(bool has_leaf) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderUnit
+set_has_sibling	./darts.h	/^  void set_has_sibling(bool has_sibling) {$/;"	f	class:Darts_0_32::Details::DawgNode
+set_index	./darts-clone.h	/^	void set_index(base_type index) { index_ = index; }$/;"	f	class:Darts::DoubleArrayKey
+set_index	./darts-clone.h	/^	void set_index(base_type index) { index_ = index; }$/;"	f	class:Darts::DoubleArrayKeyRange
+set_index	./darts-clone.h	/^	void set_index(base_type index) { set<1, 31>(index); }$/;"	f	class:Darts::DoubleArrayUnit
+set_is_end	./darts-clone.h	/^	void set_is_end() { values_ |= 2; }$/;"	f	class:Darts::DoubleArrayUnit
+set_is_fixed	./darts-clone.h	/^	void set_is_fixed() { lo_values_ |= 1; }$/;"	f	class:Darts::DoubleArrayExtra
+set_is_fixed	./darts.h	/^  void set_is_fixed(bool is_fixed) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+set_is_leaf	./darts-clone.h	/^	void set_is_leaf() { values_ |= 1; }$/;"	f	class:Darts::DoubleArrayUnit
+set_is_state	./darts.h	/^  void set_is_state(bool is_state) {$/;"	f	class:Darts_0_32::Details::DawgNode
+set_is_used	./darts-clone.h	/^	void set_is_used() { hi_values_ |= 1; }$/;"	f	class:Darts::DoubleArrayExtra
+set_is_used	./darts.h	/^  void set_is_used(bool is_used) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+set_label	./darts-clone.h	/^	void set_label(uchar_type label) { set<2, 8>(label); }$/;"	f	class:Darts::DoubleArrayUnit
+set_label	./darts.h	/^  void set_label(uchar_type label) {$/;"	f	class:Darts_0_32::Details::DawgNode
+set_label	./darts.h	/^  void set_label(uchar_type label) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderUnit
+set_link	./darts-clone.h	/^	void set_link(base_type link)$/;"	f	class:Darts::DoubleArrayUnit
+set_next	./darts-clone.h	/^	void set_next(base_type next)$/;"	f	class:Darts::DoubleArrayExtra
+set_next	./darts.h	/^  void set_next(id_type next) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+set_offset	./darts-clone.h	/^	void set_offset(base_type offset)$/;"	f	class:Darts::DoubleArrayUnit
+set_offset	./darts.h	/^  void set_offset(id_type offset) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderUnit
+set_prev	./darts-clone.h	/^	void set_prev(base_type prev)$/;"	f	class:Darts::DoubleArrayExtra
+set_prev	./darts.h	/^  void set_prev(id_type prev) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderExtraUnit
+set_result	./darts-clone.h	/^	static void set_result(ResultType &result,$/;"	f	class:Darts::DoubleArrayBase
+set_result	./darts.h	/^  void set_result(result_pair_type *result,$/;"	f	class:Darts_0_32::DoubleArrayImpl
+set_result	./darts.h	/^  void set_result(value_type *result, value_type value, std::size_t) const {$/;"	f	class:Darts_0_32::DoubleArrayImpl
+set_result_length	./darts-clone.h	/^	static void set_result_length(result_pair_type &result, size_type length)$/;"	f	class:Darts::DoubleArrayBase
+set_result_length	./darts-clone.h	/^	static void set_result_length(value_type &, size_type) {}$/;"	f	class:Darts::DoubleArrayBase
+set_result_value	./darts-clone.h	/^	static void set_result_value(result_pair_type &result, value_type value)$/;"	f	class:Darts::DoubleArrayBase
+set_result_value	./darts-clone.h	/^	static void set_result_value(result_pair_type &result,$/;"	f	class:Darts::DoubleArrayBase
+set_result_value	./darts-clone.h	/^	static void set_result_value(value_type &result, const uchar_type *tail)$/;"	f	class:Darts::DoubleArrayBase
+set_result_value	./darts-clone.h	/^	static void set_result_value(value_type &result, value_type value)$/;"	f	class:Darts::DoubleArrayBase
+set_sibling	./darts.h	/^  void set_sibling(id_type sibling) {$/;"	f	class:Darts_0_32::Details::DawgNode
+set_value	./darts-clone.h	/^	void set_value(value_type value) { value_ = value; }$/;"	f	class:Darts::DoubleArrayKey
+set_value	./darts.h	/^  void set_value(value_type value) {$/;"	f	class:Darts_0_32::Details::DawgNode
+set_value	./darts.h	/^  void set_value(value_type value) {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilderUnit
+set_value_id	./darts-clone.h	/^	void set_value_id(base_type value_id) { set<1, VALUE_ID_BITS>(value_id); }$/;"	f	class:Darts::DoubleArrayUnit
+set_vector	./darts-clone.h	/^	void set_vector(std::vector<unit_type> &new_units)$/;"	f	class:Darts::DoubleArrayBase
+sharedstatedir	./Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sibling	./darts.h	/^  id_type sibling() const {$/;"	f	class:Darts_0_32::Details::DawgNode
+sibling	./darts.h	/^  id_type sibling(id_type id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+sibling_	./darts.h	/^  id_type sibling_;$/;"	m	class:Darts_0_32::Details::DawgNode
+size	./darts-clone.h	/^	bool size(size_type &file_size)$/;"	f	class:Darts::DoubleArrayFile
+size	./darts-clone.h	/^	size_type size() const { return size_; }$/;"	f	class:Darts::DoubleArrayBase
+size	./darts-clone.h	/^	size_type size() const$/;"	f	class:Darts::DoubleArrayKeyRange
+size	./darts.h	/^  std::size_t size() const {$/;"	f	class:Darts_0_32::Details::AutoPool
+size	./darts.h	/^  std::size_t size() const {$/;"	f	class:Darts_0_32::Details::AutoStack
+size	./darts.h	/^  std::size_t size() const {$/;"	f	class:Darts_0_32::Details::BitVector
+size	./darts.h	/^  std::size_t size() const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+size	./darts.h	/^  std::size_t size() const {$/;"	f	class:Darts_0_32::DoubleArrayImpl
+size_	./darts-clone.h	/^	size_type size_;$/;"	m	class:Darts::DoubleArrayBase
+size_	./darts.h	/^  std::size_t size_;$/;"	m	class:Darts_0_32::Details::AutoPool
+size_	./darts.h	/^  std::size_t size_;$/;"	m	class:Darts_0_32::Details::BitVector
+size_	./darts.h	/^  std::size_t size_;$/;"	m	class:Darts_0_32::DoubleArrayImpl
+size_type	./darts-clone.h	/^	typedef std::size_t size_type;$/;"	t	class:Darts::DoubleArrayCommonTypes
+split_sam	./Index_da.cpp	/^int split_sam(vector<string>& vec, string line, string blank)$/;"	f	namespace:WHITE_BLACK_DA
+srcdir	./Makefile	/^srcdir = .$/;"	m
+subdir	./Makefile	/^subdir = src\/dialogue$/;"	m
+subdirs	./Makefile	/^subdirs =  ssplatform-encoding web_base utils dicmap word_segmentor web_segmentor$/;"	m
+swap	./darts.h	/^  void swap(AutoArray *array) {$/;"	f	class:Darts_0_32::Details::AutoArray
+sysconfdir	./Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+table_	./darts.h	/^  AutoArray<id_type> table_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilder
+table_	./darts.h	/^  AutoPool<id_type> table_;$/;"	m	class:Darts_0_32::Details::DawgBuilder
+tail_	./darts-clone.h	/^	const uchar_type *tail_;$/;"	m	class:Darts::DoubleArrayBase
+tail_index_	./darts-clone.h	/^	base_type tail_index_;$/;"	m	class:Darts::DoubleArrayBuilder
+target_alias	./Makefile	/^target_alias = $/;"	m
+test_run_DEPENDENCIES	./Makefile	/^test_run_DEPENDENCIES =$/;"	m
+test_run_LDADD	./Makefile	/^test_run_LDADD = -lssplatform -lencoding -ldialogue$/;"	m
+test_run_LDFLAGS	./Makefile	/^test_run_LDFLAGS = -DHAVE_CXX_STDHEADERS -DLINUX -DACE_HAS_EVENT_POLL -D_FILE_OFFSET_BITS=64 -fPIC -ggdb$/;"	m
+test_run_LINK	./Makefile	/^test_run_LINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) \\$/;"	m
+test_run_OBJECTS	./Makefile	/^test_run_OBJECTS = $(am_test_run_OBJECTS)$/;"	m
+test_run_SOURCES	./Makefile	/^test_run_SOURCES = test.cpp$/;"	m
+top	./darts.h	/^  T &top() {$/;"	f	class:Darts_0_32::Details::AutoStack
+top	./darts.h	/^  const T &top() const {$/;"	f	class:Darts_0_32::Details::AutoStack
+top_build_prefix	./Makefile	/^top_build_prefix = ..\/..\/$/;"	m
+top_builddir	./Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	./Makefile	/^top_srcdir = ..\/..$/;"	m
+total_size	./darts-clone.h	/^    size_type total_size() const { return size_ * sizeof(unit_type); }$/;"	f	class:Darts::DoubleArrayBase
+total_size	./darts.h	/^  std::size_t total_size() const {$/;"	f	class:Darts_0_32::DoubleArrayImpl
+transform	./Makefile	/^transform = $(program_transform_name)$/;"	m
+traverse	./darts-clone.h	/^	value_type traverse(QueryType &query, unit_type &agent) const$/;"	f	class:Darts::DoubleArrayBase
+traverse	./darts-clone.h	/^	value_type traverse(const char_type *key, size_type &agent,$/;"	f	class:Darts::DoubleArrayBase
+traverse	./darts.h	/^DoubleArrayImpl<A, B, T, C>::traverse(const key_type *key,$/;"	f	class:Darts_0_32::DoubleArrayImpl
+uchar_type	./darts-clone.h	/^	typedef unsigned char uchar_type;$/;"	t	class:Darts::DoubleArrayCommonTypes
+uchar_type	./darts.h	/^  typedef Details::uchar_type uchar_type;$/;"	t	class:Darts_0_32::DoubleArrayImpl
+uchar_type	./darts.h	/^typedef unsigned char uchar_type;$/;"	t	namespace:Darts_0_32::Details
+unfixed_index_	./darts-clone.h	/^	base_type unfixed_index_;$/;"	m	class:Darts::DoubleArrayBuilder
+unit	./darts.h	/^  id_type unit() const {$/;"	f	class:Darts_0_32::Details::DawgNode
+unit	./darts.h	/^  id_type unit() const {$/;"	f	class:Darts_0_32::Details::DawgUnit
+unit_	./darts.h	/^  id_type unit_;$/;"	m	class:Darts_0_32::Details::DawgUnit
+unit_	./darts.h	/^  id_type unit_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilderUnit
+unit_	./darts.h	/^  id_type unit_;$/;"	m	class:Darts_0_32::Details::DoubleArrayUnit
+unit_size	./darts-clone.h	/^	size_type unit_size() const { return sizeof(unit_type); }$/;"	f	class:Darts::DoubleArrayBase
+unit_size	./darts.h	/^  std::size_t unit_size() const {$/;"	f	class:Darts_0_32::DoubleArrayImpl
+unit_type	./darts-clone.h	/^	typedef DoubleArrayUnit<VALUE_ID_BITS> unit_type;$/;"	t	class:Darts::DoubleArrayBase
+unit_type	./darts-clone.h	/^	typedef DoubleArrayUnit<VALUE_ID_BITS> unit_type;$/;"	t	class:Darts::DoubleArrayBuilder
+unit_type	./darts.h	/^  typedef Details::DoubleArrayUnit unit_type;$/;"	t	class:Darts_0_32::DoubleArrayImpl
+unit_type	./darts.h	/^  typedef DoubleArrayBuilderUnit unit_type;$/;"	t	class:Darts_0_32::Details::DoubleArrayBuilder
+units	./darts-clone.h	/^	unit_type &units(base_type index) { return units_[index]; }$/;"	f	class:Darts::DoubleArrayBuilder
+units_	./darts-clone.h	/^	const unit_type *units_;$/;"	m	class:Darts::DoubleArrayBase
+units_	./darts-clone.h	/^	std::vector<unit_type> &units_;$/;"	m	class:Darts::DoubleArrayBuilder
+units_	./darts.h	/^  AutoPool<DawgUnit> units_;$/;"	m	class:Darts_0_32::Details::DawgBuilder
+units_	./darts.h	/^  AutoPool<id_type> units_;$/;"	m	class:Darts_0_32::Details::BitVector
+units_	./darts.h	/^  AutoPool<unit_type> units_;$/;"	m	class:Darts_0_32::Details::DoubleArrayBuilder
+units_buf_	./darts-clone.h	/^	std::vector<unit_type> units_buf_;$/;"	m	class:Darts::DoubleArrayBase
+value	./darts-clone.h	/^		value_type value;$/;"	m	struct:Darts::DoubleArrayBase::result_pair_type
+value	./darts-clone.h	/^	value_type value() const { return value_; }$/;"	f	class:Darts::DoubleArrayKey
+value	./darts.h	/^    value_type value;$/;"	m	struct:Darts_0_32::DoubleArrayImpl::result_pair_type
+value	./darts.h	/^  int value(id_type id) const {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+value	./darts.h	/^  value_type value() const {$/;"	f	class:Darts_0_32::Details::DawgNode
+value	./darts.h	/^  value_type value() const {$/;"	f	class:Darts_0_32::Details::DawgUnit
+value	./darts.h	/^  value_type value() const {$/;"	f	class:Darts_0_32::Details::DoubleArrayUnit
+value_	./darts-clone.h	/^	value_type value_;$/;"	m	class:Darts::DoubleArrayKey
+value_id	./darts-clone.h	/^	base_type value_id() const { return get<1, VALUE_ID_BITS, base_type>(); }$/;"	f	class:Darts::DoubleArrayUnit
+value_type	./darts-clone.h	/^	typedef ValueType value_type;$/;"	t	class:Darts::DoubleArrayBase
+value_type	./darts-clone.h	/^	typedef ValueType value_type;$/;"	t	class:Darts::DoubleArrayBuilder
+value_type	./darts-clone.h	/^	typedef ValueType value_type;$/;"	t	class:Darts::DoubleArrayKey
+value_type	./darts-clone.h	/^	typedef ValueType value_type;$/;"	t	class:Darts::DoubleArrayKeyRange
+value_type	./darts.h	/^  typedef T value_type;$/;"	t	class:Darts_0_32::DoubleArrayImpl
+value_type	./darts.h	/^typedef int value_type;$/;"	t	namespace:Darts_0_32::Details
+values	./darts-clone.h	/^	base_type values() const { return values_; }$/;"	f	class:Darts::DoubleArrayUnit
+values	./darts.h	/^  const value_type values(std::size_t id) const {$/;"	f	class:Darts_0_32::Details::Keyset
+values_	./darts-clone.h	/^	base_type values_;$/;"	m	class:Darts::DoubleArrayUnit
+values_	./darts.h	/^  const T *values_;$/;"	m	class:Darts_0_32::Details::Keyset
+visit	./darts.h	/^  inline std::size_t visit(std::size_t length, std::size_t node_pos, U *results, std::size_t max_num_results) const {$/;"	f	class:Darts_0_32::DoubleArrayImpl
+vr	./Index_da.h	/^	std::string vr;$/;"	m	struct:WHITE_BLACK_DA::Pos_Reform
+vr_pos_reform	./Index_da.h	/^	std::vector<Pos_Reform> vr_pos_reform;$/;"	m	struct:WHITE_BLACK_DA::WhiteBlackList_TMP
+what	./darts-clone.h	/^	const char *what() const throw() { return msg_; }$/;"	f	class:Darts::DoubleArrayException
+what	./darts.h	/^  virtual const char *what() const throw() {$/;"	f	class:Darts_0_32::Details::Exception
+white_black_da	./Index_da.h	/^    Darts::DoubleArray white_black_da; 					 \/\/	DA ´Êµä$/;"	m	class:WHITE_BLACK_DA::WhiteBlackList_
+write	./darts-clone.h	/^	bool write(const T *buf, size_type nmemb)$/;"	f	class:Darts::DoubleArrayFile
+~AutoArray	./darts.h	/^  ~AutoArray() {$/;"	f	class:Darts_0_32::Details::AutoArray
+~AutoPool	./darts.h	/^  ~AutoPool() { clear(); }$/;"	f	class:Darts_0_32::Details::AutoPool
+~AutoStack	./darts.h	/^  ~AutoStack() {$/;"	f	class:Darts_0_32::Details::AutoStack
+~BitVector	./darts.h	/^  ~BitVector() {$/;"	f	class:Darts_0_32::Details::BitVector
+~DIALOGUE	./dialogue.cpp	/^DIALOGUE::~DIALOGUE()$/;"	f	class:DIALOGUE
+~DawgBuilder	./darts.h	/^  ~DawgBuilder() {$/;"	f	class:Darts_0_32::Details::DawgBuilder
+~DoubleArrayBuilder	./darts-clone.h	/^	~DoubleArrayBuilder()$/;"	f	class:Darts::DoubleArrayBuilder
+~DoubleArrayBuilder	./darts.h	/^  ~DoubleArrayBuilder() {$/;"	f	class:Darts_0_32::Details::DoubleArrayBuilder
+~DoubleArrayFile	./darts-clone.h	/^	~DoubleArrayFile() { is_open() && std::fclose(file_); }$/;"	f	class:Darts::DoubleArrayFile
+~DoubleArrayImpl	./darts.h	/^  virtual ~DoubleArrayImpl() {$/;"	f	class:Darts_0_32::DoubleArrayImpl
+~Exception	./darts.h	/^  virtual ~Exception() throw() {}$/;"	f	class:Darts_0_32::Details::Exception
+~WhiteBlackList_	./Index_da.cpp	/^WhiteBlackList_::~WhiteBlackList_() $/;"	f	class:WHITE_BLACK_DA::WhiteBlackList_

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/websearch4/!svn/ver/438776/VH/map_search/tags/map_search.20151013.b/src/map_data_build
+END
+poi_log_index_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/websearch4/!svn/ver/438776/VH/map_search/tags/map_search.20151013.b/src/map_data_build/poi_log_index_test.cpp
+END
+poi_log_index.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/websearch4/!svn/ver/438776/VH/map_search/tags/map_search.20151013.b/src/map_data_build/poi_log_index.cpp
+END
+poi_log_index_make_index.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/websearch4/!svn/ver/438776/VH/map_search/tags/map_search.20151013.b/src/map_data_build/poi_log_index_make_index.cpp
+END
+poi_log_index.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/websearch4/!svn/ver/438776/VH/map_search/tags/map_search.20151013.b/src/map_data_build/poi_log_index.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/websearch4/!svn/ver/438776/VH/map_search/tags/map_search.20151013.b/src/map_data_build/Makefile.am
+END

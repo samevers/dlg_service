@@ -1,0 +1,87 @@
+/*************************************************
+ *
+ * Author: lichao
+ * Create time: 2015  5月 24 23时24分30秒
+ * E-Mail: lichaotx020@sogou-inc.com
+ * version 1.0
+ *
+*************************************************/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#include <iostream>
+#include <map>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <pthread.h>
+
+#include <gtest/gtest.h>
+#include "../../include/service_log.hpp"
+
+#include "poi_log_index.h"
+
+
+TEST(CPoiLogIndex,Init)
+{
+	ASSERT_TRUE(CPoiLogIndex::Init() == 0);
+}
+
+//TEST(CPoiLogIndex,MakeIndex)
+//{
+//	ASSERT_TRUE(CPoiLogIndex::MakeIndex(
+//			"input_null.txt",
+//			"index.data") < 0 );
+//	ASSERT_TRUE(CPoiLogIndex::MakeIndex(
+//			"../../data/mobile2015_234.gbk",
+//			"../../data/mobile_log.index") == 0);
+//}
+
+TEST(CPoiLogIndex,LoadIndex)
+{
+	ASSERT_TRUE(CPoiLogIndex::LoadIndex("index_null.data") < 0);
+	ASSERT_TRUE(CPoiLogIndex::LoadIndex("../../data/poi_log.index") == 0);
+}
+
+TEST(CPoiLogIndex,GetUnionResults)
+{
+	CPoiLogIndex poi_index;
+	//std::string query = "快捷餐厅";
+	//ASSERT_TRUE(poi_index.GetUnionResults(
+	//			query) == 0);
+	std::string query = "同方大厦";
+	//半角转全角
+	char dest[4096];
+	memset(dest,0x00,4096);
+	EncodingConvertor::getInstance()->dbc2gchar(
+			query.c_str(),
+			(gchar_t*)dest,
+			4096/2,
+			true);
+	std::vector<PoiLogResult> docs;
+	std::vector<std::string> seg_parts;
+	ASSERT_TRUE(poi_index.GetUnionResults(
+				std::string(dest),docs,seg_parts) == 0);
+	std::cerr<<"docs.size() = " <<docs.size()<<std::endl;
+	for(size_t i = 0; i < docs.size(); ++i)
+	{
+		std::cerr<<docs[i].query<<"\t"<<docs[i].area
+			<<"\t"<<docs[i].city<<"\t"<<docs[i].device
+			<<"\t"<<docs[i].weight<<std::endl;
+	}
+	ASSERT_TRUE(docs.size() > 0);
+}
+
+
+int main(int argc, char ** argv)
+{
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
+}

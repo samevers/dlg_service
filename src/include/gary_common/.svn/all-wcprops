@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/websearch4/!svn/ver/449057/VH/newVrqo/branches/newVrqo.20151125.a/QueryClass/include/gary_common
+END
+gary_sort.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/websearch4/!svn/ver/449046/VH/newVrqo/branches/newVrqo.20151125.a/QueryClass/include/gary_common/gary_sort.h
+END
+gary_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/websearch4/!svn/ver/449046/VH/newVrqo/branches/newVrqo.20151125.a/QueryClass/include/gary_common/gary_common.h
+END
+gary_math.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/websearch4/!svn/ver/449046/VH/newVrqo/branches/newVrqo.20151125.a/QueryClass/include/gary_common/gary_math.h
+END
+gary_bitmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/websearch4/!svn/ver/449046/VH/newVrqo/branches/newVrqo.20151125.a/QueryClass/include/gary_common/gary_bitmap.h
+END
+twsetypedef.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/websearch4/!svn/ver/449046/VH/newVrqo/branches/newVrqo.20151125.a/QueryClass/include/gary_common/twsetypedef.h
+END
+gary_priorsort.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/websearch4/!svn/ver/449046/VH/newVrqo/branches/newVrqo.20151125.a/QueryClass/include/gary_common/gary_priorsort.h
+END
+gary_dictionary.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/websearch4/!svn/ver/449046/VH/newVrqo/branches/newVrqo.20151125.a/QueryClass/include/gary_common/gary_dictionary.h
+END
+gary_string.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/websearch4/!svn/ver/449057/VH/newVrqo/branches/newVrqo.20151125.a/QueryClass/include/gary_common/gary_string.h
+END
