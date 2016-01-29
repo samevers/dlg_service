@@ -26,7 +26,7 @@ int main(int arg, char** argv)
 	{
 		spaceGary::StringTrim(line);
 		vector<string> seg_parts;
-		spaceGary::Split_Sam(line, seg_parts, "##_##");
+		spaceGary::StringSplit(line, seg_parts, "##_##");
 		string key = seg_parts[0];
 		string ans = seg_parts[1];
 
