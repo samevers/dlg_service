@@ -85,26 +85,6 @@ bool SegSplit(std::string strItem, std::vector<std::string> &vectRes, const char
 	return true;
 };
 
-// split
-int Split_Sam(std::string line, std::vector<std::string>& vec, std::string blank)
-{
-	if(line.length() < 1)
-		return 0;
-	int start = 0;
-	int loc;
-	std::string sub;
-
-	while((loc = line.find(blank.c_str())) != -1)
-	{
-		sub = line.substr(0, loc);
-		vec.push_back(sub);
-		start = loc + blank.length();
-		line = line.substr(start, line.length() - start);
-	}
-	vec.push_back(line);
-	return 1;
-}
-
 //trim
 inline
 bool StringTrim(std::string &strItem) {
@@ -302,10 +282,12 @@ int all_substr(std::vector<std::string> segment, std::vector<std::string>& all_s
 	if(segment.size() < 1)
 		return 0;
 	int size = segment.size();
-	for(int i = 0; i < segment.size(); i++)
+	int K;
+	for(int i = 0; i < size; i++)
 	{
 		sub = "";
-		for(int j = i; j < segment.size(); j++)
+		K = (size <= (i + 5) ? size:(i + 5));
+		for(int j = i; j < K; j++)
 		{
 			sub += segment[j];
 			all_sub.push_back(sub);
@@ -321,12 +303,14 @@ int all_substr(std::vector<std::string> segment, std::map<std::string, int32_t>&
 	if(segment.size() < 1)
 		return 0;
 	int size = segment.size();
-	for(int i = 0; i < segment.size(); i++)
+	int K;
+	for(int i = 0; i < size; i++)
 	{
 		sub = "";
 		if(segment[i].length() == 0)
 			continue;
-		for(int j = i; j < segment.size(); j++)
+		K = (size <= (i + 5) ? size:(i + 5));
+		for(int j = i; j < K; j++)
 		{
 			if(segment[j] == "")
 				continue;
@@ -336,6 +320,34 @@ int all_substr(std::vector<std::string> segment, std::map<std::string, int32_t>&
 				break;
 			all_sub[sub] += 1;
 		}
+	}
+	return 0;
+}
+
+inline
+int all_suffix(std::vector<std::string> segment, std::vector<std::string>& all_suffix)
+{
+	all_suffix.clear();
+	std::string sub;
+	if(segment.size() < 1)
+		return 0;
+	int size = segment.size();
+	int begin;
+	if(size > 10)
+	{
+		begin = size - 10;
+	}else
+	{
+		begin = 0;
+	}
+	for(int i = begin; i < size; i++)
+	{
+		sub = segment[i];
+		for(int j = i + 1; j < size; j++)
+		{
+			sub += segment[j];
+		}
+		all_suffix.push_back(sub);
 	}
 	return 0;
 }
