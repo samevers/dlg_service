@@ -1,9 +1,14 @@
 #include "dialogue.h"
-
+#include "EditDist.h"
 using namespace std;
 
-//const static string DA_IndexFile_DLG = "/tieba/pair.out.post.norm.docIndex";
-const static string DA_IndexFile_DLG = "index_dir/doc.Index";
+//const static string DA_IndexFile_DLG = "index_dir/qqchat.data.da.Index";
+//const static string DOC_IndexFile_DLG = "index_dir/qqchat.data.doc.Index";
+//const static string DA_IndexFile_DLG = "index_dir/da.Index";
+//const static string DOC_IndexFile_DLG = "index_dir/doc.Index";
+const string DA_IndexFile_DLG = "index_dir/singer.txt.da.Index";
+const string  DOC_IndexFile_DLG = "index_dir/sogou.query.post.doc.Index";
+
 const static string FILE_PUNC = "punc/punc.txt";
 const static int threshold = 50;			// data[i].length()/query.length()，太大的话，表示查找失败；
 static queue<string> context;				// 保存上下文
@@ -50,13 +55,21 @@ int DIALOGUE::Init(const char* dir_base) // data directory
 	// Init dlg da and docs index
 	//doc_search.Init(dir_base);
 	string data_path = string(dir_base) + "data/";
-	string index_file = data_path + "/" + DA_IndexFile_DLG;
-	//if(doc_search.LoadIndex(index_file.c_str()) == -1)
+	string index_file = data_path + "/" + DOC_IndexFile_DLG;
 	doc_search.Init(index_file.c_str());
 	/*{
 		cerr << "[ERROR] Fail to load index file!" << endl;
 		return -1;
 	}*/
+
+	// da_index
+	data_path = string(dir_base) + "data/";
+	index_file = data_path + "/" + DA_IndexFile_DLG;
+	cerr << "[dialogue.cpp] [Init] da_index file : " << index_file << endl;
+	if(da_index->Init(index_file.c_str()) == -1)
+	{
+		return -1;
+	}
 
 	// Load dicts	
 	if(loadDic(dir_base) == -1)
@@ -73,11 +86,53 @@ int DIALOGUE::Release()
 {
 	seg->Release();
 	doc_search.Release();
+	da_index->Release();
 }
 int DIALOGUE::Normalize_(const char* query)
 {
 	;
 }
+int DIALOGUE::show_results(map<int, string>& da_vec)
+{
+	map<int, string>::iterator iter;
+	vector<string> values;
+	string singer, song, album;
+	map<string, string> anwser_vec;
+	map<string, string>::iterator iter_;
+	vector<string> tmp;
+	string anwser;
+	for(iter = da_vec.begin(); iter != da_vec.end(); iter++)
+	{
+		anwser_vec.clear();
+		cerr << "out: " << iter->first << "\t" << iter->second << endl;
+		anwser = iter->second;
+		int loc = anwser.find("###");
+		if(loc != -1)
+		{
+			anwser = anwser.substr(0,loc);
+		}
+		if(anwser.length() < 1)
+		{
+			cerr << "[NOTE] length of anwser is too short!" << endl;
+			return 0;
+		}
+		cerr << "anwser: " << anwser << endl;
+		da_index->GetIndexResults(anwser, anwser_vec, tmp, seg);
+		for(iter_ = anwser_vec.begin(); iter_ != anwser_vec.end(); iter_++)
+		{
+			//cerr << "ANWSER:" << iter_->first << " " << iter_->second << endl;
+			cerr << "ANWSER:" << iter_->second << endl;
+		}
+		break;
+		//spaceGary::StringSplit(iter->second, values, "|||");
+		//for(int i = 0; i < values.size(); i++)
+		//{
+		//}
+	}
+	return 0;
+}
+
+
 int DIALOGUE::IndexOutcome(const char* query)
 {
 	char dest[4096];
@@ -150,6 +205,21 @@ int DIALOGUE::IndexOutcome(const char* query)
 	{
 		cerr << "【HU ZI】:  [ 你能好好说话不？？        What are you 弄啥嘞 ? ]" << endl;
 	}
+
+	EditDist ed;
+	vector<int> sortED;
+	map<int, string> cadidate_sort;
+	sortED.clear();
+	cadidate_sort.clear();
+	vector<string> tmp;
+	tmp = data;
+	ed.EditSort(query,tmp,cadidate_sort, sortED, seg);
+	// show results
+	show_results(cadidate_sort);
+	cadidate_sort.clear();
+	sortED.clear();
+	cerr << "----------------------------------------------------------------------------------------------------" << endl;
+
 
 	if(anwser.size() > 0)
 	{

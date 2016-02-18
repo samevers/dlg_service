@@ -1044,7 +1044,10 @@ int32_t WhiteBlackList_::MakeIndex(const char *file, const char *index_file,cons
 		WhiteBlackList_TMP node;
 		string query = parts_vect[0];				// query
 		string extend = parts_vect[1];				// vr
-				
+		spaceGary::StringTrim(query);
+		spaceGary::StringTrim(extend);
+		//cerr << "query = " << query << ";\textend = " << extend << endl;
+
 		int q_len = query.length();					// query_len
 		if(query.length() < 1 || query.length()> MAXQUERYLEN){continue;}
 		char *buffer = NULL;
@@ -1059,11 +1062,103 @@ int32_t WhiteBlackList_::MakeIndex(const char *file, const char *index_file,cons
 		vect.push_back(v);
 		
 	}
+	cerr << "tag: " << tag << endl;
 	//将数据进行转换并输出到index文件中
-	OutputIndexFile(vect, index_file);	//	将要进行DA存储的vector输出到索引文件 index_file
+	if(string(tag) == "uniq")
+	{
+		cerr << "[NOTE] GET Into OutputIndexFile(vect, index_file, uniq)" << endl;
+		OutputIndexFile(vect, index_file, "uniq");	//	将要进行DA存储的vector输出到索引文件 index_file
+	}
+	else
+		OutputIndexFile(vect, index_file);	// 这个函数有问题，对于第一个索引项打印出来的是乱码；待查证；	
 
 	fclose(fp_in);
 
+	return 0;
+}
+
+//输出index文件
+int32_t WhiteBlackList_::OutputIndexFile(std::vector<ST> & vect,const char * index_file, string isUniq) 
+{
+	sort(vect.begin(), vect.end(), comp);	// sort
+	vector<char> char_vect_extend;
+	map<string, uint32_t> dic_map;
+	string query;
+	string extend;
+	uint32_t start = 0;
+	uint32_t end = start;
+	for(int i = 0; i < vect.size(); i++)
+	{
+		query = vect[i].query;
+		extend = vect[i].extend;
+		dic_map[query] = start;
+		char_vect_push_(extend.c_str(), char_vect_extend, end);
+		start += extend.length() + 1;
+	}
+	map<string,uint32_t>::iterator itr;
+	vector<const char*> da_key_vect;
+	vector<int32_t> da_value_vect;
+	for(map<string, uint32_t>::iterator itr = dic_map.begin(); itr != dic_map.end(); ++itr) 
+	{
+		da_key_vect.push_back(itr->first.c_str());			// query 为 key
+		da_value_vect.push_back(itr->second);				// position i, 指向begin，end
+	}
+
+	if(extend_da.build(da_key_vect.size(), &da_key_vect[0], 0, &da_value_vect[0]) != 0)
+	{
+		fprintf(stderr, "build da error!\n");
+		return -1;
+	}
+
+	// 写输出文件
+	FILE * fp_index = fopen(index_file, "wb");
+	if (NULL == fp_index) 
+	{
+		fprintf(stderr, "Can not open file [%s]!\n", index_file);
+		return -1;
+	}
+	// 保留file size字段
+	uint32_t index_file_size = 0;
+	fwrite(&index_file_size, 
+			sizeof(index_file_size), 1, fp_index);
+	// 写入da size
+	uint32_t da_size =
+		extend_da.size() * extend_da.unit_size();
+	fwrite(&da_size, sizeof(da_size), 1, fp_index);
+	fclose(fp_index);
+	if (extend_da.save(index_file, "ab") != 0)
+	{
+		fprintf(stderr, "save index error!\n");
+		return -1;
+	}
+
+	fp_index = fopen(index_file, "ab");
+	uint32_t size_ = char_vect_extend.size();
+	fwrite(&size_, sizeof(size_), 1, fp_index);
+	fwrite(&(char_vect_extend[0]), sizeof(char),
+			char_vect_extend.size(), fp_index);
+	
+	// 写入文件总长度
+	fflush(fp_index);
+	fclose(fp_index);
+	
+	fp_index = fopen(index_file, "r+b");
+	struct stat file_info;
+	if (fstat(fileno(fp_index), &file_info) == -1) 
+	{
+		fprintf(stderr, 
+				"can not get index file info from file [%s]!\n", index_file);
+		return -1;
+	}
+	index_file_size = file_info.st_size;
+	fclose(fp_index);
+	
+	fp_index = fopen(index_file, "ab");
+	fwrite(&index_file_size, 
+			sizeof(index_file_size), 1, fp_index);			// 写入index_file_size ，即文件总长度
+
+	fclose(fp_index);
+	cout << "output index file over .........." << endl;	
 	return 0;
 }
 
@@ -1107,6 +1202,7 @@ int32_t WhiteBlackList_::OutputIndexFile(std::vector<ST> & vect,const char * ind
 			char_vect_push_(extend.c_str(), char_vect_extend, end);
 		}
 		prequery = query;
+		cerr << "extend = " << extend << endl;
 	}
 	map<string,uint32_t>::iterator itr;
 	vector<const char*> da_key_vect;

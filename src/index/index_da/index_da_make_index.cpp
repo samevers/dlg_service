@@ -47,7 +47,7 @@ int32_t main(int argc, char ** argv)
 				FLAGS_input.c_str(), 
 			FLAGS_output.c_str());
 	}
-	if(type == "extend")
+	if(type == "extend" || type== "uniq")
 	{
 		ret = whiteblacklist.MakeIndex( FLAGS_input.c_str(), 
 			FLAGS_output.c_str(), type.c_str());

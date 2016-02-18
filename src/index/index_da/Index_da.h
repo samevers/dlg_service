@@ -136,6 +136,7 @@ public:
 	int32_t MakeIndex(const char * file, 
 			const char * index_file, const char* tag);
 	int32_t OutputIndexFile(std::vector<ST> & vect,const char * index_file);
+	int32_t OutputIndexFile(std::vector<ST> & vect,const char * index_file, std::string isUniq);
 	int32_t LoadIndex(const char *index_file, 
 									Darts::DoubleArray* &da_, 
 									char* &buf_extend,
