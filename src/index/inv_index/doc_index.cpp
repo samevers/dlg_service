@@ -315,7 +315,8 @@ int32_t CDlgIndex::GraphSegment(
 // main
 int32_t CDlgIndex::GetDlgResult(
 		const string& query,
-		DlgResult& doc_result)
+		DlgResult& doc_result, 
+		SEGMENT_1* seg)
 {
 	//判断query长度
 	if(query.size() <= 1 || query.size() > 100)
@@ -342,7 +343,7 @@ int32_t CDlgIndex::GetDlgResult(
 	//vector<string> anwser;
 	string query_norm;
 	string seg_norm;
-	Norm.Normalize_(query, seg_norm, query_norm);
+	Norm.Normalize_(query, seg_norm, query_norm,seg);
 	cerr << "[INFO] query_norm: " << query_norm << endl;
 	cerr << "[INFO]   seg_norm: " << seg_norm << endl;
 	//倒排结果过滤

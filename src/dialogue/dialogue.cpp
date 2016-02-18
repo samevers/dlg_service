@@ -48,25 +48,31 @@ int DIALOGUE::loadDic(const char* dir_base)
 int DIALOGUE::Init(const char* dir_base) // data directory
 {
 	// Init dlg da and docs index
-	doc_index.Init(dir_base);
+	//doc_search.Init(dir_base);
 	string data_path = string(dir_base) + "data/";
 	string index_file = data_path + "/" + DA_IndexFile_DLG;
-	if(doc_index.LoadIndex(index_file.c_str()) == -1)
-	{
+	//if(doc_search.LoadIndex(index_file.c_str()) == -1)
+	doc_search.Init(index_file.c_str());
+	/*{
 		cerr << "[ERROR] Fail to load index file!" << endl;
 		return -1;
-	}
+	}*/
 
 	// Load dicts	
 	if(loadDic(dir_base) == -1)
 	{
 		return -1;
 	}
+	seg = SEGMENT_1::getInstance();
+	seg->Init();
+
 	return 0;
 }
 
 int DIALOGUE::Release() 
 {
+	seg->Release();
+	doc_search.Release();
 }
 int DIALOGUE::Normalize_(const char* query)
 {
@@ -82,7 +88,6 @@ int DIALOGUE::IndexOutcome(const char* query)
 			4096/2,
 			true);
 
-	//CDlgIndex doc_index;
 	DlgResult doc_result;
 	vector<string> data;
 	vector<string> anwser;
@@ -122,11 +127,11 @@ int DIALOGUE::IndexOutcome(const char* query)
 		cerr << "content of context: " << context.size()<< endl;
 	}
 	*/
-	if(doc_index.GetDlgResult(query_,doc_result) == 0)
+	//if(doc_search.GetDlgResult(query_,doc_result) == 0)
+	doc_search.GetIndexResults(query_, doc_result, seg);
 	{
-		string key = doc_result.query;
+		//string key = doc_result.query;
 		data = doc_result.data;
-		//anwser = doc_result.anwser;
 	}
 	cerr << "\tJUST LET ME THINK A MOMENT ... " << endl << "\t... ..." << endl << "\t... ..."<< endl << endl;
 	if(data.size() > 0)

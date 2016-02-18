@@ -22,6 +22,9 @@ int main(int arg, char** argv)
 	Normal norm;
 	norm.Init();
 	int32_t num = 0;
+	SEGMENT_1* seg = SEGMENT_1::getInstance();
+	seg->Init();
+
 	while(getline(infile, line))
 	{
 		spaceGary::StringTrim(line);
@@ -48,7 +51,7 @@ int main(int arg, char** argv)
 			cerr << "[INFO] key is too long, line number "<< num<< endl;
 			continue;
 		}
-		if(norm.Normalize_(key, seg_norm, key_norm) == -1)
+		if(norm.Normalize_(key, seg_norm, key_norm, seg) == -1)
 		{
 			cerr << "[ERROR]: Fail to get Normalize_() outcome." << endl;
 			continue;

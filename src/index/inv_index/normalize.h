@@ -18,7 +18,7 @@ class Normal{
 				std::vector<std::string>& parts);
 	
 		int32_t loadSyn();
-		int32_t Normalize_(const std::string& line, std::string& segment, std::string& norm_);
+		int32_t Normalize_(const std::string& line, std::string& segment, std::string& norm_,SEGMENT_1* seg);
 		int32_t Normalize_seg(const std::string& line, std::string& norm_);
 };
 

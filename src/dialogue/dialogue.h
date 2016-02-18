@@ -5,6 +5,7 @@
 #include "../segment/Segment.h"
 #include "Index_da.h"
 #include "../index/inv_index/doc_index.h"
+#include "Doc_Search.h"
 
 using namespace WHITE_BLACK_DA;
 
@@ -18,8 +19,11 @@ public:
 	int Normalize_(const char* query);
 	int IndexOutcome(const char* query);
 	int MakeResponse(const char* query, const char* anwser);
+public:
+	SEGMENT_1 * seg;
 private:
-	CDlgIndex doc_index;
+	//CDlgIndex doc_search;
+	DOC_SEARCH doc_search;
 	int loadDic(const char* dir_base);
 	std::map<std::string, int> Hash_punc;
 };

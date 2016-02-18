@@ -92,7 +92,7 @@ int Normal::loadSyn()
 	return 0;
 
 }
-int Normal::Normalize_(const string& line, string& segment, string& norm_)
+int Normal::Normalize_(const string& line, string& segment, string& norm_, SEGMENT_1* seg)
 {
 	char dest[4096];
 	string line_tmp(line.c_str());
@@ -107,7 +107,7 @@ int Normal::Normalize_(const string& line, string& segment, string& norm_)
 		4096/2,
 		true);
 	vector<string> seg_parts;
-	Segment_(graph,string(dest),seg_parts);
+	seg->Segment_(string(dest),seg_parts);
 	stringstream oss;
 	oss.str("");
 	//cerr << "[INFO] normalizing to be:" << endl;

@@ -7,13 +7,13 @@ SUBDIRS=
 
 lib_LTLIBRARIES+=libnormalize.la
 libnormalize_la_SOURCES=normalize.cpp
-libnormalize_la_LIBADD= -lpthread -L../index_da -lindex_da
+libnormalize_la_LIBADD= -lpthread -L../index_da -lindex_da -L../../segment -lSegment
 AM_CPPFLAGS+= -I../index_da -I../../include -I../../segment
 
 
 bin_PROGRAMS+=normalize
 normalize_SOURCES=normalize_main.cpp
-normalize_LDADD=-ldoc_index -lpthread -L../index_da -lindex_da -lnormalize
+normalize_LDADD=-ldoc_index -lpthread -L../index_da -lindex_da -lnormalize -L../../segment -lSegment
 #AM_CPPFLAGS= -I../index_da -I../../include
 
 

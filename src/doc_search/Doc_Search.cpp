@@ -61,9 +61,9 @@ int32_t DOC_SEARCH::Release()
 }
 
 
-int32_t DOC_SEARCH::DOC_Search(string& dest_norm, DlgResult& doc_result) 
+int32_t DOC_SEARCH::DOC_Search(string& dest_norm, DlgResult& doc_result,SEGMENT_1* seg) 
 {
-	if(doc_index.GetDlgResult(dest_norm, doc_result) == -1)
+	if(doc_index.GetDlgResult(dest_norm, doc_result, seg) == -1)
 		cerr << "[ERROR] Fail to run GetDlgResult() " << endl;
 	return 0;
 }
@@ -97,7 +97,7 @@ int32_t DOC_SEARCH::GetIndexResults(
 	}
 	cerr << "[INFO] dest_norm: " << dest_norm << endl;
 
-	DOC_Search(dest_norm, doc_result);
+	DOC_Search(dest_norm, doc_result, seg);
 	//Query_DOC_Search(dest_norm, doc_result);
 
 	int num = 1;

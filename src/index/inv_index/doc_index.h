@@ -130,7 +130,8 @@ public:
 			std::vector<std::string>& parts);
 	int32_t GetDlgResult(
 			const std::string& query,
-			DlgResult& dlg_result);
+			DlgResult& dlg_result,
+			SEGMENT_1* seg);
 
 	int32_t GraphSegment(
 			analysis::TGraph& graph,

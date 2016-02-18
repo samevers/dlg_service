@@ -19,7 +19,7 @@ class DOC_SEARCH{
 		int32_t Init(const char* dir_base);
 		int32_t Release();
 		int32_t LoadDOCs(const char* KEY_ANS_INDEX_FILE);
-		int32_t DOC_Search(string& dest_norm, DlgResult& doc_result);
+		int32_t DOC_Search(string& dest_norm, DlgResult& doc_result,SEGMENT_1* seg);
 		int32_t Query_DOC_Search(string& dest_norm, DlgResult& doc_result);
 		int32_t GetIndexResults(
 			string& query,
