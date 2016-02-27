@@ -28,12 +28,12 @@ int main(int arg,char** argv)
 	if( dlg_index.Init(dir_base) != 0)
 	{
 		cerr<<"init dlg index error !"<<endl;
-		return -1;
+		//return -1;
 	}
 	if( dlg_index.LoadStopword(stopword_file.c_str()) != 0)
 	{
 		cerr<<"load stopword file error !"<<endl;
-		return -1;
+		//return -1;
 	}
 
 	if(dlg_index.MakeIndex(input_file.c_str(),output_file.c_str()) != 0)

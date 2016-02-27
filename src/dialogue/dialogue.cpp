@@ -6,8 +6,10 @@ using namespace std;
 //const static string DOC_IndexFile_DLG = "index_dir/qqchat.data.doc.Index";
 //const static string DA_IndexFile_DLG = "index_dir/da.Index";
 //const static string DOC_IndexFile_DLG = "index_dir/doc.Index";
-const string DA_IndexFile_DLG = "index_dir/singer.txt.da.Index";
-const string  DOC_IndexFile_DLG = "index_dir/sogou.query.post.doc.Index";
+//const string DA_IndexFile_DLG = "index_dir/singer.txt.da.Index";
+//const string  DOC_IndexFile_DLG = "index_dir/sogou.query.post.doc.Index";
+const static string DA_IndexFile_DLG = "index_dir/dlg.da.index";
+const static string DOC_IndexFile_DLG = "index_dir/dlg.doc.index";
 
 const static string FILE_PUNC = "punc/punc.txt";
 const static int threshold = 50;			// data[i].length()/query.length()，太大的话，表示查找失败；
@@ -92,37 +94,51 @@ int DIALOGUE::Normalize_(const char* query)
 {
 	;
 }
-int DIALOGUE::show_results(map<int, string>& da_vec)
+int DIALOGUE::show_results(size_t query_length, map<int, string>& da_vec)
 {
 	map<int, string>::iterator iter;
 	vector<string> values;
 	string singer, song, album;
-	map<string, string> anwser_vec;
+	map<string, string> anwser_hash;
 	map<string, string>::iterator iter_;
 	vector<string> tmp;
+	vector<string> anwser_vec;
 	string anwser;
+	int32_t nearest_dis = 10000;
+	int32_t dis;
 	for(iter = da_vec.begin(); iter != da_vec.end(); iter++)
 	{
 		anwser_vec.clear();
+		anwser_hash.clear();
 		cerr << "out: " << iter->first << "\t" << iter->second << endl;
-		anwser = iter->second;
-		int loc = anwser.find("###");
-		if(loc != -1)
+		if(iter->first > 5)
 		{
-			anwser = anwser.substr(0,loc);
+			cerr << "[NOTE] Cannot find the shortest and most similar QUESTION!" << endl;
+			break;
 		}
+		anwser = iter->second;
+		spaceGary::StringSplit(anwser,anwser_vec, "###");
 		if(anwser.length() < 1)
 		{
 			cerr << "[NOTE] length of anwser is too short!" << endl;
 			return 0;
 		}
-		cerr << "anwser: " << anwser << endl;
-		da_index->GetIndexResults(anwser, anwser_vec, tmp, seg);
-		for(iter_ = anwser_vec.begin(); iter_ != anwser_vec.end(); iter_++)
+		for(int i = 0; i < anwser_vec.size(); i++)
 		{
-			//cerr << "ANWSER:" << iter_->first << " " << iter_->second << endl;
-			cerr << "ANWSER:" << iter_->second << endl;
+			if((dis = anwser_vec[i].length() < query_length ? 
+						query_length - anwser_vec[i].length(): anwser_vec[i].length() - query_length) < nearest_dis)
+			{
+				anwser = anwser_vec[i];
+				nearest_dis = dis;
+			}
 		}
+		da_index->GetIndexResults(anwser, anwser_hash, tmp, seg);
+		cerr << "----------------------------------------------------------------------------------------------------------------------------" << endl;
+		for(iter_ = anwser_hash.begin(); iter_ != anwser_hash.end(); iter_++)
+		{
+			cerr << "| ANWSER:" << iter_->second << endl;
+		}
+		cerr << "----------------------------------------------------------------------------------------------------------------------------" << endl;
 		break;
 		//spaceGary::StringSplit(iter->second, values, "|||");
 		//for(int i = 0; i < values.size(); i++)
@@ -199,7 +215,7 @@ int DIALOGUE::IndexOutcome(const char* query)
 				//anwser.clear();
 			}
 			else	
-				cerr << "\t\t\t\t\t\tU R ASKING ...\t" << data[i] << " ?"<< endl;
+				cout << "\t\t\t\t\t\tU R ASKING ...\t" << data[i] << " ?"<< endl;
 		}
 	} else
 	{
@@ -215,12 +231,13 @@ int DIALOGUE::IndexOutcome(const char* query)
 	tmp = data;
 	ed.EditSort(query,tmp,cadidate_sort, sortED, seg);
 	// show results
-	show_results(cadidate_sort);
+	show_results(query_.length(), cadidate_sort);
 	cadidate_sort.clear();
 	sortED.clear();
 	cerr << "----------------------------------------------------------------------------------------------------" << endl;
 
 
+	/*
 	if(anwser.size() > 0)
 	{
 		for(int i = 0; i < anwser.size(); i++)
@@ -229,6 +246,7 @@ int DIALOGUE::IndexOutcome(const char* query)
 			cerr << "【HU ZI】: [ " << anwser[i] << " ]" << endl;
 		}
 	}
+	*/
 	cerr << "============================ END ==================================" << endl;
 
 	return 0;

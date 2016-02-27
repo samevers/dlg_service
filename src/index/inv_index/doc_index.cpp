@@ -565,7 +565,7 @@ int32_t CDlgIndex::GetUnionResults(
 			//cout << "[docs info]:" << endl;
 			for(int i = 0; i < docs.size(); i++)
 			{
-				cout << "\t[onInvResultdocs]:" << docs[i]->weight << endl;
+				//cout << "\t[onInvResultdocs]:" << docs[i]->weight << endl;
 			} 
 		}
 	}

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-const char* SYN_FILE = "/search/yonghuahu/hack/dlg_service/data/syn/synterm.txt";
+const char* SYN_FILE = "/search/yonghuahu/dm_/project/dlg_service/data/syn/synterm.txt";
 analysis::TGraph graph(65536);
 
 Normal::Normal()

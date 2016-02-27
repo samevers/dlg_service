@@ -20,7 +20,7 @@ public:
 	int Normalize_(const char* query);
 	int IndexOutcome(const char* query);
 	int MakeResponse(const char* query, const char* anwser);
-	int show_results(map<int, string>& da_vec);
+	int show_results(size_t query_length, map<int, string>& da_vec);
 public:
 	SEGMENT_1 * seg;
 private:
