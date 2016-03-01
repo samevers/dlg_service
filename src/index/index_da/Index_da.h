@@ -137,6 +137,7 @@ public:
 			const char * index_file, const char* tag);
 	int32_t OutputIndexFile(std::vector<ST> & vect,const char * index_file);
 	int32_t OutputIndexFile(std::vector<ST> & vect,const char * index_file, std::string isUniq);
+	int32_t OutputIndexFile_common(std::vector<ST> & vect,const char * index_file, std::string isUniq);
 	int32_t LoadIndex(const char *index_file, 
 									Darts::DoubleArray* &da_, 
 									char* &buf_extend,
@@ -166,7 +167,8 @@ private:
 	//PhraseTranslationCandidate * m_phrase_candidate_buf;
 	//int64_t m_num_phrase_candidate;
 	//static const float kMultiBoost = 100.0;
-	
+
+	SEGMENT_1* seg;	
 };
 
 };

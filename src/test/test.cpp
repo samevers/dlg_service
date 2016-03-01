@@ -103,16 +103,6 @@ int show_results(map<int, string> cadidate_sort, vector<int> sortED)
 
 int main(int arg, char** argv)
 {
-	DIALOGUE dlg;
-	cerr << "[INFO] Begin to Init dlg" << endl;
-	if(dlg.Init(dir_path) == -1)
-	{
-		cerr << "[ERROR] Fail to dlg.init()" << endl;
-		return -1;
-	}
-	cerr << "[INFO] Init dlg OK" << endl;
-
-	
 	DA_SEARCH da_singersearch;
 	DA_SEARCH da_songsearch;
 	DA_SEARCH da_albumsearch;
@@ -190,12 +180,11 @@ int main(int arg, char** argv)
 			ed.EditSort(query,tmp,cadidate_sort, sortED, seg);
 			
 			// show results
-			show_results(cadidate_sort, sortED);
+			//show_results(cadidate_sort, sortED);
 
 			cadidate_sort.clear();
 			sortED.clear();
 			cerr << "----------------------------------------------------------------------------------------------------" << endl;
-			//dlg.IndexOutcome(query.c_str());
 		}
 	}
 	da_singersearch.Release();

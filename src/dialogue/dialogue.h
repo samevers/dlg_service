@@ -18,7 +18,7 @@ public:
 	int Init(const char* dir_base);
 	int Release();
 	int Normalize_(const char* query);
-	int IndexOutcome(const char* query);
+	int IndexOutcome(const char* query);//, std::ofstream& FILE_TEACHER);
 	int MakeResponse(const char* query, const char* anwser);
 	int show_results(size_t query_length, map<int, string>& da_vec);
 public:

@@ -30,7 +30,7 @@ int main(int arg, char** argv)
 	{
 		spaceGary::StringTrim(line);
 		vector<string> seg_parts;
-		spaceGary::Split_Sam(line, seg_parts, "##_##");
+		spaceGary::StringSplit(line, seg_parts, "##_##");
 		if(seg_parts.size() == 2)
 		{
 			string key = seg_parts[0];

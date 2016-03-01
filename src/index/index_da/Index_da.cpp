@@ -47,6 +47,8 @@ WhiteBlackList_::WhiteBlackList_()
 	m_char_buf = NULL;
 	m_len_char = 0;
 	m_len_struct = 0;
+	seg = SEGMENT_1::getInstance();
+	seg->Init();
 }
 
 WhiteBlackList_::~WhiteBlackList_() 
@@ -218,7 +220,6 @@ int char_vect_push_(const char* content, vector<char>& char_vect_, uint32_t& end
 	return 0;
 }	
 //输出index文件
-//int32_t WhiteBlackList_::OutputIndexFile(std::vector<ST> & vect,const char * index_file) 
 int32_t WhiteBlackList_::OutputIndexFile(
 		std::vector<WhiteBlackList_TMP> & WhiteBlackList_vect,
 		const char * index_file) {
@@ -1059,6 +1060,8 @@ int32_t WhiteBlackList_::MakeIndex(const char *file, const char *index_file,cons
 		v.query = gQuery;
 		//v.extend = gExtend;
 		v.extend = extend;
+		//cerr << "query = " << gQuery << endl;
+		//cerr << "extend = " << extend << endl;
 		vect.push_back(v);
 		
 	}
@@ -1076,12 +1079,12 @@ int32_t WhiteBlackList_::MakeIndex(const char *file, const char *index_file,cons
 
 	return 0;
 }
-
 //输出index文件
-int32_t WhiteBlackList_::OutputIndexFile(std::vector<ST> & vect,const char * index_file, string isUniq) 
+int32_t WhiteBlackList_::OutputIndexFile_common(std::vector<ST> & vect,const char * index_file, string isUniq) 
 {
 	sort(vect.begin(), vect.end(), comp);	// sort
 	vector<char> char_vect_extend;
+	vector<string> parts;
 	map<string, uint32_t> dic_map;
 	string query;
 	string extend;
@@ -1089,11 +1092,132 @@ int32_t WhiteBlackList_::OutputIndexFile(std::vector<ST> & vect,const char * ind
 	uint32_t end = start;
 	for(int i = 0; i < vect.size(); i++)
 	{
-		query = vect[i].query;
+		parts.clear();
+		seg->Segment_(
+			vect[i].query,
+			parts);
+		if(parts.size() < 1)
+		{
+			cerr << "query = " << vect[i].query << endl;
+			cerr <<"[note] segment size lt 1" << endl;
+			continue;
+		}
+		string dest_norm = "";
+		for(int i = 0; i < parts.size(); i++)
+		{
+			dest_norm += parts[i];
+		}
+		query = dest_norm;
+		//query = vect[i].query;
 		extend = vect[i].extend;
 		dic_map[query] = start;
 		char_vect_push_(extend.c_str(), char_vect_extend, end);
 		start += extend.length() + 1;
+	}
+	map<string,uint32_t>::iterator itr;
+	vector<const char*> da_key_vect;
+	vector<int32_t> da_value_vect;
+	for(map<string, uint32_t>::iterator itr = dic_map.begin(); itr != dic_map.end(); ++itr) 
+	{
+		da_key_vect.push_back(itr->first.c_str());			// query 为 key
+		da_value_vect.push_back(itr->second);				// position i, 指向begin，end
+	}
+
+	if(extend_da.build(da_key_vect.size(), &da_key_vect[0], 0, &da_value_vect[0]) != 0)
+	{
+		fprintf(stderr, "build da error!\n");
+		return -1;
+	}
+
+	// 写输出文件
+	FILE * fp_index = fopen(index_file, "wb");
+	if (NULL == fp_index) 
+	{
+		fprintf(stderr, "Can not open file [%s]!\n", index_file);
+		return -1;
+	}
+	// 保留file size字段
+	uint32_t index_file_size = 0;
+	fwrite(&index_file_size, 
+			sizeof(index_file_size), 1, fp_index);
+	// 写入da size
+	uint32_t da_size =
+		extend_da.size() * extend_da.unit_size();
+	fwrite(&da_size, sizeof(da_size), 1, fp_index);
+	fclose(fp_index);
+	if (extend_da.save(index_file, "ab") != 0)
+	{
+		fprintf(stderr, "save index error!\n");
+		return -1;
+	}
+
+	fp_index = fopen(index_file, "ab");
+	uint32_t size_ = char_vect_extend.size();
+	fwrite(&size_, sizeof(size_), 1, fp_index);
+	fwrite(&(char_vect_extend[0]), sizeof(char),
+			char_vect_extend.size(), fp_index);
+	
+	// 写入文件总长度
+	fflush(fp_index);
+	fclose(fp_index);
+	
+	fp_index = fopen(index_file, "r+b");
+	struct stat file_info;
+	if (fstat(fileno(fp_index), &file_info) == -1) 
+	{
+		fprintf(stderr, 
+				"can not get index file info from file [%s]!\n", index_file);
+		return -1;
+	}
+	index_file_size = file_info.st_size;
+	fclose(fp_index);
+	
+	fp_index = fopen(index_file, "ab");
+	fwrite(&index_file_size, 
+			sizeof(index_file_size), 1, fp_index);			// 写入index_file_size ，即文件总长度
+
+	fclose(fp_index);
+	cout << "output index file over .........." << endl;	
+	return 0;
+}
+
+
+//输出index文件
+int32_t WhiteBlackList_::OutputIndexFile(std::vector<ST> & vect,const char * index_file, string isUniq) 
+{
+	sort(vect.begin(), vect.end(), comp);	// sort
+	vector<char> char_vect_extend;
+	vector<string> parts;
+	map<string, uint32_t> dic_map;
+	string query;
+	string extend;
+	uint32_t start = 0;
+	uint32_t end = start;
+	for(int i = 0; i < vect.size(); i++)
+	{
+		parts.clear();
+		seg->Segment_(
+			vect[i].query,
+			parts);
+		if(parts.size() < 1)
+		{
+			cerr << "query = " << vect[i].query << endl;
+			cerr <<"[note] segment size lt 1" << endl;
+			continue;
+		}
+		string dest_norm = "";
+		for(int i = 0; i < parts.size(); i++)
+		{
+			dest_norm += parts[i];
+		}
+		query = dest_norm;
+		//query = vect[i].query;
+		extend = vect[i].extend;
+		dic_map[query] = start;
+		char_vect_push_(extend.c_str(), char_vect_extend, end);
+		start = end;
+		//start = end + 2;
+		//start += extend.length() + 1;
 	}
 	map<string,uint32_t>::iterator itr;
 	vector<const char*> da_key_vect;
@@ -1186,7 +1310,8 @@ int32_t WhiteBlackList_::OutputIndexFile(std::vector<ST> & vect,const char * ind
 				//cout << "query:" << query<< endl;
 				//cout << "extend:" << extend << endl;
 				char_vect_push_(extend.c_str(), char_vect_extend, end);
-				start = end + 1;
+				start = end;
+				//start = end + 2;
 				//start += extend.length() + 1;
 			}else
 			{
@@ -1202,7 +1327,7 @@ int32_t WhiteBlackList_::OutputIndexFile(std::vector<ST> & vect,const char * ind
 			char_vect_push_(extend.c_str(), char_vect_extend, end);
 		}
 		prequery = query;
-		cerr << "extend = " << extend << endl;
+		//cerr << "extend = " << extend << endl;
 	}
 	map<string,uint32_t>::iterator itr;
 	vector<const char*> da_key_vect;

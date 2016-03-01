@@ -1,5 +1,6 @@
 #include "dialogue.h"
 #include "EditDist.h"
+#include <stdlib.h>
 using namespace std;
 
 //const static string DA_IndexFile_DLG = "index_dir/qqchat.data.da.Index";
@@ -132,25 +133,60 @@ int DIALOGUE::show_results(size_t query_length, map<int, string>& da_vec)
 				nearest_dis = dis;
 			}
 		}
+		cerr << "anwser to search da_index :" << anwser << endl;
 		da_index->GetIndexResults(anwser, anwser_hash, tmp, seg);
 		cerr << "----------------------------------------------------------------------------------------------------------------------------" << endl;
+		vector<string> anwser_vec;
 		for(iter_ = anwser_hash.begin(); iter_ != anwser_hash.end(); iter_++)
 		{
 			cerr << "| ANWSER:" << iter_->second << endl;
+			spaceGary::StringSplit(iter_->second, anwser_vec, "##-##");
+		}
+		cerr << "----------------------------------------------------------------------------------------------------------------------------" << endl;
+		int pos_anwser;
+		if(anwser_vec.size() > 1)
+		{
+			pos_anwser = rand()%anwser_vec.size();
+			cerr << "anwser_vec.size = " << anwser_vec.size() << endl;
+			cerr << "pos_anwser = " << pos_anwser << endl;
+
+		}
+		else
+			pos_anwser = 0;
+		if(pos_anwser > anwser_vec.size() || pos_anwser < 0)
+			pos_anwser = 0;
+
+		if(pos_anwser < anwser_vec.size() && pos_anwser > -1)
+			cerr << "小胡狸: "<< anwser_vec[pos_anwser] << endl;
+		else
+		{
+			cerr << "[ERROR] pos_anwser is not in the range of anwser_vec! Please Check!" << endl;
+			cerr << "小胡狸: 你说话太深奥了，你太有学问了，我听不懂！你教我啊！" << endl;
+			cerr << "\t\t[教学格式]: 问题##答案" << endl;
 		}
 		cerr << "----------------------------------------------------------------------------------------------------------------------------" << endl;
 		break;
-		//spaceGary::StringSplit(iter->second, values, "|||");
-		//for(int i = 0; i < values.size(); i++)
-		//{
-		//}
 	}
 	return 0;
 }
 
 
-int DIALOGUE::IndexOutcome(const char* query)
+int DIALOGUE::IndexOutcome(const char* query)//, ofstream& FILE_TEACHER)
 {
+	// If it is from user's teaching.
+	string query_(query);
+/*
+	vector<string> teacher;
+	spaceGary::StringSplit(query_, teacher, "##");
+	if(teacher.size() == 2)
+	{
+		string question = teacher[0];
+		string anwser = teacher[1];
+		FILE_TEACHER << question << "##_##" << anwser << endl;
+		cerr << "小胡狸: 哇塞，你简直就是上天派来的救世主！谢谢谢谢  ^_^" << endl;
+		return 0;
+	}
+*/
 	char dest[4096];
 	memset(dest,0x00,4096);
 	EncodingConvertor::getInstance()->dbc2gchar(
@@ -162,7 +198,6 @@ int DIALOGUE::IndexOutcome(const char* query)
 	DlgResult doc_result;
 	vector<string> data;
 	vector<string> anwser;
-	string query_ = query;
 	cerr << "============================ BEGINE ==================================" << endl;
 	cerr << "【ME】: " << query << "" << endl << endl;
 	/*if(context.size() < 3)

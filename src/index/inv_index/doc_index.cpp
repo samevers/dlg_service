@@ -641,8 +641,10 @@ int32_t CDlgIndex::UnionInvResult(
 		vector<DLG_DOC_TYPE*>& docs)
 {
 	if(num_info.min_inv_size == 0)
-	{//存在词没有倒排
-		return 0;
+	{//存在任何一个词没有倒排，则跳出。目的是要求query 中所有词都存在倒排链。
+		// 所有词都必须在数据中出现过。
+		//
+		//return 0;
 	}
 
 	vector<int> index_begins(inv_results.size(),0);
