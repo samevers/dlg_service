@@ -70,6 +70,7 @@ int32_t PreProcess_dlg_cor(string filename)
 		cerr << "[ERROR] Fail to open inputfile: " << filename << endl;
 		return -1;
 	}
+	cerr << "[INFO] open file : " << filename << endl;
 	string line;
 	string query;
 	string extend;
@@ -79,13 +80,15 @@ int32_t PreProcess_dlg_cor(string filename)
 	{
 		vec.clear();
 		spaceGary::StringSplit(line, vec, "##_##");
-		cerr << "query = " << vec[0] << endl;
+		parts.clear();
 		seg->Segment_(
 			vec[0],
 			parts);
 		if(parts.size() < 1)
 		{
 			cerr <<"[note] segment size lt 1" << endl;
+			cerr <<"[note] query = " << vec[0] << endl;
+			cout << line << endl;
 			continue;
 		}
 		string dest_norm = "";
@@ -105,7 +108,7 @@ int main(int arg, char* argv[])
 {
 	seg = SEGMENT_1::getInstance();
 	seg->Init();
-	string filename = argv[0];
+	string filename = argv[1];
 	PreProcess_dlg_cor(filename);
 	return 0;
 }
