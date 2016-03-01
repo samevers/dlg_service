@@ -1006,7 +1006,8 @@ int WhiteBlackList_::change2qj(string query, char* &buffer)
 int32_t WhiteBlackList_::MakeIndex(const char *file, const char *index_file,const char* tag)
 {
 	cerr << "[debug_sam] MakeIndex file of tag: " << tag << "\tfile:" << file << endl;
-	FILE * fp_in = fopen(file, "r");
+	ifstream fp_in;
+	fp_in.open(file, ios::in);
 	if (!fp_in) 
 	{
 		cerr << "can't not open file:" << file;
@@ -1018,9 +1019,10 @@ int32_t WhiteBlackList_::MakeIndex(const char *file, const char *index_file,cons
 	int nn = 1;
 	ST v;
 	string blank = "##_##";
-	while (fgets(line, 20480, fp_in)) 
+	string str_line;
+	while (getline(fp_in, str_line)) 
 	{
-		string str_line = line;
+		spaceGary::StringTrim(str_line);
 		vector<string> parts_vect;
 		parts_vect.clear();
 		//boost::algorithm::split(parts_vect, str_line, boost::is_any_of( "_$##$_"));
@@ -1075,7 +1077,7 @@ int32_t WhiteBlackList_::MakeIndex(const char *file, const char *index_file,cons
 	else
 		OutputIndexFile(vect, index_file);	// 这个函数有问题，对于第一个索引项打印出来的是乱码；待查证；	
 
-	fclose(fp_in);
+	fp_in.close();
 
 	return 0;
 }

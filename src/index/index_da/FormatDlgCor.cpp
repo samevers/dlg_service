@@ -76,9 +76,11 @@ int32_t PreProcess_dlg_cor(string filename)
 	string extend;
 	vector<string> vec;
 	vector<string> parts;
+	map<string, string> hash_uniq;
 	while(getline(infile, line))
 	{
 		vec.clear();
+		spaceGary::StringTrim(line);
 		spaceGary::StringSplit(line, vec, "##_##");
 		parts.clear();
 		seg->Segment_(
@@ -88,7 +90,13 @@ int32_t PreProcess_dlg_cor(string filename)
 		{
 			cerr <<"[note] segment size lt 1" << endl;
 			cerr <<"[note] query = " << vec[0] << endl;
-			cout << line << endl;
+			if(hash_uniq.find(vec[0]) != hash_uniq.end())
+			{
+				hash_uniq[vec[0]] += "##-##" + vec[1];
+			}else
+			{
+				hash_uniq[vec[0]] = vec[1];
+			}
 			continue;
 		}
 		string dest_norm = "";
@@ -97,8 +105,20 @@ int32_t PreProcess_dlg_cor(string filename)
 			dest_norm += parts[i];
 		}
 		query = dest_norm;
+ 		if(hash_uniq.find(query) != hash_uniq.end())
+		{
+			hash_uniq[query] += "##-##" + vec[1];
+		}else
+		{
+			hash_uniq[query] = vec[1];
+		}
 
-		cout << query << "##_##" << vec[1] << endl;
+	}
+
+	map<string, string>::iterator iter;
+	for(iter = hash_uniq.begin(); iter != hash_uniq.end(); iter ++)
+	{
+		cout << iter->first << "##_##" << iter->second << endl;
 	}
 	return 0;
 
