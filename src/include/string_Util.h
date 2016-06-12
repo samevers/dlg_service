@@ -39,6 +39,10 @@ int separateIP(const char *value, char *ip, int *port);
 
 uint64_t hex2uint64(const my_sso_string hexStr);
 
+void chinese_or_english(char *str);
+int32_t chinese_or_english_length(char *str);
+int chinese_or_english_vec(char *str, std::vector<string>& vecout); 
+
 //hashËã·¨º¯Êı
 
 unsigned int _sgHash(const void *key, int len);

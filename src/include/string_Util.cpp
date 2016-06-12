@@ -1,6 +1,9 @@
 #include "string_Util.h"
 #include <errno.h>
 #include <cctype>
+#include <sstream>
+using namespace std;
+
 
 static int s_iconv(const my_sso_string &src, my_sso_string &result,my_sso_string in,my_sso_string out)
 {
@@ -438,4 +441,72 @@ uint64_t hex2uint64(const my_sso_string hexStr)
 		fprintf(stderr,"srcStr:%s,desInt:%llx\n",hexStr.c_str(),ret);
 		return ret;
 }
+/***注意：有的linux下一个中文占用三个字节,有的占用2个字节；
+ * 			windows占两个字节***/  
+void chinese_or_english(char *str)  
+{  
+  char chinese[4] = {0};  
+  for (int i = 0; i < strlen(str); i++) {  
+    //if (str[i] >= 0 && str[i] <= 127) {      //ascII  
+    if ((str[i] & 0x80) == 0) {   //chinese:the top is 1  
+      cout<<"alpha:"<<str[i]<<endl;  
+    }  
+    //else if (str[i] < 0){  
+    else {  
+      chinese[0] = str[i];  
+      chinese[1] = str[i + 1];  
+      //chinese[2] = str[i + 2];  
+      i++;    //skip one more  
+      //i++;  
+      printf("chinese:%s\n", chinese);  
+    }  
+  }  
+}  
+int chinese_or_english_vec(char *str, std::vector<string>& vecout)  
+{  
+	char chinese[4] = {0};
+	int j = 0;
+	string tmp;
+	ostringstream oss;
+	if(strlen(str) == 0)
+	{
+		return 0;
+	}
+	for (int i = 0; i < strlen(str); i++) {  
+		if ((str[i] & 0x80) == 0) {   //chinese:the top is 1  
+			oss.str("");
+			oss << str[i];
+			vecout[j++] = oss.str().c_str();
+    	}  
+		else {  
+			chinese[0] = str[i];  
+			chinese[1] = str[i + 1];  
+			i++;    //skip one more  
+			printf("chinese:%s\n", chinese);
+			oss.str("");
+			oss << chinese;
+			vecout[j++] = oss.str().c_str();
+		}
+	}
+	return 0;
+}
+
+int32_t chinese_or_english_length(char *str)  
+{  
+	int32_t length = 0;
+  char chinese[4] = {0};  
+  for (int i = 0; i < strlen(str); i++) {  
+    if ((str[i] & 0x80) == 0) {   //chinese:the top is 1  
+		length++;
+    }  
+    else {  
+      chinese[0] = str[i];  
+      chinese[1] = str[i + 1];  
+      i++;    //skip one more  
+      //i++;  
+	 length += 2;
+    }  
+  }
+	return length;  
+}  
 
